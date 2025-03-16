@@ -1,0 +1,244 @@
+{
+    "questions" : [
+        {
+            "id":1,
+            "question": "Minek a rövidítése a PC?",
+            "options": [
+                "Personal Computer",
+                "Portable Computer",
+                "Personal Calculating machine",
+                "Portable Calculating machine"
+            ],
+            "answer": "Personal Computer",
+            "rank": 1
+        },
+        {
+            "id":2,
+            "question": "Melyik programozási nyelv nem támogatja az objektum orientált programozást?",
+            "options": [
+                "Python",
+                "C",
+                "C#",
+                "Java"
+            ],
+            "answer": "C",
+            "rank": 1
+        },
+        {
+            "id":3,
+            "question": "Mi volt az Adobe Flash?",
+            "options": [
+                "Multimédiás szoftverplatform",
+                "Weboldal",
+                "Programozási nyelv",
+                "Szkript nyelv"
+            ],
+            "answer": "Multimédiás szoftverplatform",
+            "rank": 1
+        },
+        {
+            "id":4,
+            "question": "Melyik része végzi el a számításokat a számítógépben?",
+            "options": [
+                "Alaplap (Motherboard)",
+                "Processzor (CPU)",
+                "Félvezető alapú meghajtó (SSD)",
+                "Videókártya (GPU)"
+            ],
+            "answer": "Processzor (CPU)",
+            "rank": 1
+        },
+        {
+            "id":5,
+            "question": "Milyen színkeverési eljárás az RGB?",
+            "options": [
+                "Additív",
+                "Szubtraktív",
+                "Fázis",
+                "Fizikai"
+            ],
+            "answer": "Additív",
+            "rank": 1
+        },
+        {
+            "id":6,
+            "question": "Milyen színkeverési eljárás az CMYK?",
+            "options": [
+                "Additív",
+                "Szubtraktív",
+                "Fázis",
+                "Fizikai"
+            ],
+            "answer": "Szubtractív",
+            "rank": 1
+        },
+        {
+            "id":7,
+            "question": "Mi nem használ RGB színkeverési eljárást?",
+            "options": [
+                "Monitor",
+                "TV",
+                "Okostelefon",
+                "Nyomtató"
+            ],
+            "answer": "Nyomtató",
+            "rank": 1
+        },
+        {
+            "id":8,
+            "question": "Melyik szín a K az CMYK színkeverésben?",
+            "options": [
+                "Cián",
+                "Sárga",
+                "Fekete",
+                "Magenta"
+            ],
+            "answer": "Fekete",
+            "rank": 1
+        },
+        {
+            "id":9,
+            "question": "Mire jó a bootstrap a webprogramozásban?",
+            "options": [
+                "Különböző méretű eszközök kezelése",
+                "Különböző szkript nyelvek összekötésére",
+                "Különböző programozási nyelvek összekötésére",
+                "Különböző szerverek kezelésére"
+            ],
+            "answer": "Különböző méretű eszközök kezelése",
+            "rank": 1
+        },
+        {
+            "id":10,
+            "question": "Melyik kábelt nem használják a PC-k?",
+            "options": [
+                "VGA",
+                "Koax kábel",
+                "UTP",
+                "HDMI"
+            ],
+            "answer": "Koax kábel",
+            "rank": 1
+        },
+        {
+            "id":11,
+            "question": "Melyik adattároló eszközt nem használják manapság?",
+            "options": [
+                "Hajlékony lemez",
+                "CD",
+                "DVD",
+                "Blu-ray lemez"
+            ],
+            "answer": "Hajlékony lemez",
+            "rank": 1
+        },
+        {
+            "id":12,
+            "question": "Mit használ a vízhűtés?",
+            "options": [
+                "Forrás víz",
+                "Ásvány víz",
+                "Desztillált víz",
+                "Lúgos víz"
+            ],
+            "answer": "Desztillált víz",
+            "rank": 1
+        },
+        {
+            "id":13,
+            "question": "Milyen periféria nem létezik?",
+            "options": [
+                "Bemeneti",
+                "Kimeneti",
+                "Háttértárak",
+                "Tároló eszközök"
+            ],
+            "answer": "Tároló eszközök",
+            "rank": 1
+        },
+        {
+            "id":14,
+            "question": "Melyik nem bemeneti periféria?",
+            "options": [
+                "Monitor",
+                "Egér",
+                "Billentyűzet",
+                "Mikrofon"
+            ],
+            "answer": "Monitor",
+            "rank": 1
+        },
+        {
+            "id":15,
+            "question": "Melyik nem kimeneti ?",
+            "options": [
+                "Nyomtató",
+                "Szkenner",
+                "Hangszóró",
+                "Monitor"
+            ],
+            "answer": "Szkenner",
+            "rank": 1
+        },
+        {
+            "id":16,
+            "question": "Melyik a kakukktojás?",
+            "options": [
+                "Számítógép",
+                "Laptop",
+                "Okostelefon",
+                "Tablet"
+            ],
+            "answer": "Számítógép",
+            "rank": 1
+        },
+        {
+            "id":17,
+            "question": "Mit használnak az LCD-es eszközök?",
+            "options": [
+                "Folyékony kristály",
+                "Folyékony műanyag",
+                "Folyékony fém",
+                "Folyékony szénelektróda"
+            ],
+            "answer": "Folyékony kristály",
+            "rank": 1
+        },
+        {
+            "id":18,
+            "question": "Milyen fényt nem használhatnak az LED-es eszközök?",
+            "options": [
+                "Látható fény",
+                "Infravörös fény (IR)",
+                "Ultraviolet fény (UV)",
+                "Röntgen fény"
+            ],
+            "answer": "Röntgen fény",
+            "rank": 1
+        },
+        {
+            "id":19,
+            "question": "Melyik nyomtatófajta már elavult?",
+            "options": [
+                "Mátrix",
+                "Hő",
+                "Tintasugaras",
+                "Lézer"
+            ],
+            "answer": "Mátrix",
+            "rank": 1
+        },
+        {
+            "id":20,
+            "question": "Melyik nem tartós adattároló?",
+            "options": [
+                "Merevlemez(HDD)",
+                "Tetszőleges hozzáférésű memória (RAM)",
+                "Csak Olvasható Memória (ROM)",
+                "Flash Memória"
+            ],
+            "answer": "Tetszőleges hozzáférésű memória (RAM)",
+            "rank": 1
+        }
+    ]
+}
