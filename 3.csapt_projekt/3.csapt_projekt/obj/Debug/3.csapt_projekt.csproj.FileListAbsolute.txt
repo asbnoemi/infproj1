@@ -1,0 +1,5 @@
+C:\Users\asbot\OneDrive\Asztali gép\egyetem\inf.p.1\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\3.csapt_projekt.csproj.AssemblyReference.cache
+C:\Users\asbot\OneDrive\Asztali gép\egyetem\inf.p.1\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\MainWindow.g.cs
+C:\Users\asbot\OneDrive\Asztali gép\egyetem\inf.p.1\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\App.g.cs
+C:\Users\asbot\OneDrive\Asztali gép\egyetem\inf.p.1\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\3.csapt_projekt_MarkupCompile.cache
+C:\Users\asbot\OneDrive\Asztali gép\egyetem\inf.p.1\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\3.csapt_projekt_MarkupCompile.lref

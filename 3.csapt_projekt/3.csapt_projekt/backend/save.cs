@@ -1,18 +1,50 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+
 
 namespace _3.csapt_projekt.backend
 {
-    internal class save
+    public class Save
     {
-        public short timeMinut;//játékidö perc ben
-        public short mep;//pája sorszáma
-        public short score;//öszegyüjtött pontok
-        public byte[] top3;//3 legjobb eredmény
-    }
-   
+        public short TimeMinut { get; set; } //játékidö perc ben
+        public short Mep { get; set; }//pája sorszáma
+        public short Score { get; set; }//öszegyüjtött pontok
+        public short[] Top3 { get; set; }//3 legjobb eredmény
+        public save(short timeMinut, short mep, short score, short[] top3)
+        {
+            TimeMinut = timeMinut;
+            Mep = mep;
+            Score = score;
+            if (top3[0] < score)
+            {
+                top3[0] = score;
+                Top3[1] = top3[1];
+                Top3[2] = top3[2];
+            }
+                else if (top3[1] < score)
+                {
+                    top3[1] = score;
+                    Top3[0] = top3[0];
+                    Top3[2] = top3[2];
+                }
+                    else if (top3[2] < score)
+                    {
+                        top3[2] = score;
+                        Top3[0] = top3[0];
+                        Top3[1] = top3[1];
+                    }
+        }
+        public bool ShaveFile(Save aktual)
+        {
 
+            return true;
+        }
+
+
+    } 
 }
