@@ -6,8 +6,10 @@
         xmlns:local="clr-namespace:_3.csapt_projekt"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    
     <Grid RenderTransformOrigin="0.368,0.533">
         <Button Content="Button" HorizontalAlignment="Left" Margin="98,303,0,0" VerticalAlignment="Top" Height="86" Width="92"/>
 
+        <Label Content="LÁTOD?" HorizontalAlignment="Left" Margin="200,168,0,0" VerticalAlignment="Top" Height="134" Width="349"/>
     </Grid>
 </Window>
