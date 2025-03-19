@@ -7,5 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     
-    <Grid RenderTransformOrigin="0.368,0.533"/>
+    <Grid RenderTransformOrigin="0.368,0.533">
+        <Button Content="Button" HorizontalAlignment="Left" Margin="639,95,0,0" VerticalAlignment="Top"/>
+    </Grid>
 </Window>
