@@ -5,14 +5,28 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:_3.csapt_projekt"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800" Height="450" Width="800">
     <Grid Width="800" Height="450">
         <Grid.Background>
             <ImageBrush ImageSource="Resources/StartMenuBackground.jpg" Stretch="Fill"/>
         </Grid.Background>
-        <Rectangle HorizontalAlignment="Center" Height="518" Stroke="White" VerticalAlignment="Center" Width="232"/>
-        <Button Content="Play" Height="70" Margin="0,60,0,0" VerticalAlignment="Top" Width="145" HorizontalAlignment="Center" Foreground="White" FontFamily="Impact" FontSize="30" BorderBrush="{x:Null}" Background="{x:Null}" BorderThickness="3,1,1,1"/>
-        <Button Content="Jobs" Height="70" VerticalAlignment="Top" Width="145" HorizontalAlignment="Center" Margin="0,190,0,0" FontFamily="Impact" FontSize="30" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}"/>
-        <Button Content="Scores" Height="70" Margin="0,320,0,0" VerticalAlignment="Top" Width="144" HorizontalAlignment="Center" FontFamily="Impact" FontSize="30" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}"/>
+        <Rectangle HorizontalAlignment="Center" Height="518" VerticalAlignment="Center" Width="232" Fill="#FF16BC7B"/>
+        <Button Content="Play" Height="50" Margin="0,70,0,0" VerticalAlignment="Top" Width="232" HorizontalAlignment="Center" Foreground="White" FontFamily="Impact" FontSize="30" BorderBrush="{x:Null}" BorderThickness="1,1,1,1">
+            <Button.Background>
+                <SolidColorBrush Color="#FF23AF42" Opacity="0.6"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Jobs" Height="50" VerticalAlignment="Center" Width="232" HorizontalAlignment="Center" FontFamily="Impact" FontSize="30" Foreground="White" BorderBrush="{x:Null}">
+            <Button.Background>
+                <SolidColorBrush Color="#FF23AF42" Opacity="0.6"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Scores" Height="50" Margin="0,330,0,0" VerticalAlignment="Top" Width="232" HorizontalAlignment="Center" FontFamily="Impact" FontSize="30" BorderBrush="{x:Null}" Foreground="White">
+            <Button.Background>
+                <SolidColorBrush Color="#FF23AF42" Opacity="0.6"/>
+            </Button.Background>
+        </Button>
+        <Rectangle HorizontalAlignment="Left" Height="497" VerticalAlignment="Top" Width="284" Fill="#FF16BC7B" Margin="516,0,0,0" Opacity="0.2"/>
+        <Rectangle HorizontalAlignment="Left" Height="463" VerticalAlignment="Top" Width="284" Fill="#FF16BC7B" Opacity="0.2"/>
     </Grid>
 </UserControl>
