@@ -13,5 +13,6 @@ namespace _3.csapt_projekt
     /// </summary>
     public partial class App : Application
     {
+
     }
 }

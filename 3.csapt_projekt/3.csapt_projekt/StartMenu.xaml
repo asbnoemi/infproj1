@@ -11,7 +11,7 @@
             <ImageBrush ImageSource="Resources/StartMenuBackground.jpg" Stretch="Fill"/>
         </Grid.Background>
         <Rectangle HorizontalAlignment="Center" Height="518" VerticalAlignment="Center" Width="232" Fill="#FF16BC7B"/>
-        <Button Content="Play" Height="50" Margin="0,70,0,0" VerticalAlignment="Top" Width="232" HorizontalAlignment="Center" Foreground="White" FontFamily="Impact" FontSize="30" BorderBrush="{x:Null}" BorderThickness="1,1,1,1">
+        <Button Click="Button_ClickMain" Content="Play" Height="50" Margin="0,70,0,0" VerticalAlignment="Top" Width="232" HorizontalAlignment="Center" Foreground="White" FontFamily="Impact" FontSize="30" BorderBrush="{x:Null}" BorderThickness="1,1,1,1">
             <Button.Background>
                 <SolidColorBrush Color="#FF23AF42" Opacity="0.6"/>
             </Button.Background>
@@ -21,7 +21,7 @@
                 <SolidColorBrush Color="#FF23AF42" Opacity="0.6"/>
             </Button.Background>
         </Button>
-        <Button Content="Scores" Height="50" Margin="0,330,0,0" VerticalAlignment="Top" Width="232" HorizontalAlignment="Center" FontFamily="Impact" FontSize="30" BorderBrush="{x:Null}" Foreground="White">
+        <Button Click="Button_ClickScoreScore" Content="Scores" Height="50" Margin="0,330,0,0" VerticalAlignment="Top" Width="232" HorizontalAlignment="Center" FontFamily="Impact" FontSize="30" BorderBrush="{x:Null}" Foreground="White">
             <Button.Background>
                 <SolidColorBrush Color="#FF23AF42" Opacity="0.6"/>
             </Button.Background>
