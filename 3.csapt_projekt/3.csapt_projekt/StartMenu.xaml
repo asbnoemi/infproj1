@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:_3.csapt_projekt"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800" Height="450" Width="800">
-    <Grid Width="800" Height="450">
+    <Grid Name="ContentArea" Width="800" Height="450">
         <Grid.Background>
             <ImageBrush ImageSource="Resources/StartMenuBackground.jpg" Stretch="Fill"/>
         </Grid.Background>

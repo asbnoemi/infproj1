@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _3.csapt_projekt.backend
+{
+    public class ScoresUdate 
+    {
+        Shave shave;
+        public void Udate() { }
+        public void shaves() 
+        {
+            Shave.ShaveFile(shave);
+        }
+    }
+}

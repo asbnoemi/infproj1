@@ -28,7 +28,7 @@ namespace _3.csapt_projekt
             InitializeComponent();
             
         }
-
+        
         private void Button_ClickMain(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = new MainWindow();
@@ -38,8 +38,7 @@ namespace _3.csapt_projekt
         private void Button_ClickScore(object sender, RoutedEventArgs e)
         {
 
-          Scores scores = new Scores();
-            scores.sh
+          
 
         }
     }
