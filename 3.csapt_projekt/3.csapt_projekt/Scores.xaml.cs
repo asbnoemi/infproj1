@@ -24,5 +24,7 @@ namespace _3.csapt_projekt
         {
             InitializeComponent();
         }
+
     }
+    
 }

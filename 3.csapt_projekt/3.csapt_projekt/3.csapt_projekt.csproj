@@ -87,7 +87,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="backend\ScoresUdate.cs" />
-    <Compile Include="backend\ShaveRead.cs" />
+    <Compile Include="backend\megnemtom.cs" />
     <Compile Include="Scores.xaml.cs">
       <DependentUpon>Scores.xaml</DependentUpon>
     </Compile>

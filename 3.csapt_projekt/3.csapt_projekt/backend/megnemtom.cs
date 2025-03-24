@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace _3.csapt_projekt.backend
 {
-    internal class ShaveRead
+    internal class megnemtom
     {
+        public Shave[] top3()
+        {
+
+            return new Shave[0];
+        }
     }
+    
 }

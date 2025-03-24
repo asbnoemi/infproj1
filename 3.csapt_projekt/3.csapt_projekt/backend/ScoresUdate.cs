@@ -8,11 +8,6 @@ namespace _3.csapt_projekt.backend
 {
     public class ScoresUdate 
     {
-        Shave shave;
-        public void Udate() { }
-        public void shaves() 
-        {
-            Shave.ShaveFile(shave);
-        }
+       
     }
 }
