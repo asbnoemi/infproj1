@@ -19,7 +19,7 @@ namespace _3.csapt_projekt.backend
                  Mep = mep;
                  Score = score;
                  if (top3[0] < score)
-                 {
+                 
                      top3[0] = score;
                      Top3[1] = top3[1];
                      Top3[2] = top3[2];
