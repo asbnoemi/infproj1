@@ -86,7 +86,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="backend\ScoresUdate.cs" />
+    <Compile Include="backend\QuestRead.cs" />
     <Compile Include="backend\megnemtom.cs" />
     <Compile Include="Scores.xaml.cs">
       <DependentUpon>Scores.xaml</DependentUpon>
