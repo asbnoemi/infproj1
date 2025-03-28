@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:_3.csapt_projekt"
              StartupUri="StartMenu.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary Source="/Resources/ResourceDictionary.xaml"/>
     </Application.Resources>
 </Application>
