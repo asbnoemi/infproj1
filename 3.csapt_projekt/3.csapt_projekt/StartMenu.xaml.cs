@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _3.csapt_projekt.backend;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,6 +33,15 @@ namespace _3.csapt_projekt
         private void Button_ClickMain(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = new MainWindow();
+            Shave.Me.load();
+            var a =new Shave.ScoreC()
+            {
+                Mep = 0,
+                Score = 10,
+                TimeMinut = 20
+            };
+            Shave.Me.scoreLs.Add(a);
+            Shave.Me.ShaveFile();
             mainWindow.Show();
         }
 
