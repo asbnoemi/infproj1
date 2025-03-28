@@ -39,17 +39,10 @@ namespace _3.csapt_projekt.backend
         }
         public bool Qestverification(string sign,int id) 
         {
-            foreach (qestsC score in QestLs)
-            {
-                if (sign == QestLs.Goodsolution && id==QestLs.Id )
-                {
-                    return true;
-                    break;
-                }
+            var res = QestLs.Find(x => x.Id == id);
+            return res.Goodsolution == sign;
                 
-
-            }
-            return false;
+                
         }
     }
 }
