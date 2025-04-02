@@ -15,7 +15,7 @@
         <TextBox HorizontalAlignment="Center" Height="34" Margin="0,142,0,0" TextWrapping="Wrap" Text="Highest" VerticalAlignment="Top" Width="106" Foreground="White" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Impact" FontSize="25" TextAlignment="Center"/>
         <TextBox HorizontalAlignment="Left" Height="34" Margin="210,178,0,0" TextWrapping="Wrap" Text="2nd" VerticalAlignment="Top" Width="106" Foreground="White" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Impact" FontSize="25" TextAlignment="Center"/>
         <TextBox HorizontalAlignment="Left" Height="34" Margin="492,197,0,0" TextWrapping="Wrap" Text="3rd" VerticalAlignment="Top" Width="106" Foreground="White" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Impact" FontSize="25" TextAlignment="Center"/>
-        <Button Content="Back" HorizontalAlignment="Left" Height="32" Margin="691,408,0,0" VerticalAlignment="Top" Width="99" FontFamily="Impact" FontSize="20" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}"/>
+        <Button Content="Back" HorizontalAlignment="Left" Height="32" Margin="691,408,0,0" VerticalAlignment="Top" Width="99" FontFamily="Impact" FontSize="20" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}" Click="GoStartMenu_Click"/>
 
     </Grid>
 </UserControl>

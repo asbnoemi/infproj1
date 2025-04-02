@@ -11,14 +11,7 @@
     </Window.Resources>
 
     <Grid RenderTransformOrigin="0.368,0.533" Background="{StaticResource MainBG}">
-        <Grid Height="50" Width="Auto" Background="DodgerBlue" Margin="0,0,0,384">
-            <TextBlock Text=" "/>
-        </Grid>
-        <Image HorizontalAlignment="Left" Margin="478,266,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}"/>
-        <Image HorizontalAlignment="Center" Margin="0,354,0,0" VerticalAlignment="Top" Style="{StaticResource Laptop}"/>
-        <Image HorizontalAlignment="Left" Margin="176,160,0,0" VerticalAlignment="Top" Style="{StaticResource server}"/>
-        <Image HorizontalAlignment="Left" Margin="275,324,0,0" VerticalAlignment="Top" Style="{StaticResource Router}"/>
-        <Image HorizontalAlignment="Left" Margin="642,135,0,0" VerticalAlignment="Top" Style="{StaticResource Mobile}"/>
+        <ContentControl x:Name="MainContent" VerticalAlignment="Center"/>
     </Grid>
 
 </Window>
