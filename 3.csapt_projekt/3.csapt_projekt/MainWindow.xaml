@@ -10,7 +10,7 @@
         <ImageBrush x:Key="MainBG" ImageSource="/Resources/MainBG.png"/>
     </Window.Resources>
 
-    <Grid RenderTransformOrigin="0.368,0.533" Background="{StaticResource MainBG}">
+    <Grid Background="{StaticResource MainBG}">
         <ContentControl x:Name="MainContent" VerticalAlignment="Center"/>
     </Grid>
 

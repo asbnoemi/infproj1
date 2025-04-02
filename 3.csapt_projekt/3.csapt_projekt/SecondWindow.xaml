@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="SecondWindow" Height="450" Width="800">
     <Grid>
-        
+        <ContentControl x:Name="SecondMainContent" VerticalAlignment="Center"/>
     </Grid>
 </Window>
