@@ -23,6 +23,24 @@ namespace _3.csapt_projekt
         public MainWindow()
         {
             InitializeComponent();
+            //MainContent.Content = new StartMenu(); // Alapértelmezett nézet
+            MainContent.Content = new StartMenuDark();
+        }
+
+        public void GoStartMenu()
+        {
+            //MainContent.Content = new StartMenu();
+            MainContent.Content = new StartMenuDark();
+        }
+
+        public void GoScores()
+        {
+            MainContent.Content = new Scores();
+        }
+        public void OpenSecondWindow()
+        {
+            SecondWindow secondWindow = new SecondWindow();
+            secondWindow.Show();
         }
     }
 }

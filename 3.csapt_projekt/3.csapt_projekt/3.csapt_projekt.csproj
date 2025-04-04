@@ -91,6 +91,9 @@
     <Compile Include="Scores.xaml.cs">
       <DependentUpon>Scores.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SecondWindow.xaml.cs">
+      <DependentUpon>SecondWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StartMenu.xaml.cs">
       <DependentUpon>StartMenu.xaml</DependentUpon>
     </Compile>
@@ -115,6 +118,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Scores.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SecondWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

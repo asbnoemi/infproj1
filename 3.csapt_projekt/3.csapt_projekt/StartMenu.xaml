@@ -6,27 +6,30 @@
              xmlns:local="clr-namespace:_3.csapt_projekt"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800" Height="450" Width="800">
-    <Grid Name="ContentArea" Width="800" Height="450">
-        <Grid.Background>
-            <ImageBrush ImageSource="Resources/StartMenuBackground.jpg" Stretch="Fill"/>
-        </Grid.Background>
-        <Rectangle HorizontalAlignment="Center" Height="518" VerticalAlignment="Center" Width="232" Fill="#FF16BC7B"/>
-        <Button Click="Button_ClickMain" Content="Play" Height="50" Margin="0,70,0,0" VerticalAlignment="Top" Width="232" HorizontalAlignment="Center" Foreground="White" FontFamily="Impact" FontSize="30" BorderBrush="{x:Null}" BorderThickness="1,1,1,1">
-            <Button.Background>
-                <SolidColorBrush Color="#FF23AF42" Opacity="0.6"/>
-            </Button.Background>
-        </Button>
-        <Button Content="Jobs" Height="50" VerticalAlignment="Center" Width="232" HorizontalAlignment="Center" FontFamily="Impact" FontSize="30" Foreground="White" BorderBrush="{x:Null}">
-            <Button.Background>
-                <SolidColorBrush Color="#FF23AF42" Opacity="0.6"/>
-            </Button.Background>
-        </Button>
-        <Button  Content="Scores" Height="50" Margin="0,330,0,0" VerticalAlignment="Top" Width="232" HorizontalAlignment="Center" FontFamily="Impact" FontSize="30" BorderBrush="{x:Null}" Foreground="White">
-            <Button.Background>
-                <SolidColorBrush Color="#FF23AF42" Opacity="0.6"/>
-            </Button.Background>
-        </Button>
-        <Rectangle HorizontalAlignment="Left" Height="497" VerticalAlignment="Top" Width="284" Fill="#FF16BC7B" Margin="516,0,0,0" Opacity="0.2"/>
-        <Rectangle HorizontalAlignment="Left" Height="463" VerticalAlignment="Top" Width="284" Fill="#FF16BC7B" Opacity="0.2"/>
-    </Grid>
+    <Viewbox Stretch="Uniform">
+        <!-- EZT ÉN MÁRK RAKTAM IDE elméletileg ha kicsinyíted akkor a tartalom is össze menne de ennél az oldalnál nem müködik-->
+        <Grid Name="ContentArea" Width="800" Height="450">
+            <Grid.Background>
+                <ImageBrush ImageSource="Resources/StartMenuBackground.jpg" Stretch="Fill"/>
+            </Grid.Background>
+            <Rectangle HorizontalAlignment="Center" Height="518" VerticalAlignment="Center" Width="232" Fill="#FF16BC7B"/>
+            <Button Click="Button_ClickMain" Content="Play" Height="50" Margin="0,70,0,0" VerticalAlignment="Top" Width="232" HorizontalAlignment="Center" Foreground="White" FontFamily="Impact" FontSize="30" BorderBrush="{x:Null}" BorderThickness="1,1,1,1">
+                <Button.Background>
+                    <SolidColorBrush Color="#FF23AF42" Opacity="0.6"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Jobs" Height="50" VerticalAlignment="Center" Width="232" HorizontalAlignment="Center" FontFamily="Impact" FontSize="30" Foreground="White" BorderBrush="{x:Null}">
+                <Button.Background>
+                    <SolidColorBrush Color="#FF23AF42" Opacity="0.6"/>
+                </Button.Background>
+            </Button>
+            <Button  Content="Scores" Height="50" Margin="0,330,0,0" VerticalAlignment="Top" Width="232" HorizontalAlignment="Center" FontFamily="Impact" FontSize="30" BorderBrush="{x:Null}" Foreground="White" Click="GoScores_Click">
+                <Button.Background>
+                    <SolidColorBrush Color="#FF23AF42" Opacity="0.6"/>
+                </Button.Background>
+            </Button>
+            <Rectangle HorizontalAlignment="Left" Height="497" VerticalAlignment="Top" Width="284" Fill="#FF16BC7B" Margin="516,0,0,0" Opacity="0.2"/>
+            <Rectangle HorizontalAlignment="Left" Height="463" VerticalAlignment="Top" Width="284" Fill="#FF16BC7B" Opacity="0.2"/>
+        </Grid>
+    </Viewbox>
 </UserControl>

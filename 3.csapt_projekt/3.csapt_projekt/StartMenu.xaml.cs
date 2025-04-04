@@ -45,7 +45,7 @@ namespace _3.csapt_projekt
             mainWindow.Show();
         }
 
-        private void Button_ClickScore(object sender, RoutedEventArgs e)
+        private void GoScores_Click(object sender, RoutedEventArgs e)
         {
 
           
