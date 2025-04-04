@@ -44,5 +44,17 @@ namespace _3.csapt_projekt.backend
                 
                 
         }
+        public qestsC randQestGen(int rank) 
+        {
+            int lastid= QestLs[QestLs.Count - 1].Id;
+            Random random = new Random();   
+            int newQ=random.Next(1,lastid);
+            while (QestLs[newQ].Rank != rank)
+            {  
+                newQ++;
+            }
+
+            return QestLs[newQ];
+        }
     }
 }

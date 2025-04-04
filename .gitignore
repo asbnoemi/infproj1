@@ -1,4 +1,14 @@
 .vs
-/3.csapt_projekt/3.csapt_projekt/obj/Debug/3.csapt_projekt_MarkupCompile.lref
-/3.csapt_projekt/3.csapt_projekt/obj/Debug/3.csapt_projekt_MarkupCompile.cache
-/3.csapt_projekt/3.csapt_projekt/obj/Debug/3.csapt_projekt.csproj.AssemblyReference.cache
+*.lref
+*.cache
+*.suo
+*.user
+*.userosscacheű
+*.sln.docstates
+*.sln.ide
+*.sln.ide.user
+*.sln.ide.userosscache
+*.sln.ide.userosscache2
+*.sln.ide.userosscache3
+*.sln.ide.userosscache4
+
