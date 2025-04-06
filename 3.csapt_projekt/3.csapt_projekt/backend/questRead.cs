@@ -10,7 +10,7 @@ namespace _3.csapt_projekt.backend
 {
     public class QuestRead 
     {
-        const string filename = @"c:\Temp\Quest.json";//proba bekek még alitani
+        
         private static QuestRead _meQ; //hivatkozás QuestRead.me.ScoreLs.lista fügvény
         public static QuestRead MeQ
         {
@@ -23,15 +23,20 @@ namespace _3.csapt_projekt.backend
         {
             public int id { get; set; }
             public string question { get; set; } 
-            //public List<string> options { get; set; }
+            public List<string> options { get; set; }
             public string answer { get; set; }
             public int rank { get; set; }
         }
         public List<qestsC> questions { get; set; } = new List<qestsC>();
         public QuestRead() { }
-        public void load(string qFile = filename)
+        public void load(string qFile = "")
         {
-           string readall = File.ReadAllText(qFile);
+            if (qFile == "")
+            {
+                qFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Quest.json");
+            }
+            
+            string readall = File.ReadAllText(qFile);
             QuestRead questRead = JsonSerializer.Deserialize<QuestRead>(readall);
 
             _meQ = questRead;

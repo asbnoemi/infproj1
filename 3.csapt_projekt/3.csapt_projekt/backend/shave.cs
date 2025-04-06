@@ -13,7 +13,7 @@ namespace _3.csapt_projekt.backend
     public class Shave //mentés fájl ját kezelö osztály
 
     {
-        const string filename = @"c:\temp\shave.json";//proba bekek még alitani
+       
         private static Shave _me; //hivatkozás Shave.me.ScoreLs.lista fügvény
         public static Shave Me { get {
             if (_me==null) _me=new Shave(); return _me;
@@ -27,9 +27,12 @@ namespace _3.csapt_projekt.backend
         public List<ScoreC> scoreLs { get; set; }=new List<ScoreC>();
 
         public Shave() { }
-        public bool ShaveFile( string svFile =filename)
+        public bool ShaveFile( string svFile ="")
         {
-
+            if (svFile == "")
+            {
+                svFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "shave.json");
+            }
             try
             {
                 
@@ -42,8 +45,12 @@ namespace _3.csapt_projekt.backend
                 return false;
             }
         }
-        public void load(string svFile =filename) 
+        public void load(string svFile ="") 
         {
+            if (svFile == "")
+            {
+                svFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "shave.json");
+            }
             Shave shave = JsonSerializer.Deserialize<Shave>(File.ReadAllText(svFile));
             _me = shave;
         }

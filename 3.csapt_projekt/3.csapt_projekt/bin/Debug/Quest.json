@@ -1,0 +1,496 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Minek a rövidítése a PC?",
+      "options": [
+        "Personal Computer",
+        "Portable Computer",
+        "Personal Calculating machine",
+        "Portable Calculating machine"
+      ],
+      "answer": "Personal Computer",
+      "rank": 1
+    },
+    {
+      "id": 2,
+      "question": "Melyik programozási nyelv nem támogatja az objektum orientált programozást?",
+      "options": [
+        "Python",
+        "C",
+        "C#",
+        "Java"
+      ],
+      "answer": "C",
+      "rank": 1
+    },
+    {
+      "id": 3,
+      "question": "Mi volt az Adobe Flash?",
+      "options": [
+        "Multimédiás szoftverplatform",
+        "Weboldal",
+        "Programozási nyelv",
+        "Szkript nyelv"
+      ],
+      "answer": "Multimédiás szoftverplatform",
+      "rank": 1
+    },
+    {
+      "id": 4,
+      "question": "Melyik része végzi el a számításokat a számítógépben?",
+      "options": [
+        "Alaplap (Motherboard)",
+        "Processzor (CPU)",
+        "Félvezető alapú meghajtó (SSD)",
+        "Videókártya (GPU)"
+      ],
+      "answer": "Processzor (CPU)",
+      "rank": 1
+    },
+    {
+      "id": 5,
+      "question": "Milyen színkeverési eljárás az RGB?",
+      "options": [
+        "Additív",
+        "Szubtraktív",
+        "Fázis",
+        "Fizikai"
+      ],
+      "answer": "Additív",
+      "rank": 1
+    },
+    {
+      "id": 6,
+      "question": "Milyen színkeverési eljárás az CMYK?",
+      "options": [
+        "Additív",
+        "Szubtraktív",
+        "Fázis",
+        "Fizikai"
+      ],
+      "answer": "Szubtractív",
+      "rank": 1
+    },
+    {
+      "id": 7,
+      "question": "Mi nem használ RGB színkeverési eljárást?",
+      "options": [
+        "Monitor",
+        "TV",
+        "Okostelefon",
+        "Nyomtató"
+      ],
+      "answer": "Nyomtató",
+      "rank": 1
+    },
+    {
+      "id": 8,
+      "question": "Melyik szín a K az CMYK színkeverésben?",
+      "options": [
+        "Cián",
+        "Sárga",
+        "Fekete",
+        "Magenta"
+      ],
+      "answer": "Fekete",
+      "rank": 1
+    },
+    {
+      "id": 9,
+      "question": "Mire jó a bootstrap a webprogramozásban?",
+      "options": [
+        "Különböző méretű eszközök kezelése",
+        "Különböző szkript nyelvek összekötésére",
+        "Különböző programozási nyelvek összekötésére",
+        "Különböző szerverek kezelésére"
+      ],
+      "answer": "Különböző méretű eszközök kezelése",
+      "rank": 1
+    },
+    {
+      "id": 10,
+      "question": "Melyik kábelt nem használják a PC-k?",
+      "options": [
+        "VGA",
+        "Koax kábel",
+        "UTP",
+        "HDMI"
+      ],
+      "answer": "Koax kábel",
+      "rank": 1
+    },
+    {
+      "id": 11,
+      "question": "Melyik adattároló eszközt nem használják manapság?",
+      "options": [
+        "Hajlékony lemez",
+        "CD",
+        "DVD",
+        "Blu-ray lemez"
+      ],
+      "answer": "Hajlékony lemez",
+      "rank": 1
+    },
+    {
+      "id": 12,
+      "question": "Mit használ a vízhűtés?",
+      "options": [
+        "Forrás víz",
+        "Ásvány víz",
+        "Desztillált víz",
+        "Lúgos víz"
+      ],
+      "answer": "Desztillált víz",
+      "rank": 1
+    },
+    {
+      "id": 13,
+      "question": "Milyen periféria nem létezik?",
+      "options": [
+        "Bemeneti",
+        "Kimeneti",
+        "Háttértárak",
+        "Tároló eszközök"
+      ],
+      "answer": "Tároló eszközök",
+      "rank": 1
+    },
+    {
+      "id": 14,
+      "question": "Melyik nem bemeneti periféria?",
+      "options": [
+        "Monitor",
+        "Egér",
+        "Billentyűzet",
+        "Mikrofon"
+      ],
+      "answer": "Monitor",
+      "rank": 1
+    },
+    {
+      "id": 15,
+      "question": "Melyik nem kimeneti periféria?",
+      "options": [
+        "Nyomtató",
+        "Szkenner",
+        "Hangszóró",
+        "Monitor"
+      ],
+      "answer": "Szkenner",
+      "rank": 1
+    },
+    {
+      "id": 16,
+      "question": "Melyik a kakukktojás?",
+      "options": [
+        "Számítógép",
+        "Laptop",
+        "Okostelefon",
+        "Tablet"
+      ],
+      "answer": "Számítógép",
+      "rank": 1
+    },
+    {
+      "id": 17,
+      "question": "Mit használnak az LCD-es eszközök?",
+      "options": [
+        "Folyékony kristály",
+        "Folyékony műanyag",
+        "Folyékony fém",
+        "Folyékony szénelektróda"
+      ],
+      "answer": "Folyékony kristály",
+      "rank": 1
+    },
+    {
+      "id": 18,
+      "question": "Milyen fényt nem használhatnak az LED-es eszközök?",
+      "options": [
+        "Látható fény",
+        "Infravörös fény (IR)",
+        "Ultraviolet fény (UV)",
+        "Röntgen fény"
+      ],
+      "answer": "Röntgen fény",
+      "rank": 1
+    },
+    {
+      "id": 19,
+      "question": "Melyik nyomtatófajta található a kasszákban?",
+      "options": [
+        "Mátrix",
+        "Hő",
+        "Tintasugaras",
+        "Lézer"
+      ],
+      "answer": "Hő",
+      "rank": 1
+    },
+    {
+      "id": 20,
+      "question": "Melyik nem tartós adattároló?",
+      "options": [
+        "Merevlemez(HDD)",
+        "Tetszőleges hozzáférésű memória (RAM)",
+        "Csak Olvasható Memória (ROM)",
+        "Flash Memória"
+      ],
+      "answer": "Tetszőleges hozzáférésű memória (RAM)",
+      "rank": 1
+    },
+    {
+      "id": 21,
+      "question": "Hány réteg-e van az OSI modellnek?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "answer": "7",
+      "rank": 1
+    },
+    {
+      "id": 22,
+      "question": "Hány réteg-e van a TCP/IP modellnek?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "answer": "4",
+      "rank": 1
+    },
+    {
+      "id": 23,
+      "question": "Melyik réteg nem az OSI modell része?",
+      "options": [
+        "Szállítási réteg",
+        "Fizikai réteg",
+        "Hálózati interfész réteg",
+        "Viszony réteg"
+      ],
+      "answer": "Hálózati interfész réteg",
+      "rank": 1
+    },
+    {
+      "id": 24,
+      "question": "Melyik réteg nem az TCP/IP modell része?",
+      "options": [
+        "Szállítási réteg",
+        "Alkalmazási réteg",
+        "Hálózati interfész réteg",
+        "Megjelenítési réteg"
+      ],
+      "answer": "Megjelenítési réteg",
+      "rank": 1
+    },
+    {
+      "id": 25,
+      "question": "Melyik OSI modell rétegben dolgozik a kapcsoló (switch)?",
+      "options": [
+        "Fizikai",
+        "Adatkapcsolati",
+        "Hálózati",
+        "Szállítási"
+      ],
+      "answer": "Adatkapcsolati",
+      "rank": 1
+    },
+    {
+      "id": 26,
+      "question": "Melyik OSI modell rétegben dolgozik a forgalomirányító (router)?",
+      "options": [
+        "Fizikai",
+        "Adatkapcsolati",
+        "Hálózati",
+        "Szállítási"
+      ],
+      "answer": "Hálózati",
+      "rank": 1
+    },
+    {
+      "id": 27,
+      "question": "Melyik paranccsal kell a hálózati portokat felkapcsolni?",
+      "options": [
+        "No Shutdown",
+        "Power On",
+        "Port Enable",
+        "Port On"
+      ],
+      "answer": "No Shutdown",
+      "rank": 1
+    },
+    {
+      "id": 28,
+      "question": "Milyen formában továbbítják az adatokat a hálózati gépek az adatkapcsolati rétegben?",
+      "options": [
+        "Bitek (Bits)",
+        "Keretek (Frames)",
+        "Csomagok (Packets)",
+        "Adat (Data)"
+      ],
+      "answer": "Keretek (Frames)",
+      "rank": 1
+    },
+    {
+      "id": 29,
+      "question": "Milyen formában továbbítják az adatokat a hálózati gépek az hálózati rétegben?",
+      "options": [
+        "Bitek (Bits)",
+        "Keretek (Frames)",
+        "Csomagok (Packets)",
+        "Adat (Data)"
+      ],
+      "answer": "Csomagok (Packets)",
+      "rank": 1
+    },
+    {
+      "id": 30,
+      "question": "Mire jó a Variable Length Subnet Mask (VLSM) számítás?",
+      "options": [
+        "Hálózati cím alhálózatokra elosztása",
+        "Hálózati címek összekapcsolására",
+        "Alhálózatok kezelésére",
+        "Hálózati címek kezelésére"
+      ],
+      "answer": "Hálózati cím alhálózatokra elosztása",
+      "rank": 1
+    },
+    {
+      "id": 31,
+      "question": "Melyik gép párost nem keresztkötésű UTP-kábellel kötünk össze?",
+      "options": [
+        "Kapcsoló-kapcsoló",
+        "Forgalomirányító-forgalomirányító",
+        "Forgalomirányító-PC",
+        "Forgalomirányító-kapcsoló"
+      ],
+      "answer": "Forgalomirányító-PC",
+      "rank": 1
+    },
+    {
+      "id": 32,
+      "question": "Melyik géppárost nem egyeneskötésű UTP-kábellel kötünk össze?",
+      "options": [
+        "Forgalomirányító-PC",
+        "Forgalomirányító-kapcsoló",
+        "Kapcsoló-PC",
+        "Kapcsoló-Hozzáférési pont (Access point)"
+      ],
+      "answer": "Forgalomirányító-kapcsoló",
+      "rank": 1
+    },
+    {
+      "id": 33,
+      "question": "Melyik színű kábel nincs az UTP kábelben?",
+      "options": [
+        "Kék",
+        "Kék és fehér",
+        "Fehér",
+        "Barna"
+      ],
+      "answer": "Fehér",
+      "rank": 1
+    },
+    {
+      "id": 34,
+      "question": "Mi az UTP kábel csatlakozójának a neve?",
+      "options": [
+        "RJ45",
+        "PG25",
+        "AZ95",
+        "KH55"
+      ],
+      "answer": "RJ45",
+      "rank": 1
+    },
+    {
+      "id": 35,
+      "question": "Melyik kábel portja a HWIC-2T?",
+      "options": [
+        "UTP",
+        "Soros (serial)",
+        "Konzol",
+        "Telefonvonal"
+      ],
+      "answer": "Soros (serial)",
+      "rank": 1
+    },
+    {
+      "id": 36,
+      "question": "Melyik hálózati terület a legnagyobb?",
+      "options": [
+        "Personal Area Network (PAN)",
+        "Local Area Network (LAN)",
+        "Metropolitan Area Network (MAN)",
+        "Wide Area Network (WAN)"
+      ],
+      "answer": "Wide Area Network (WAN)",
+      "rank": 1
+    },
+    {
+      "id": 37,
+      "question": "Mit jelent a V a VLAN rövidítésben?",
+      "options": [
+        "Vizuális (Visual)",
+        "Virtuális (Virtual)",
+        "Erényes (Virtuous)",
+        "Különféle (Various)"
+      ],
+      "answer": "Virtuális (Virtual)",
+      "rank": 1
+    },
+    {
+      "id": 38,
+      "question": "Melyik VLAN interfészbe vannak a hálózati eszközök beállítva?",
+      "options": [
+        "VLAN 0",
+        "VLAN 1",
+        "VLAN 100",
+        "Semelyikbe"
+      ],
+      "answer": "VLAN 1",
+      "rank": 1
+    },
+    {
+      "id": 39,
+      "question": "Melyik nem dinamikus forgalomirányító protokoll?",
+      "options": [
+        "Routing Information Protocol (RIP)",
+        "Open Shortest Path First (OSPF)",
+        "Enhanced Interior Gateway Routing Protocol (EIGRP)",
+        "Spanning Tree Protocol (STP)"
+      ],
+      "answer": "Spanning Tree Protocol (STP)",
+      "rank": 1
+    },
+    {
+      "id": 40,
+      "question": "Mire használjuk a Feszítőfa protokollt (STP)?",
+      "options": [
+        "VLAN-ok közötti kommunikáció",
+        "VLAN-ok listájának a megosztása hálózati eszközökkel",
+        "Kapcsolók összekötése hálózati hurok nélkül",
+        "Hogy ne dőljön ki a hálózat"
+      ],
+      "answer": "Kapcsolók összekötése hálózati hurok nélkül",
+      "rank": 1
+    },
+    {
+      "id": 41,
+      "question": "Melyik OSI réteg felelős az adatok titkosításáért?",
+      "options": [
+        "Alkalmazási réteg",
+        "Megjelenítési réteg",
+        "Hálózati réteg",
+        "Szállítási réteg"
+      ],
+      "answer": "Megjelenítési réteg",
+      "rank": 1
+    }
+  ]
+}
