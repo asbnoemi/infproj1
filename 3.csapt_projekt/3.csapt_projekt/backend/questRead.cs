@@ -10,7 +10,7 @@ namespace _3.csapt_projekt.backend
 {
     public class QuestRead 
     {
-        const string filename = @"c:\temp\Quest.json";//proba bekek még alitani
+        const string filename = @"c:\Temp\Quest.json";//proba bekek még alitani
         private static QuestRead _meQ; //hivatkozás QuestRead.me.ScoreLs.lista fügvény
         public static QuestRead MeQ
         {
@@ -21,40 +21,39 @@ namespace _3.csapt_projekt.backend
         }
         public class qestsC
         {
-            public string Qest { get; set; } 
-            public string solution1 { get; set; }
-            public  string solution2 { get; set; }
-            public string solution3 { get; set; }
-            public string solution4 { get; set; }
-            public string Goodsolution { get; set; }
-            public int Rank { get; set; }
-            public int Id { get; set; }
+            public int id { get; set; }
+            public string question { get; set; } 
+            //public List<string> options { get; set; }
+            public string answer { get; set; }
+            public int rank { get; set; }
         }
-        public List<qestsC> QestLs { get; set; } = new List<qestsC>();
+        public List<qestsC> questions { get; set; } = new List<qestsC>();
         public QuestRead() { }
         public void load(string qFile = filename)
         {
-            QuestRead questRead = JsonSerializer.Deserialize<QuestRead>(File.ReadAllText(qFile));
+           string readall = File.ReadAllText(qFile);
+            QuestRead questRead = JsonSerializer.Deserialize<QuestRead>(readall);
+
             _meQ = questRead;
         }
         public bool Qestverification(string sign,int id) 
         {
-            var res = QestLs.Find(x => x.Id == id);
-            return res.Goodsolution == sign;
+            var res = questions.Find(x => x.id == id);
+            return res.answer == sign;
                 
                 
         }
         public qestsC randQestGen(int rank) 
         {
-            int lastid= QestLs[QestLs.Count - 1].Id;
+            int lastid= questions[questions.Count - 1].id;
             Random random = new Random();   
             int newQ=random.Next(1,lastid);
-            while (QestLs[newQ].Rank != rank)
+            while (questions[newQ].rank != rank)
             {  
                 newQ++;
             }
 
-            return QestLs[newQ];
+            return questions[newQ];
         }
     }
 }
