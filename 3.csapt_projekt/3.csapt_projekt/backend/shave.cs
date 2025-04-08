@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Text.Json;
+using System.Windows.Media.Media3D;
 
 
 namespace _3.csapt_projekt.backend
@@ -54,7 +55,32 @@ namespace _3.csapt_projekt.backend
             Shave shave = JsonSerializer.Deserialize<Shave>(File.ReadAllText(svFile));
             _me = shave;
         }
-    
+        public Shave[] roppscore ()
+        {
+            load();
+            Shave[] top3 = new Shave[3] ;
+            int[] top3ind = new int[3] { 0, 0, 0 };
+            for (int i = 0; i < scoreLs.Count; i++)
+            {
+                if (scoreLs[i].Score > scoreLs[top3ind[0]].Score)
+                {
+                    top3ind[0] = i;
+                }
+                    else if (scoreLs[i].Score > scoreLs[top3ind[1]].Score)
+                    {
+                        top3ind[1] = i;
+                    }
+                        else if (scoreLs[i].Score > scoreLs[top3ind[2]].Score)
+                        {
+                            top3ind[2] = i;
+                        }
+            }
+            top3[0] = scoreLs[top3ind[0]];
+            top3[1] = scoreLs[top3ind[1]];
+            top3[2] = scoreLs[top3ind[2]];
+            return top3;
+        }   
+
     }
 }
     
