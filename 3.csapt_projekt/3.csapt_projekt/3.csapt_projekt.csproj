@@ -88,6 +88,12 @@
     </ApplicationDefinition>
     <Compile Include="backend\QuestRead.cs" />
     <Compile Include="backend\megnemtom.cs" />
+    <Compile Include="Jobs.xaml.cs">
+      <DependentUpon>Jobs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="maps\Map1.xaml.cs">
+      <DependentUpon>Map1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Scores.xaml.cs">
       <DependentUpon>Scores.xaml</DependentUpon>
     </Compile>
@@ -100,6 +106,10 @@
     <Compile Include="StartMenuDark.xaml.cs">
       <DependentUpon>StartMenuDark.xaml</DependentUpon>
     </Compile>
+    <Page Include="Jobs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -113,6 +123,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="maps\Map1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Resources\ResourceDictionary.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -165,25 +179,24 @@
     <Resource Include="Resources\StartMenuBackground.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="maps\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Router.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\server.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Pc.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Mobile.png" />
+    <Resource Include="Resources\Hacker.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\MainBG.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\Police.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mobile.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Resources\Laptop.png" />
+    <Resource Include="Resources\Router.png" />
+    <Resource Include="Resources\Server.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Pc.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

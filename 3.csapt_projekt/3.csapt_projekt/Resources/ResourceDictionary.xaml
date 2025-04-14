@@ -1,28 +1,80 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <Style x:Key="Computer" TargetType="Image">
-        <Setter Property="Source" Value="/Resources/Pc.png"/>
+    <Style x:Key="Computer" TargetType="Button">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Width" Value="50"/>
         <Setter Property="Height" Value="50"/>
+        <Setter Property="Content">
+            <Setter.Value>
+                <Image Source="/Resources/Pc.png" Stretch="Fill"/>
+            </Setter.Value>
+        </Setter>
     </Style>
-    <Style x:Key="Laptop" TargetType="Image">
-        <Setter Property="Source" Value="/Resources/Laptop.png"/>
+    <Style x:Key="Laptop" TargetType="Button">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Width" Value="80"/>
         <Setter Property="Height" Value="80"/>
+        <Setter Property="Content">
+            <Setter.Value>
+                <Image Source="/Resources/Laptop.png" Stretch="Fill"/>
+            </Setter.Value>
+        </Setter>
     </Style>
-    <Style x:Key="server" TargetType="Image">
-        <Setter Property="Source" Value="/Resources/server.png"/>
+    <Style x:Key="server" TargetType="Button">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Width" Value="70"/>
         <Setter Property="Height" Value="70"/>
+        <Setter Property="Content">
+            <Setter.Value>
+                <Image Source="/Resources/Server.png" Stretch="Fill"/>
+            </Setter.Value>
+        </Setter>
     </Style>
-    <Style x:Key="Router" TargetType="Image">
-        <Setter Property="Source" Value="/Resources/Router.png"/>
+    <Style x:Key="Router" TargetType="Button">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Width" Value="60"/>
         <Setter Property="Height" Value="60"/>
+        <Setter Property="Content">
+            <Setter.Value>
+                <Image Source="/Resources/Router.png" Stretch="Fill"/>
+            </Setter.Value>
+        </Setter>
     </Style>
-    <Style x:Key="Mobile" TargetType="Image">
-        <Setter Property="Source" Value="/Resources/Mobile.png"/>
+    <Style x:Key="Mobile" TargetType="Button">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Width" Value="60"/>
         <Setter Property="Height" Value="60"/>
+        <Setter Property="Content">
+            <Setter.Value>
+                <Image Source="/Resources/Mobile.png" Stretch="Fill"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="Hacker" TargetType="Button">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Width" Value="100"/>
+        <Setter Property="Height" Value="100"/>
+        <Setter Property="Content">
+            <Setter.Value>
+                <Image Source="/Resources/Hacker.png" Stretch="Fill"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="Police" TargetType="Button">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Width" Value="100"/>
+        <Setter Property="Height" Value="100"/>
+        <Setter Property="Content">
+            <Setter.Value>
+                <Image Source="/Resources/Police.png" Stretch="Fill"/>
+            </Setter.Value>
+        </Setter>
     </Style>
 </ResourceDictionary>

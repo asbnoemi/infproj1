@@ -23,5 +23,10 @@ namespace _3.csapt_projekt
         {
             InitializeComponent();
         }
+
+        public void GoJobs()
+        {
+            SecondContent.Content = new Jobs();
+        }
     }
 }
