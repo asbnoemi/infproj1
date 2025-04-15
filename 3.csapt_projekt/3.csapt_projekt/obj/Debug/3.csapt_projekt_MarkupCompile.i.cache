@@ -9,21 +9,12 @@ _3.csapt_projekt
 none
 false
 DEBUG;TRACE
-<<<<<<< HEAD
-H:\FONTOS\fontos\egyetem\tanulás\6.félév\infproj\infproj1\3.csapt_projekt\3.csapt_projekt\App.xaml
+C:\Users\asbot\OneDrive\Asztali gép\egyetem\inf.p.1\infproj1\3.csapt_projekt\3.csapt_projekt\App.xaml
 9-1911242963
 
 16-302165472
-242002053444
-Jobs.xaml;MainWindow.xaml;maps\Map1.xaml;Question.xaml;Resources\ResourceDictionary.xaml;Scores.xaml;SecondWindow.xaml;StartMenu.xaml;StartMenuDark.xaml;
-=======
-C:\Users\asbot\OneDrive\Asztali gép\egyetem\inf.p.1\infproj1\3.csapt_projekt\3.csapt_projekt\App.xaml
-872241135
-
-15-1555614438
 241796440596
-Jobs.xaml;MainWindow.xaml;maps\Map1.xaml;Resources\ResourceDictionary.xaml;Scores.xaml;SecondWindow.xaml;StartMenu.xaml;StartMenuDark.xaml;
->>>>>>> 83117e7366e492beb78e1dfa0d4e28bc8b380da5
+Jobs.xaml;MainWindow.xaml;maps\Map1.xaml;Question.xaml;Resources\ResourceDictionary.xaml;Scores.xaml;SecondWindow.xaml;StartMenu.xaml;StartMenuDark.xaml;
 
-False
+True
 

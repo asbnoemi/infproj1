@@ -186,5 +186,7 @@ H:\FONTOS\fontos\egyetem\tanulás\6.félév\infproj\infproj1\3.csapt_projekt\3.c
 H:\FONTOS\fontos\egyetem\tanulás\6.félév\infproj\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\3.csapt_projekt.pdb
 H:\FONTOS\fontos\egyetem\tanulás\6.félév\infproj\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Jobs.g.cs
 H:\FONTOS\fontos\egyetem\tanulás\6.félév\infproj\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Jobs.baml
-H:\FONTOS\fontos\egyetem\tanulás\6.félév\infproj\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Question.g.cs
-H:\FONTOS\fontos\egyetem\tanulás\6.félév\infproj\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Question.baml
+C:\Users\asbot\OneDrive\Asztali gép\egyetem\inf.p.1\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Jobs.g.cs
+C:\Users\asbot\OneDrive\Asztali gép\egyetem\inf.p.1\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\maps\Map1.g.cs
+C:\Users\asbot\OneDrive\Asztali gép\egyetem\inf.p.1\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Jobs.baml
+C:\Users\asbot\OneDrive\Asztali gép\egyetem\inf.p.1\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\maps\Map1.baml
