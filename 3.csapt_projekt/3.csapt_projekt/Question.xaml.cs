@@ -40,11 +40,12 @@ namespace _3.csapt_projekt
         private void answer_Click(object sender, RoutedEventArgs e)
         {
             Button UsedButton = sender as Button;
+            string button = UsedButton.Content as string;
+            
+            QuestRead.MeQ.Qestverification(button, kerdes.id);
+            
 
-            //if (UsedButton.Content == QuestRead.MeQ.Qestverification(kerdes.answer, kerdes.id))
-            //{
-
-            //}
+            
 
         }
     }
