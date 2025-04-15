@@ -44,6 +44,7 @@ namespace _3.csapt_projekt.backend
         public bool Qestverification(string sign,int id) 
         {
             var res = questions.Find(x => x.id == id);
+
             return res.answer == sign;
                 
                 
