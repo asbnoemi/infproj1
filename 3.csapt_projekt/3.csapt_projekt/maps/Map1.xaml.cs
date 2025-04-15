@@ -31,9 +31,18 @@ namespace _3.csapt_projekt.maps
         public int faults = 0;
         private void Question_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
-            mainWindow.OpenSecondWindow();
-            
+            SecondWindow second = Application.Current.Windows.OfType<SecondWindow>().FirstOrDefault();
+            if (second != null)
+            {
+                second.GoQuestion();
+            }
+            else
+            {
+                second = new SecondWindow();
+                second.GoQuestion();
+                MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
+                mainWindow.OpenSecondWindow();
+            }
         }
     }
 }

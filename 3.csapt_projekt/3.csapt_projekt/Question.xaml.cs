@@ -33,9 +33,9 @@ namespace _3.csapt_projekt
             question.Content = kerdes.question;
 
             button1.Content = kerdes.options[0];
-            button1.Content = kerdes.options[1];
-            button1.Content = kerdes.options[2];
-            button1.Content = kerdes.options[3];
+            button2.Content = kerdes.options[1];
+            button3.Content = kerdes.options[2];
+            button4.Content = kerdes.options[3];
         }
         
         private async void answer_Click(object sender, RoutedEventArgs e)
@@ -54,20 +54,25 @@ namespace _3.csapt_projekt
 
             if (answer)
             {
-                UsedButton.Content = "Jó válasz";
-                UsedButton.Visibility = Visibility.Visible;
-                //await Task.Delay(1000);
-                //SecondWindow sec = Application.Current.Windows.OfType<SecondWindow>().FirstOrDefault();
-                //if (sec != null) 
-                //{
-                //    sec.Close();
-                //}
+                eredmeny.Content = "Jó válasz";
+                eredmeny.Visibility = Visibility.Visible;
+                await Task.Delay(1000);
+                SecondWindow sec = Application.Current.Windows.OfType<SecondWindow>().FirstOrDefault();
+                if (sec != null)
+                {
+                    sec.Close();
+                }
             }
             else
             {
-                UsedButton.Content = "Rossz válasz";
-                UsedButton.Visibility = Visibility.Visible;
+                eredmeny.Content = "Rossz válasz";
+                eredmeny.Visibility = Visibility.Visible;
                 await Task.Delay(1000);
+                SecondWindow sec = Application.Current.Windows.OfType<SecondWindow>().FirstOrDefault();
+                if (sec != null)
+                {
+                    sec.Close();
+                }
             }
             
 
