@@ -9,10 +9,20 @@
     <UserControl.Resources>
         <ImageBrush x:Key="MainBG" ImageSource="/Resources/MainBG.png"/>
     </UserControl.Resources>
-    <Grid Background="{StaticResource MainBG}">
-        <Button HorizontalAlignment="Left" Margin="387,253,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Click="Question_Click"/>
-        <Button HorizontalAlignment="Left" Margin="217,278,0,0" VerticalAlignment="Top" Style="{StaticResource Mobile}" Click="Question_Click"/>
-        <Button HorizontalAlignment="Left" Margin="490,0,0,0" VerticalAlignment="Center" Style="{StaticResource Router}" Click="Question_Click"/>
-        <Button HorizontalAlignment="Left" Margin="362,350,0,0" VerticalAlignment="Top" Style="{StaticResource Hacker}"/>
+    <Grid>
+        <Grid Height="50" Background="DarkBlue" Margin="0,0,0,400">
+            <Label Content="Label" HorizontalAlignment="Left" Height="177" Margin="602,-177,0,0" VerticalAlignment="Top" Width="9"/>
+
+        </Grid>
+        <Grid Height="400" Background="{StaticResource MainBG}" Margin="0,55,0,-5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="627*"/>
+                <ColumnDefinition Width="173*"/>
+            </Grid.ColumnDefinitions>
+            <Button HorizontalAlignment="Left" Margin="387,233,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Click="Question_Click"/>
+            <Button HorizontalAlignment="Left" Margin="236,0,0,0" VerticalAlignment="Center" Style="{StaticResource Mobile}" Click="Question_Click"/>
+            <Button HorizontalAlignment="Left" Margin="460,84,0,0" VerticalAlignment="Top" Style="{StaticResource server}" Click="Question_Click"/>
+            <Button HorizontalAlignment="Left" Margin="362,314,0,0" VerticalAlignment="Top" Style="{StaticResource Hacker}"/>
+        </Grid>
     </Grid>
 </UserControl>

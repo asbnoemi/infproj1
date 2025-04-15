@@ -16,6 +16,7 @@
         <Button x:Name="button3" Content="Button" HorizontalAlignment="Left" Margin="139,349,0,0" VerticalAlignment="Top" Click="answer_Click"/>
         <Button x:Name="button4" Content="Button" HorizontalAlignment="Left" Margin="604,349,0,0" VerticalAlignment="Top" Click="answer_Click"/>
         <Label x:Name="eredmeny" Content="Label" Foreground="White" HorizontalAlignment="Center" Margin="0,283,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Label Content="" HorizontalAlignment="Center" Margin="0,424,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </UserControl>
