@@ -33,7 +33,7 @@ namespace _3.csapt_projekt
             {
 
                 string ButtonName = UsedButton.Name;
-                int job = int.Parse(ButtonName[3].ToString());
+                int job = int.Parse(ButtonName.Substring(3).ToString());
                 StartMenuDark startMenuDark = new StartMenuDark();
                 startMenuDark.mapchange(job);
             }

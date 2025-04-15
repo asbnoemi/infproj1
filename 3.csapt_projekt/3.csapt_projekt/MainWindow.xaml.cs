@@ -43,7 +43,6 @@ namespace _3.csapt_projekt
                     MainContent.Content = new Map1();
                     break;
             }
-            MainContent.Content = new Map1();
         }
 
         public void GoScores()

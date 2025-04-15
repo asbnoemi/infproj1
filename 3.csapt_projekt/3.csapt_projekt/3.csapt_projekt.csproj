@@ -94,6 +94,9 @@
     <Compile Include="maps\Map1.xaml.cs">
       <DependentUpon>Map1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Question.xaml.cs">
+      <DependentUpon>Question.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Scores.xaml.cs">
       <DependentUpon>Scores.xaml</DependentUpon>
     </Compile>
@@ -124,6 +127,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="maps\Map1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Question.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
