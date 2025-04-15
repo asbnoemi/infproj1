@@ -28,5 +28,10 @@ namespace _3.csapt_projekt
         {
             SecondContent.Content = new Jobs();
         }
+
+        public void GoQuestion()
+        {
+            SecondContent.Content = new Question();
+        }
     }
 }
