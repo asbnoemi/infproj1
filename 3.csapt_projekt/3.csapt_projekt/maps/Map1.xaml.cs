@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _3.csapt_projekt.backend;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static _3.csapt_projekt.backend.QuestRead;
 
 namespace _3.csapt_projekt.maps
 {
@@ -30,6 +32,7 @@ namespace _3.csapt_projekt.maps
         {
             MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
             mainWindow.OpenSecondWindow();
+            
         }
     }
 }

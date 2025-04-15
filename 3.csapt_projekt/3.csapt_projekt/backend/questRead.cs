@@ -41,16 +41,31 @@ namespace _3.csapt_projekt.backend
 
             _meQ = questRead;
         }
-        public bool Qestverification(string sign,int id) 
+        public ValueTuple<bool, int,int> Qestverification(string sign,int id,int vpoint, int fault) 
         {
+            bool fc = false;
+            int point = vpoint;
+            int faultpoint = fault;
             var res = questions.Find(x => x.id == id);
+            if (res.answer == sign)
+            {
+                fc = true;
+                point = vpoint+1;      
+            }
+            else
+            {
+                fc = false;
+                faultpoint = fault+1;
 
-            return res.answer == sign;
+            } 
+                
+            return (fc,point,faultpoint);
                 
                 
         }
         public qestsC randQestGen(int rank) 
         {
+
             int lastid= questions[questions.Count - 1].id;
             Random random = new Random();   
             int newQ=random.Next(1,lastid);
