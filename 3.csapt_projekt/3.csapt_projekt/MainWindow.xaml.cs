@@ -1,4 +1,5 @@
-﻿using _3.csapt_projekt.maps;
+﻿using _3.csapt_projekt.backend;
+using _3.csapt_projekt.maps;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +27,7 @@ namespace _3.csapt_projekt
         {
             InitializeComponent();
             //MainContent.Content = new StartMenu(); // Alapértelmezett nézet
+            QuestRead.MeQ.load();
             MainContent.Content = new StartMenuDark();
         }
 
