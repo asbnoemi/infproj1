@@ -198,3 +198,5 @@ D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Qu
 D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Jobs.baml
 D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\maps\Map1.baml
 D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Question.baml
+D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\maps\Map2.g.cs
+D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\maps\Map2.baml
