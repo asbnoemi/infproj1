@@ -27,7 +27,8 @@ namespace _3.csapt_projekt.maps
         {
             InitializeComponent();
         }
-
+        public int wins = 0;
+        public int faults = 0;
         private void Question_Click(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = Application.Current.MainWindow as MainWindow;

@@ -1,4 +1,5 @@
 ﻿using _3.csapt_projekt.backend;
+using _3.csapt_projekt.maps;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,15 +37,38 @@ namespace _3.csapt_projekt
             button1.Content = kerdes.options[2];
             button1.Content = kerdes.options[3];
         }
-
-        private void answer_Click(object sender, RoutedEventArgs e)
+        
+        private async void answer_Click(object sender, RoutedEventArgs e)
         {
             Button UsedButton = sender as Button;
             string button = UsedButton.Content as string;
-            
-            QuestRead.MeQ.Qestverification(button, kerdes.id);
+            Map1 map1 = new Map1();
+
+            bool answer;
+            int w;
+            int l;
+
             
 
+            (answer, w, l) = QuestRead.MeQ.Qestverification(button, kerdes.id, map1.wins, map1.faults);
+
+            if (answer)
+            {
+                UsedButton.Content = "Jó válasz";
+                UsedButton.Visibility = Visibility.Visible;
+                //await Task.Delay(1000);
+                //SecondWindow sec = Application.Current.Windows.OfType<SecondWindow>().FirstOrDefault();
+                //if (sec != null) 
+                //{
+                //    sec.Close();
+                //}
+            }
+            else
+            {
+                UsedButton.Content = "Rossz válasz";
+                UsedButton.Visibility = Visibility.Visible;
+                await Task.Delay(1000);
+            }
             
 
         }
