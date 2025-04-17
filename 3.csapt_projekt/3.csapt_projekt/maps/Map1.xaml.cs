@@ -24,9 +24,11 @@ namespace _3.csapt_projekt.maps
     /// </summary>
     public partial class Map1 : UserControl
     {
+        private List<Button> ButtonList = new List<Button>();
         public Map1()
         {
             InitializeComponent();
+
         }
         public int wins = 0;
         public int faults = 0;
@@ -40,15 +42,55 @@ namespace _3.csapt_projekt.maps
             pont.Content = "pont: " + wins.ToString();
             hiba.Content = "hiba: " + faults.ToString();
         }
-        private void Question_Click1(object sender, RoutedEventArgs e)
+
+        private void Question(Button usedbutton, List<Button> locked)
         {
-            Button UsedButton = sender as Button;
-            int button = int.Parse(UsedButton.Content as string);
             MainWindow mainwindow = Application.Current.Windows
                             .OfType<MainWindow>()
                             .FirstOrDefault();
-            mainwindow.Question_Click(button);
+            mainwindow.Question_Click(usedbutton, locked);
+        }
 
+        private void Question_Click1(object sender, RoutedEventArgs e)
+        {
+            ButtonList.Clear();
+            ButtonList.Add(firstrow1);
+            ButtonList.Add(firstrow2);
+            Button UsedButton = sender as Button;
+            Question(UsedButton, ButtonList);
+        }
+
+        private void Question_Click2(object sender, RoutedEventArgs e)
+        {
+            ButtonList.Clear();
+            ButtonList.Add(secondrow2);
+            Button UsedButton = sender as Button;
+            Question(UsedButton, ButtonList);
+        }
+        private void Question_Click3(object sender, RoutedEventArgs e)
+        {
+            ButtonList.Clear();
+            ButtonList.Add(secondrow1);
+            Button UsedButton = sender as Button;
+            Question(UsedButton, ButtonList);
+
+            
+        }
+        private void Question_Click4(object sender, RoutedEventArgs e)
+        {
+            ButtonList.Clear();
+            ButtonList.Add(thirdrow1);
+            ButtonList.Add(thirdrow2);
+            Button UsedButton = sender as Button;
+            Question(UsedButton, ButtonList);
+
+            
+        }
+        private void Question_Click5(object sender, RoutedEventArgs e)
+        {
+            ButtonList.Clear();
+            Button UsedButton = sender as Button;
+            Question(UsedButton, ButtonList);
         }
     }
 }

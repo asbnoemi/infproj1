@@ -63,6 +63,7 @@ namespace _3.csapt_projekt
                 eredmeny.Foreground = new SolidColorBrush(Colors.White);
                 eredmeny.Visibility = Visibility.Visible;
                 await Task.Delay(1000);
+                mainwindow.ButtonEnableer();
                 mainwindow.UpdateMapLabel(w, l);
                 SecondWindow sec = Application.Current.Windows.OfType<SecondWindow>().FirstOrDefault();
                 if (sec != null)
