@@ -24,12 +24,16 @@ namespace _3.csapt_projekt
     /// </summary>
     public partial class Question : UserControl
     {
-        qestsC kerdes = QuestRead.MeQ.randQestGen(1);
+        qestsC kerdes;
+
+
         public Question()
         {
             InitializeComponent();
-            
-
+            MainWindow mainwindow = Application.Current.Windows
+                            .OfType<MainWindow>()
+                            .FirstOrDefault();
+            kerdes = QuestRead.MeQ.randQestGen(mainwindow.difficulty);
             question.Content = kerdes.question;
 
             button1.Content = kerdes.options[0];
@@ -45,18 +49,21 @@ namespace _3.csapt_projekt
             Map1 map1 = new Map1();
 
             bool answer;
-            int w;
-            int l;
+            int w = 0, l = 0;
 
-            
 
             (answer, w, l) = QuestRead.MeQ.Qestverification(button, kerdes.id, map1.wins, map1.faults);
 
             if (answer)
             {
+                MainWindow mainwindow = Application.Current.Windows
+                            .OfType<MainWindow>()
+                            .FirstOrDefault();
                 eredmeny.Content = "Jó válasz";
+                eredmeny.Foreground = new SolidColorBrush(Colors.White);
                 eredmeny.Visibility = Visibility.Visible;
                 await Task.Delay(1000);
+                mainwindow.UpdateMapLabel(w, l);
                 SecondWindow sec = Application.Current.Windows.OfType<SecondWindow>().FirstOrDefault();
                 if (sec != null)
                 {
@@ -65,8 +72,13 @@ namespace _3.csapt_projekt
             }
             else
             {
+                MainWindow mainwindow = Application.Current.Windows
+                            .OfType<MainWindow>()
+                            .FirstOrDefault();
                 eredmeny.Content = "Rossz válasz";
+                eredmeny.Foreground = new SolidColorBrush(Colors.Red);
                 eredmeny.Visibility = Visibility.Visible;
+                mainwindow.UpdateMapLabel(w, l);
                 await Task.Delay(1000);
                 SecondWindow sec = Application.Current.Windows.OfType<SecondWindow>().FirstOrDefault();
                 if (sec != null)

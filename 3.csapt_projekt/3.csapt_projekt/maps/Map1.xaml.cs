@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,20 +30,25 @@ namespace _3.csapt_projekt.maps
         }
         public int wins = 0;
         public int faults = 0;
-        private void Question_Click(object sender, RoutedEventArgs e)
+
+        public void scores(int w, int l)
         {
-            SecondWindow second = Application.Current.Windows.OfType<SecondWindow>().FirstOrDefault();
-            if (second != null)
-            {
-                second.GoQuestion();
-            }
-            else
-            {
-                second = new SecondWindow();
-                second.GoQuestion();
-                MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
-                mainWindow.OpenSecondWindow();
-            }
+            
+            wins = wins + w;
+            faults = faults + l;
+
+            pont.Content = "pont: " + wins.ToString();
+            hiba.Content = "hiba: " + faults.ToString();
+        }
+        private void Question_Click1(object sender, RoutedEventArgs e)
+        {
+            Button UsedButton = sender as Button;
+            int button = int.Parse(UsedButton.Content as string);
+            MainWindow mainwindow = Application.Current.Windows
+                            .OfType<MainWindow>()
+                            .FirstOrDefault();
+            mainwindow.Question_Click(button);
+
         }
     }
 }

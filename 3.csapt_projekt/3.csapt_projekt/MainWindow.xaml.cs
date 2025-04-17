@@ -23,6 +23,31 @@ namespace _3.csapt_projekt
     /// </summary>
     public partial class MainWindow : Window
     {
+        public int difficulty = 1;
+        public void Question_Click(int diff)
+        {
+            SecondWindow second = Application.Current.Windows.OfType<SecondWindow>().FirstOrDefault();
+            if (second != null)
+            {
+                difficulty = diff;
+                second.GoQuestion();
+            }
+            else
+            {
+                difficulty = diff;
+                second = new SecondWindow();
+                second.GoQuestion();
+                MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
+                mainWindow.OpenSecondWindow();
+            }
+        }
+
+        private Map1 map1;
+
+        public void UpdateMapLabel(int w, int l)
+        {
+            map1?.scores(w, l);
+        }
         public MainWindow()
         {
             InitializeComponent();
@@ -42,7 +67,8 @@ namespace _3.csapt_projekt
             switch (maps)
             {
                 case 1:
-                    MainContent.Content = new Map1();
+                    map1 = new Map1();
+                    MainContent.Content = map1;
                     break;
             }
         }
