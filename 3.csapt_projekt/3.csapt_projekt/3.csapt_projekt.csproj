@@ -93,7 +93,7 @@
     <Compile Include="Jobs.xaml.cs">
       <DependentUpon>Jobs.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Map2.xaml.cs">
+    <Compile Include="maps\Map2.xaml.cs">
       <DependentUpon>Map2.xaml</DependentUpon>
     </Compile>
     <Compile Include="maps\Map1.xaml.cs">
@@ -131,7 +131,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Map2.xaml">
+    <Page Include="maps\Map2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
