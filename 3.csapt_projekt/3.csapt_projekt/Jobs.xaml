@@ -10,7 +10,8 @@
         <ImageBrush x:Key="MainBG" ImageSource="/Resources/MainBG.png"/>
     </UserControl.Resources>
     <Grid Background="{StaticResource MainBG}">
-        <Button x:Name="map1" Content="1.map" HorizontalAlignment="Left" Margin="67,73,0,0" VerticalAlignment="Top" Height="60" Width="60" Click="mapchange_Click"/>
-
+        <Button x:Name="map1" Content="map 1 &#xD;&#xA;easy" HorizontalAlignment="Left" Margin="67,73,0,0" VerticalAlignment="Top" Height="60" Width="60" Click="mapchange_Click"/>
+        <Button x:Name="map2" Content="map 2 &#xD;&#xA;normal" HorizontalAlignment="Left" Margin="154,73,0,0" VerticalAlignment="Top" Height="60" Width="60" Click="mapchange_Click"/>
+        <Button x:Name="map3" Content="map 3 &#xD;&#xA;hard" HorizontalAlignment="Left" Margin="239,73,0,0" VerticalAlignment="Top" Height="60" Width="60" Click="mapchange_Click"/>
     </Grid>
 </UserControl>
