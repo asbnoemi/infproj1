@@ -15,7 +15,7 @@ namespace _3.csapt_projekt.backend
 
     {
        
-        private static Shave _me; //hivatkozás Shave.me.ScoreLs.lista fügvény
+        private static Shave _me; //hivatkozás Shave.me.ScoreLs.(lista fügvény)
         public static Shave Me { get {
             if (_me==null) _me=new Shave(); return _me;
             } }
