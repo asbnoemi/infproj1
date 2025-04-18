@@ -51,5 +51,10 @@ namespace _3.csapt_projekt
           
 
         }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

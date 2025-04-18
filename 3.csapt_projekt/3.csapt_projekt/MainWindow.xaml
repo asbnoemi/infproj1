@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_3.csapt_projekt"
         mc:Ignorable="d"
-        Title="MainWindow" Height="485" Width="800" ResizeMode="NoResize">
+        Title="MainWindow" Height="485" Width="800" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <ImageBrush x:Key="MainBG" ImageSource="/Resources/MainBG.png"/>
     </Window.Resources>
 
-    <Grid Width="800" Height="450" Background="{StaticResource MainBG}">
+    <Grid Background="{StaticResource MainBG}">
         
         <ContentControl x:Name="MainContent"/>
     </Grid>

@@ -15,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace _3.csapt_projekt
 {
@@ -23,6 +24,43 @@ namespace _3.csapt_projekt
     /// </summary>
     public partial class MainWindow : Window
     {
+        public int difficulty = 1;
+        public List<Button> enabled = new List<Button>();
+        public void ButtonEnableer()
+        {
+            foreach (Button button in enabled)
+            {
+                button.IsEnabled = true;
+            }
+        }
+
+        public void Question_Click(Button Button, List<Button> locked)
+        {
+            int diff = int.Parse(Button.Content as string);
+            SecondWindow second = Application.Current.Windows.OfType<SecondWindow>().FirstOrDefault();
+            if (second != null)
+            {
+                difficulty = diff;
+                enabled = locked;
+                second.GoQuestion();
+            }
+            else
+            {
+                difficulty = diff;
+                enabled = locked;
+                second = new SecondWindow();
+                second.GoQuestion();
+                MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
+                mainWindow.OpenSecondWindow();
+            }
+        }
+
+        private Map1 map1;
+
+        public void UpdateMapLabel(int w, int l)
+        {
+            map1?.scores(w, l);
+        }
         public MainWindow()
         {
             InitializeComponent();
@@ -42,7 +80,8 @@ namespace _3.csapt_projekt
             switch (maps)
             {
                 case 1:
-                    MainContent.Content = new Map1();
+                    map1 = new Map1();
+                    MainContent.Content = map1;
                     break;
             }
         }

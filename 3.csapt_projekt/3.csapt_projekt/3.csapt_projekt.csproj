@@ -43,6 +43,7 @@
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.IO.Pipelines, Version=9.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.IO.Pipelines.9.0.3\lib\net462\System.IO.Pipelines.dll</HintPath>
     </Reference>
@@ -68,6 +69,7 @@
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -91,8 +93,14 @@
     <Compile Include="Jobs.xaml.cs">
       <DependentUpon>Jobs.xaml</DependentUpon>
     </Compile>
+    <Compile Include="maps\Map2.xaml.cs">
+      <DependentUpon>Map2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="maps\Map1.xaml.cs">
       <DependentUpon>Map1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="maps\Map3.xaml.cs">
+      <DependentUpon>Map3.xaml</DependentUpon>
     </Compile>
     <Compile Include="Question.xaml.cs">
       <DependentUpon>Question.xaml</DependentUpon>
@@ -126,7 +134,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="maps\Map2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="maps\Map1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="maps\Map3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

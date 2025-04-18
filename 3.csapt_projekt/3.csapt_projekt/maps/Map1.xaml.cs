@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,26 +24,73 @@ namespace _3.csapt_projekt.maps
     /// </summary>
     public partial class Map1 : UserControl
     {
+        private List<Button> ButtonList = new List<Button>();
         public Map1()
         {
             InitializeComponent();
+
         }
         public int wins = 0;
         public int faults = 0;
-        private void Question_Click(object sender, RoutedEventArgs e)
+
+        public void scores(int w, int l)
         {
-            SecondWindow second = Application.Current.Windows.OfType<SecondWindow>().FirstOrDefault();
-            if (second != null)
-            {
-                second.GoQuestion();
-            }
-            else
-            {
-                second = new SecondWindow();
-                second.GoQuestion();
-                MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
-                mainWindow.OpenSecondWindow();
-            }
+            
+            wins = wins + w;
+            faults = faults + l;
+
+            pont.Content = "pont: " + wins.ToString();
+            hiba.Content = "hiba: " + faults.ToString();
+        }
+
+        private void Question(Button usedbutton, List<Button> locked)
+        {
+            MainWindow mainwindow = Application.Current.Windows
+                            .OfType<MainWindow>()
+                            .FirstOrDefault();
+            mainwindow.Question_Click(usedbutton, locked);
+        }
+
+        private void Question_Click1(object sender, RoutedEventArgs e)
+        {
+            ButtonList.Clear();
+            ButtonList.Add(firstrow1);
+            ButtonList.Add(firstrow2);
+            Button UsedButton = sender as Button;
+            Question(UsedButton, ButtonList);
+        }
+
+        private void Question_Click2(object sender, RoutedEventArgs e)
+        {
+            ButtonList.Clear();
+            ButtonList.Add(secondrow2);
+            Button UsedButton = sender as Button;
+            Question(UsedButton, ButtonList);
+        }
+        private void Question_Click3(object sender, RoutedEventArgs e)
+        {
+            ButtonList.Clear();
+            ButtonList.Add(secondrow1);
+            Button UsedButton = sender as Button;
+            Question(UsedButton, ButtonList);
+
+            
+        }
+        private void Question_Click4(object sender, RoutedEventArgs e)
+        {
+            ButtonList.Clear();
+            ButtonList.Add(thirdrow1);
+            ButtonList.Add(thirdrow2);
+            Button UsedButton = sender as Button;
+            Question(UsedButton, ButtonList);
+
+            
+        }
+        private void Question_Click5(object sender, RoutedEventArgs e)
+        {
+            ButtonList.Clear();
+            Button UsedButton = sender as Button;
+            Question(UsedButton, ButtonList);
         }
     }
 }
