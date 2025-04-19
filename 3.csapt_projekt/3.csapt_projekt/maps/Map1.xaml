@@ -51,6 +51,11 @@
             <Button x:Name="secondrow1" HorizontalAlignment="Left" Margin="110,73,0,0" VerticalAlignment="Top" Style="{StaticResource server}" Click="Question_Click5" IsEnabled="False"/>
             <Button x:Name="thirdrow1" HorizontalAlignment="Left" Margin="449,28,0,0" VerticalAlignment="Top" Style="{StaticResource Mobile}" Click="Question_Click5" IsEnabled="False"/>
             <Button x:Name="thirdrow2" HorizontalAlignment="Left" Margin="607,28,0,0" VerticalAlignment="Top" Style="{StaticResource Mobile}" Click="Question_Click5" IsEnabled="False"/>
+            <Button Content="Menu" HorizontalAlignment="Left" Height="28" Margin="690,350,0,0" VerticalAlignment="Top" Width="81" BorderBrush="White" Foreground="White" FontSize="18" FontWeight="Bold" FontFamily="Impact" Click="GoStartMenu_Click">
+                <Button.Background>
+                    <SolidColorBrush Color="Black" Opacity="0.2"/>
+                </Button.Background>
+            </Button>
         </Grid>
     </Grid>
 </UserControl>

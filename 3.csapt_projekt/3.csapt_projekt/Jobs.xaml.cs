@@ -37,7 +37,6 @@ namespace _3.csapt_projekt
                 StartMenuDark startMenuDark = new StartMenuDark();
                 startMenuDark.mapchange(job);
             }
-            
         }
     }
 }

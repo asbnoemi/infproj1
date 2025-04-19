@@ -40,6 +40,11 @@
         <Button HorizontalAlignment="Left" Margin="625,221,0,0" VerticalAlignment="Top" Style="{StaticResource server}"/>
         <Button HorizontalAlignment="Left" Margin="39,23,0,0" VerticalAlignment="Top" Style="{StaticResource server}"/>
         <Button HorizontalAlignment="Left" Margin="480,256,0,0" VerticalAlignment="Top" Style="{StaticResource Laptop}" Height="70" Width="70" RenderTransformOrigin="0.669,0.346"/>
+        <Button Content="Menu" HorizontalAlignment="Left" Height="28" Margin="704,10,0,0" VerticalAlignment="Top" Width="82" BorderBrush="White" Foreground="White" FontSize="18" FontWeight="Bold" FontFamily="Impact" Click="GoStartMenu_Click">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.2"/>
+            </Button.Background>
+        </Button>
         <Rectangle HorizontalAlignment="Left" Height="35" Margin="71,286,0,0" Stroke="#FF1BBD42" VerticalAlignment="Top" Width="3" RenderTransformOrigin="0.5,0.5" Fill="#FF1BBD42">
             <Rectangle.RenderTransform>
                 <TransformGroup>

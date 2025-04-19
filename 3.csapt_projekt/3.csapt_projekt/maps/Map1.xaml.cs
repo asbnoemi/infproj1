@@ -92,5 +92,10 @@ namespace _3.csapt_projekt.maps
             Button UsedButton = sender as Button;
             Question(UsedButton, ButtonList);
         }
+        private void GoStartMenu_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
+            mainWindow.GoStartMenu();
+        }
     }
 }
