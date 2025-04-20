@@ -72,17 +72,7 @@ namespace _3.csapt_projekt
         private Map3 map3;
 
         
-        public int wins = 0;
-        public int faults = 0;
-        public void scores(int w, int l)
-        {
-
-            wins = wins + w;
-            faults = faults + l;
-
-            pont.Content = "pont: " + wins.ToString();
-            hiba.Content = "hiba: " + faults.ToString();
-        }
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -131,6 +121,17 @@ namespace _3.csapt_projekt
                 second = new SecondWindow();
             }
             second.Show();
+        }
+        public int wins = 0;
+        public int faults = 0;
+        public void scores(int w, int l)
+        {
+
+            wins = wins + w;
+            faults = faults + l;
+
+            pont.Content = "pont: " + wins.ToString();
+            hiba.Content = "hiba: " + faults.ToString();
         }
     }
 }

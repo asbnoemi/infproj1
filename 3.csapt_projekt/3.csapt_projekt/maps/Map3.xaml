@@ -10,6 +10,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Resources/MainBG.png" Stretch="Fill"/>
         </Grid.Background>
+        <Grid Height="450" Width="800">
         <Image Width="150" VerticalAlignment="Bottom" Margin="-1,0,651,-20">
             <Image.Source>
                 /Resources/Hacker.png
@@ -335,5 +336,6 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
+        </Grid>
     </Grid>
 </UserControl>
