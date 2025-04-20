@@ -56,7 +56,7 @@ namespace _3.csapt_projekt
         private void Play_Click(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
-            mainWindow.Play(map);
+            mainWindow.Play();
         }
     }
 }

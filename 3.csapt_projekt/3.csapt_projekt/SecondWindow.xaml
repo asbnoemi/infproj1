@@ -8,5 +8,6 @@
         Title="SecondWindow" Height="450" Width="800">
     <Grid>
         <ContentControl x:Name="SecondContent" VerticalAlignment="Center"/>
+        <Button Content="Close" HorizontalAlignment="Left" Height="26" Margin="684,382,0,0" VerticalAlignment="Top" Width="76" Click="closeBttn_Click"/>
     </Grid>
 </Window>

@@ -30,18 +30,9 @@ namespace _3.csapt_projekt.maps
             InitializeComponent();
 
         }
-        public int wins = 0;
-        public int faults = 0;
+        
 
-        public void scores(int w, int l)
-        {
-            
-            wins = wins + w;
-            faults = faults + l;
-
-            pont.Content = "pont: " + wins.ToString();
-            hiba.Content = "hiba: " + faults.ToString();
-        }
+        
 
         private void Question(Button usedbutton, List<Button> locked)
         {
@@ -53,10 +44,11 @@ namespace _3.csapt_projekt.maps
 
         private void Question_Click1(object sender, RoutedEventArgs e)
         {
+            Button UsedButton = sender as Button;
             ButtonList.Clear();
             ButtonList.Add(firstrow1);
             ButtonList.Add(firstrow2);
-            Button UsedButton = sender as Button;
+            ButtonList.Add((Button)UsedButton);
             Question(UsedButton, ButtonList);
         }
 
@@ -65,6 +57,7 @@ namespace _3.csapt_projekt.maps
             ButtonList.Clear();
             ButtonList.Add(secondrow2);
             Button UsedButton = sender as Button;
+            ButtonList.Add((Button)UsedButton);
             Question(UsedButton, ButtonList);
         }
         private void Question_Click3(object sender, RoutedEventArgs e)
@@ -72,6 +65,7 @@ namespace _3.csapt_projekt.maps
             ButtonList.Clear();
             ButtonList.Add(secondrow1);
             Button UsedButton = sender as Button;
+            ButtonList.Add((Button)UsedButton);
             Question(UsedButton, ButtonList);
 
             
@@ -82,6 +76,7 @@ namespace _3.csapt_projekt.maps
             ButtonList.Add(thirdrow1);
             ButtonList.Add(thirdrow2);
             Button UsedButton = sender as Button;
+            ButtonList.Add((Button)UsedButton);
             Question(UsedButton, ButtonList);
 
             
@@ -90,7 +85,13 @@ namespace _3.csapt_projekt.maps
         {
             ButtonList.Clear();
             Button UsedButton = sender as Button;
+            ButtonList.Add((Button)UsedButton);
             Question(UsedButton, ButtonList);
+        }
+        private void GoStartMenu_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
+            mainWindow.GoStartMenu();
         }
     }
 }

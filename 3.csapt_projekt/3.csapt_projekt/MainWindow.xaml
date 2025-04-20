@@ -5,14 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_3.csapt_projekt"
         mc:Ignorable="d"
-        Title="MainWindow" Height="485" Width="800" WindowStartupLocation="CenterScreen">
+        Title="MainWindow" Height="515" Width="800" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <ImageBrush x:Key="MainBG" ImageSource="/Resources/MainBG.png"/>
     </Window.Resources>
-
     <Grid Background="{StaticResource MainBG}">
-        
+        <Grid x:Name="Top" Background="DarkBlue" Height="50" VerticalAlignment="Top">
+            <Label x:Name="hiba" Content="hiba: 0" Foreground="White" HorizontalAlignment="Left" Height="30" Margin="606,0,0,0" VerticalAlignment="Center" Width="46"/>
+            <Label x:Name="pont" Content="pont: 0" Foreground="White" HorizontalAlignment="Left" Height="30" Margin="657,0,0,0" VerticalAlignment="Center" Width="53"/>
+        </Grid>
+        <Grid>
+            <ContentControl x:Name="GameContent" Margin="0,51,0,-26"/>
+
+        </Grid>
         <ContentControl x:Name="MainContent"/>
     </Grid>
-
 </Window>

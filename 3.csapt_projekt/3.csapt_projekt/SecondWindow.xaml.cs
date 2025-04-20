@@ -28,6 +28,10 @@ namespace _3.csapt_projekt
         {
             SecondContent.Content = new Jobs();
         }
+        public void closeBttn_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
 
         public void GoQuestion()
         {
