@@ -34,8 +34,10 @@ namespace _3.csapt_projekt
 
                 string ButtonName = UsedButton.Name;
                 int job = int.Parse(ButtonName.Substring(3).ToString());
-                StartMenuDark startMenuDark = new StartMenuDark();
-                startMenuDark.mapchange(job);
+                MainWindow mainwindow = Application.Current.Windows
+                            .OfType<MainWindow>()
+                            .FirstOrDefault();
+                mainwindow.mapchange(job);
             }
         }
     }

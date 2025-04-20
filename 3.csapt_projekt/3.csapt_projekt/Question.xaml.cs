@@ -51,20 +51,20 @@ namespace _3.csapt_projekt
             bool answer;
             int w = 0, l = 0;
 
-
-            (answer, w, l) = QuestRead.MeQ.Qestverification(button, kerdes.id, map1.wins, map1.faults);
+            MainWindow mainwindow = Application.Current.Windows
+                            .OfType<MainWindow>()
+                            .FirstOrDefault();
+            (answer, w, l) = QuestRead.MeQ.Qestverification(button, kerdes.id, mainwindow.wins, mainwindow.faults);
 
             if (answer)
             {
-                MainWindow mainwindow = Application.Current.Windows
-                            .OfType<MainWindow>()
-                            .FirstOrDefault();
+                
                 eredmeny.Content = "Jó válasz";
                 eredmeny.Foreground = new SolidColorBrush(Colors.White);
                 eredmeny.Visibility = Visibility.Visible;
                 await Task.Delay(1000);
                 mainwindow.ButtonEnableer();
-                mainwindow.UpdateMapLabel(w, l);
+                mainwindow.scores(w, l);
                 SecondWindow sec = Application.Current.Windows.OfType<SecondWindow>().FirstOrDefault();
                 if (sec != null)
                 {
@@ -73,13 +73,10 @@ namespace _3.csapt_projekt
             }
             else
             {
-                MainWindow mainwindow = Application.Current.Windows
-                            .OfType<MainWindow>()
-                            .FirstOrDefault();
                 eredmeny.Content = "Rossz válasz";
                 eredmeny.Foreground = new SolidColorBrush(Colors.Red);
                 eredmeny.Visibility = Visibility.Visible;
-                mainwindow.UpdateMapLabel(w, l);
+                mainwindow.scores(w, l);
                 await Task.Delay(1000);
                 SecondWindow sec = Application.Current.Windows.OfType<SecondWindow>().FirstOrDefault();
                 if (sec != null)

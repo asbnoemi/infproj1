@@ -9,10 +9,15 @@
     <Window.Resources>
         <ImageBrush x:Key="MainBG" ImageSource="/Resources/MainBG.png"/>
     </Window.Resources>
-
     <Grid Background="{StaticResource MainBG}">
-        
+        <Grid x:Name="Top" Background="DarkBlue" Margin="0,0,0,409">
+            <Label x:Name="hiba" Content="hiba: 0" Foreground="White" HorizontalAlignment="Left" Height="30" Margin="606,0,0,0" VerticalAlignment="Center" Width="46"/>
+            <Label x:Name="pont" Content="pont: 0" Foreground="White" HorizontalAlignment="Left" Height="30" Margin="657,0,0,0" VerticalAlignment="Center" Width="46"/>
+        </Grid>
+        <Grid Height="400" Margin="0,69,0,0">
+            <ContentControl x:Name="GameContent"/>
+
+        </Grid>
         <ContentControl x:Name="MainContent"/>
     </Grid>
-
 </Window>

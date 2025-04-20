@@ -10,11 +10,8 @@
         <ImageBrush x:Key="MainBG" ImageSource="/Resources/MainBG.png"/>
     </UserControl.Resources>
     <Grid>
-        <Grid Height="50" Background="DarkBlue" Margin="0,0,0,400">
-            <Label x:Name="hiba" Content="hiba: 0" Foreground="White" HorizontalAlignment="Left" Height="30" Margin="606,0,0,0" VerticalAlignment="Center" Width="46"/>
-            <Label x:Name="pont" Content="pont: 0" Foreground="White" HorizontalAlignment="Left" Height="30" Margin="657,0,0,0" VerticalAlignment="Center" Width="46"/>
-        </Grid>
-        <Grid Background="{StaticResource MainBG}" Margin="0,50,0,0">
+        
+        <Grid Background="{StaticResource MainBG}">
 
             <Canvas>
                 <Line
@@ -44,7 +41,7 @@
     X2="256" Y2="190" Canvas.Left="10" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Center" Width="723"/>
             </Canvas>
             <Button x:Name="secondrow2" HorizontalAlignment="Left" Margin="544,93,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Click="Question_Click4" IsEnabled="False"/>
-            <Button HorizontalAlignment="Left" Margin="387,234,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Click="Question_Click1"/>
+            <Button x:Name="start" HorizontalAlignment="Left" Margin="387,234,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Click="Question_Click1"/>
             <Button x:Name="firstrow1" HorizontalAlignment="Left" Margin="236,0,0,0" VerticalAlignment="Center" Style="{StaticResource Mobile}" Click="Question_Click3" IsEnabled="False"/>
             <Button x:Name="firstrow2" HorizontalAlignment="Left" Margin="449,160,0,0" VerticalAlignment="Top" Style="{StaticResource server}" Click="Question_Click2" IsEnabled="False"/>
             <Button HorizontalAlignment="Left" Margin="362,300,0,0" VerticalAlignment="Top" Style="{StaticResource Hacker}"/>

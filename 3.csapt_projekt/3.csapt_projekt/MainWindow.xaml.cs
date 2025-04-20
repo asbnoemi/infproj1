@@ -30,10 +30,22 @@ namespace _3.csapt_projekt
         {
             foreach (Button button in enabled)
             {
-                button.IsEnabled = true;
+                if (button.IsEnabled == false)
+                {
+                    button.IsEnabled = true;
+                }
+                else
+                {
+                    button.IsEnabled = false;
+                }
+                
             }
         }
-
+        public int maps = 1;
+        public void mapchange(int job)
+        {
+            maps = job;
+        }
         public void Question_Click(Button Button, List<Button> locked)
         {
             int diff = int.Parse(Button.Content as string);
@@ -54,12 +66,22 @@ namespace _3.csapt_projekt
                 mainWindow.OpenSecondWindow();
             }
         }
-
+        List<UserControl> jobs = new List<UserControl>();
         private Map1 map1;
+        private Map2 map2;
+        private Map3 map3;
 
-        public void UpdateMapLabel(int w, int l)
+        
+        public int wins = 0;
+        public int faults = 0;
+        public void scores(int w, int l)
         {
-            map1?.scores(w, l);
+
+            wins = wins + w;
+            faults = faults + l;
+
+            pont.Content = "pont: " + wins.ToString();
+            hiba.Content = "hiba: " + faults.ToString();
         }
         public MainWindow()
         {
@@ -74,14 +96,25 @@ namespace _3.csapt_projekt
             //MainContent.Content = new StartMenu();
             MainContent.Content = new StartMenuDark();
         }
-
-        public void Play(int maps)
+        
+        public void Play()
         {
             switch (maps)
             {
                 case 1:
                     map1 = new Map1();
-                    MainContent.Content = map1;
+                    MainContent.Content = null;
+                    GameContent.Content = map1;
+                    break;
+                case 2:
+                    map2 = new Map2();
+                    MainContent.Content = null;
+                    GameContent.Content = map2;
+                    break;
+                case 3:
+                    map3 = new Map3();
+                    MainContent.Content = null;
+                    GameContent.Content = map3;
                     break;
             }
         }
