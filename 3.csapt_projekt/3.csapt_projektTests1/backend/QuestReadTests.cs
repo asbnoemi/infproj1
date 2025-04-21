@@ -27,8 +27,13 @@ namespace _3.csapt_projekt.backend.Tests
         [TestMethod()]
         public void QestverificationTest()
         {
-            Assert.Fail();
+            QuestRead.MeQ.load();
+            var res = QuestRead.MeQ.Qestverification("A", 1, 0, 0);
+            Assert.IsTrue(res.Item1);
+            Assert.AreEqual(res.Item2, 1);
+            Assert.AreEqual(res.Item3, 0);
         }
+
 
         [TestMethod()]
         public void randQestGenTest()

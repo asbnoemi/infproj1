@@ -27,12 +27,10 @@ namespace _3.csapt_projekt.backend
 
             return actual;
         }
-        public static bool ButtonAnable()
-        {
-
-            return false;
-        }
        
+
+
+
 
     }
 }

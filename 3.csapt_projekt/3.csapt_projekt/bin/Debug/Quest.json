@@ -22,7 +22,7 @@
         "Java"
       ],
       "answer": "C",
-      "rank": 1
+      "rank": 3
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@
         "Szkript nyelv"
       ],
       "answer": "Multimédiás szoftverplatform",
-      "rank": 1
+      "rank": 2
     },
     {
       "id": 4,
@@ -70,7 +70,7 @@
         "Fizikai"
       ],
       "answer": "Szubtractív",
-      "rank": 1
+      "rank": 2
     },
     {
       "id": 7,
@@ -82,7 +82,7 @@
         "Nyomtató"
       ],
       "answer": "Nyomtató",
-      "rank": 1
+      "rank": 2
     },
     {
       "id": 8,
@@ -94,7 +94,7 @@
         "Magenta"
       ],
       "answer": "Fekete",
-      "rank": 1
+      "rank": 3
     },
     {
       "id": 9,
@@ -106,7 +106,7 @@
         "Különböző szerverek kezelésére"
       ],
       "answer": "Különböző méretű eszközök kezelése",
-      "rank": 1
+      "rank": 2
     },
     {
       "id": 10,
@@ -127,7 +127,7 @@
         "Hajlékony lemez",
         "CD",
         "DVD",
-        "Blu-ray lemez"
+        "SSD"
       ],
       "answer": "Hajlékony lemez",
       "rank": 1
@@ -154,7 +154,7 @@
         "Tároló eszközök"
       ],
       "answer": "Tároló eszközök",
-      "rank": 1
+      "rank": 2
     },
     {
       "id": 14,
@@ -202,7 +202,7 @@
         "Folyékony szénelektróda"
       ],
       "answer": "Folyékony kristály",
-      "rank": 1
+      "rank": 2
     },
     {
       "id": 18,
@@ -214,7 +214,7 @@
         "Röntgen fény"
       ],
       "answer": "Röntgen fény",
-      "rank": 1
+      "rank": 2
     },
     {
       "id": 19,
@@ -238,7 +238,7 @@
         "Flash Memória"
       ],
       "answer": "Tetszőleges hozzáférésű memória (RAM)",
-      "rank": 1
+      "rank": 2
     },
     {
       "id": 21,
@@ -250,7 +250,7 @@
         "8"
       ],
       "answer": "7",
-      "rank": 1
+      "rank": 3
     },
     {
       "id": 22,
@@ -262,7 +262,7 @@
         "8"
       ],
       "answer": "4",
-      "rank": 1
+      "rank": 3
     },
     {
       "id": 23,
@@ -274,7 +274,7 @@
         "Viszony réteg"
       ],
       "answer": "Hálózati interfész réteg",
-      "rank": 1
+      "rank": 3
     },
     {
       "id": 24,
@@ -286,7 +286,7 @@
         "Megjelenítési réteg"
       ],
       "answer": "Megjelenítési réteg",
-      "rank": 1
+      "rank": 3
     },
     {
       "id": 25,
@@ -298,7 +298,7 @@
         "Szállítási"
       ],
       "answer": "Adatkapcsolati",
-      "rank": 1
+      "rank": 2
     },
     {
       "id": 26,
@@ -310,7 +310,7 @@
         "Szállítási"
       ],
       "answer": "Hálózati",
-      "rank": 1
+      "rank": 2
     },
     {
       "id": 27,
@@ -346,7 +346,7 @@
         "Adat (Data)"
       ],
       "answer": "Csomagok (Packets)",
-      "rank": 1
+      "rank": 3
     },
     {
       "id": 30,
@@ -358,7 +358,7 @@
         "Hálózati címek kezelésére"
       ],
       "answer": "Hálózati cím alhálózatokra elosztása",
-      "rank": 1
+      "rank": 2
     },
     {
       "id": 31,
@@ -406,7 +406,7 @@
         "KH55"
       ],
       "answer": "RJ45",
-      "rank": 1
+      "rank": 3
     },
     {
       "id": 35,
@@ -418,7 +418,7 @@
         "Telefonvonal"
       ],
       "answer": "Soros (serial)",
-      "rank": 1
+      "rank": 3
     },
     {
       "id": 36,
@@ -454,7 +454,7 @@
         "Semelyikbe"
       ],
       "answer": "VLAN 1",
-      "rank": 1
+      "rank": 2
     },
     {
       "id": 39,
@@ -466,7 +466,7 @@
         "Spanning Tree Protocol (STP)"
       ],
       "answer": "Spanning Tree Protocol (STP)",
-      "rank": 1
+      "rank": 2
     },
     {
       "id": 40,
@@ -478,7 +478,7 @@
         "Hogy ne dőljön ki a hálózat"
       ],
       "answer": "Kapcsolók összekötése hálózati hurok nélkül",
-      "rank": 1
+      "rank": 3
     },
     {
       "id": 41,
@@ -490,6 +490,146 @@
         "Szállítási réteg"
       ],
       "answer": "Megjelenítési réteg",
+      "rank": 2
+    },
+    {
+      "id": 42,
+      "question": "Milyen adattípus jellemző egy egész szám tárolására C# nyelvben?",
+      "options": [ "float", "int", "string", "bool" ],
+      "answer": "int",
+      "rank": 1
+    },
+    {
+      "id": 43,
+      "question": "Melyik a helyes szintaxis egy 'Hello, World!' kiírására Pythonban?",
+      "options": [ "print('Hello, World!')", "echo('Hello, World!')", "console.log('Hello, World!')", "System.out.println('Hello, World!')" ],
+      "answer": "print('Hello, World!')",
+      "rank": 3
+    },
+    {
+      "id": 44,
+      "question": "Mit jelent az IDE rövidítés a programozásban?",
+      "options": [ "Integrated Development Environment", "Internal Data Emulator", "Independent Debugging Engine", "Interactive Design Editor" ],
+      "answer": "Integrated Development Environment",
+      "rank": 2
+    },
+    {
+      "id": 45,
+      "question": "Melyik NEM programozási nyelv?",
+      "options": [ "Python", "HTML", "C++", "Java" ],
+      "answer": "HTML",
+      "rank": 1
+    },
+    {
+      "id": 46,
+      "question": "Mi történik, ha egy végtelen ciklust írsz programba?",
+      "options": [ "A program gyorsabban fut", "A program nem fordul le", "A program soha nem áll le", "A program automatikusan leáll" ],
+      "answer": "A program soha nem áll le",
+      "rank": 1
+    },
+    {
+      "id": 47,
+      "question": "Mi a fő célja a változónak egy programban?",
+      "options": [ "A kód formázása", "Adatok tárolása", "A hibák keresése", "A kód megjelenítése" ],
+      "answer": "Adatok tárolása",
+      "rank": 1
+    },
+    {
+      "id": 48,
+      "question": "Mi a 'for' ciklus szerepe a programozásban?",
+      "options": [ "Adatok számolása", "Kódismétlés vezérlése", "Adatok törlése", "Hibakeresés" ],
+      "answer": "Kódismétlés vezérlése",
+      "rank": 1
+    },
+    {
+      "id": 49,
+      "question": "Melyik karakterrel kezdődik a komment a Pythonban?",
+      "options": [ "//", "/*", "#", "--" ],
+      "answer": "#",
+      "rank": 2
+    },
+    {
+      "id": 50,
+      "question": "Mire használjuk az if-else szerkezetet?",
+      "options": [ "Ismétlésre", "Döntéshozatalra", "Kiírásra", "Adattárolásra" ],
+      "answer": "Döntéshozatalra",
+      "rank": 1
+    },
+    {
+      "id": 51,
+      "question": "Mit jelent a 'bug' szó a programozásban?",
+      "options": [ "Új funkció", "Programhiba", "Bogár a gépházban", "Vírus" ],
+      "answer": "Programhiba",
+      "rank": 1
+    },
+    {
+      "id": 52,
+      "question": "Mit csinál a `len()` függvény Pythonban?",
+      "options": [ "Megszoroz két számot", "Visszaadja egy lista hosszát", "Összehasonlít két karaktert", "Konvertál stringet számra" ],
+      "answer": "Visszaadja egy lista hosszát",
+      "rank": 3
+    },
+    {
+      "id": 53,
+      "question": "Melyik fájlkiterjesztés jellemző Python programokra?",
+      "options": [ ".cpp", ".cs", ".java", ".py" ],
+      "answer": ".py",
+      "rank": 2
+    },
+    {
+      "id": 54,
+      "question": "Mi az algoritmus?",
+      "options": [ "Programozási nyelv", "Fejlesztői környezet", "Problémamegoldó lépéssor", "Számítógép típusa" ],
+      "answer": "Problémamegoldó lépéssor",
+      "rank": 1
+    },
+    {
+      "id": 55,
+      "question": "Mit tárol egy 'string' típusú változó?",
+      "options": [ "Karakterek", "Lebegőpontos számokat", "Szöveges adatokat", "Logikai értékeket" ],
+      "answer": "Szöveges adatokat",
+      "rank": 1
+    },
+    {
+      "id": 56,
+      "question": "Melyik NEM vezérlési szerkezet?",
+      "options": [ "if", "for", "while", "print" ],
+      "answer": "print",
+      "rank": 1
+    },
+    {
+      "id": 57,
+      "question": "Mit jelent a deklaráció?",
+      "options": [ "Változó értékének megadása", "Változó létrehozása", "Függvény futtatása", "Program bezárása" ],
+      "answer": "Változó létrehozása",
+      "rank": 3
+    },
+    {
+      "id": 58,
+      "question": "Mi a futási időben keletkező hiba neve?",
+      "options": [ "Logikai hiba", "Fordítási hiba", "Szintaktikai hiba", "Runtime error" ],
+      "answer": "Runtime error",
+      "rank": 2
+    },
+    {
+      "id": 59,
+      "question": "Mire használjuk a debug funkciót?",
+      "options": [ "Új funkciók hozzáadására", "Hibakeresésre", "Adatbázis-kezelésre", "Telepítésre" ],
+      "answer": "Hibakeresésre",
+      "rank": 1
+    },
+    {
+      "id": 60,
+      "question": "Mi történik, ha egy változót típus nélkül deklarálunk Pythonban?",
+      "options": [ "Fordítási hiba", "Automatikusan meghatározza a típusát", "Nem fog működni", "semi" ],
+      "answer": "Automatikusan meghatározza a típusát",
+      "rank": 3
+    },
+    {
+      "id": 61,
+      "question": "Mi a szerepe a return utasításnak egy függvényben?",
+      "options": [ "Kilépés a programból", "Adatok beolvasása", "Érték visszaadása", "Kiírás a képernyőre" ],
+      "answer": "Érték visszaadása",
       "rank": 1
     }
   ]

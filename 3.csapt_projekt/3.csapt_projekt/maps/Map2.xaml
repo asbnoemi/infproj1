@@ -17,7 +17,7 @@
                 </Image.Source>
             </Image>
             
-            <Button HorizontalAlignment="Center" Margin="0,231,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Height="90" Width="90"/>
+            <Button  HorizontalAlignment="Center" Margin="0,231,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Height="90" Width="90"/>
             <Button HorizontalAlignment="Left" Margin="500,306,0,0" VerticalAlignment="Top" Style="{StaticResource Mobile}" Height="50" Width="50"/>
             <Button HorizontalAlignment="Left" Margin="575,360,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Height="90" Width="90"/>
             <Button HorizontalAlignment="Left" Margin="720,370,0,0" VerticalAlignment="Top" Style="{StaticResource server}"/>
