@@ -28,7 +28,7 @@ namespace _3.csapt_projekt.backend
         public List<ScoreC> scoreLs { get; set; }=new List<ScoreC>();
 
         public Shave() { }
-        public bool ShaveFile( string svFile ="")
+        public bool ShaveFile( string svFile ="") 
         {
             if (svFile == "")
             {
