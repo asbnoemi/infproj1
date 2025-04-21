@@ -82,6 +82,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="backend\QuestReadTests.cs" />
+    <Compile Include="backend\appfunctionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
