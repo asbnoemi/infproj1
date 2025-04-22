@@ -127,11 +127,11 @@ namespace _3.csapt_projekt
         public void scores(int w, int l)
         {
 
-            wins = wins + w;
-            faults = faults + l;
+            wins = w;
+            faults = l;
 
-            pont.Content = "pont: " + wins.ToString();
-            hiba.Content = "hiba: " + faults.ToString();
+            pont.Content = "pont: " + w.ToString();
+            hiba.Content = "hiba: " + l.ToString();
         }
     }
 }
