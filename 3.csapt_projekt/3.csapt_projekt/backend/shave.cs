@@ -27,7 +27,7 @@ namespace _3.csapt_projekt.backend
         }
         public List<ScoreC> scoreLs { get; set; }=new List<ScoreC>();
 
-        public Shave() { }
+        public Shave() { load(); }
         public bool ShaveFile( string svFile ="") 
         {
             if (svFile == "")
@@ -57,7 +57,7 @@ namespace _3.csapt_projekt.backend
         }
         public Shave[] roppscore ()
         {
-            load();
+            
             Shave[] top3 = new Shave[3] ;
             int[] top3ind = new int[3] { 0, 0, 0 };
             for (int i = 0; i < scoreLs.Count; i++)
