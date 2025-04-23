@@ -55,28 +55,34 @@ namespace _3.csapt_projekt.backend
             Shave shave = JsonSerializer.Deserialize<Shave>(File.ReadAllText(svFile));
             _me = shave;
         }
-        public Shave[] roppscore ()
+        public int[] roppscore ()
         {
             
-            Shave[] top3 = new Shave[3] ;
+            ;
             int[] top3ind = new int[3] { 0, 0, 0 };
             
             for (int i = 0; i < scoreLs.Count; i++)
             {
                 if (scoreLs[i].Score > scoreLs[top3ind[0]].Score)
                 {
+                   top3ind[2] = top3ind[1];
+                    top3ind[1] = top3ind[0];
+                    
                     top3ind[0] = i;
                 }
-                    else if (scoreLs[i].Score > scoreLs[top3ind[1]].Score)
+                else if (scoreLs[i].Score > scoreLs[top3ind[1]].Score)
                     {
-                        top3ind[1] = i;
-                    }
+                       
+                    top3ind[2] = top3ind[1];
+                    top3ind[1] = i;
+                }
                         else if (scoreLs[i].Score > scoreLs[top3ind[2]].Score)
                         {
                             top3ind[2] = i;
                         }
             }
-            return top3;
+            
+            return top3ind;// a legjobb 3 indexe igy egyszerübb volt 
         }   
 
     }
