@@ -25,8 +25,9 @@ namespace _3.csapt_projekt
         {
             InitializeComponent();
             Shave shave = new Shave();
-            int[] top3ind = new int[3] { 0, 0, 0 };
-           // top3ind = shave.roppscore();
+            int[] top3index = new int[3] { 0, 0, 0 };
+            top3index = shave.roppscore();
+            
         }
 
         private void GoStartMenu_Click(object sender, RoutedEventArgs e)
