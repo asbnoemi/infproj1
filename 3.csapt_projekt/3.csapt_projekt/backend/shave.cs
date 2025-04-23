@@ -75,9 +75,6 @@ namespace _3.csapt_projekt.backend
                             top3ind[2] = i;
                         }
             }
-            /*top3[0] = scoreLs[top3ind[0]];
-            top3[1] = scoreLs[top3ind[1]];
-            top3[2] = scoreLs[top3ind[2]];*/
             return top3;
         }   
 
