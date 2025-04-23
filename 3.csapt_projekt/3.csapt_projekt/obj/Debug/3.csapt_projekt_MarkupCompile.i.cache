@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\App.xaml
-12-881600384
+13-69014186
 
-19266109801
+20-376976273
 26-1137157038
-Jobs.xaml;MainWindow.xaml;maps\Map2.xaml;maps\Map1.xaml;maps\Map3.xaml;Question.xaml;Resources\ResourceDictionary.xaml;Scores.xaml;SecondWindow.xaml;StartMenu.xaml;StartMenuDark.xaml;Win.xaml;
+GameOver.xaml;Jobs.xaml;MainWindow.xaml;maps\Map2.xaml;maps\Map1.xaml;maps\Map3.xaml;Question.xaml;Resources\ResourceDictionary.xaml;Scores.xaml;SecondWindow.xaml;StartMenu.xaml;StartMenuDark.xaml;Win.xaml;
 
-False
+True
 

@@ -90,6 +90,9 @@
     </ApplicationDefinition>
     <Compile Include="backend\appfunction.cs" />
     <Compile Include="backend\QuestRead.cs" />
+    <Compile Include="GameOver.xaml.cs">
+      <DependentUpon>GameOver.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Jobs.xaml.cs">
       <DependentUpon>Jobs.xaml</DependentUpon>
     </Compile>
@@ -120,6 +123,10 @@
     <Compile Include="Win.xaml.cs">
       <DependentUpon>Win.xaml</DependentUpon>
     </Compile>
+    <Page Include="GameOver.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Jobs.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
