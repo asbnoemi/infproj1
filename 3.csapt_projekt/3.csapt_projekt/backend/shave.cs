@@ -60,28 +60,51 @@ namespace _3.csapt_projekt.backend
             
             ;
             int[] top3ind = new int[3] { 0, 0, 0 };
-            
-            for (int i = 0; i < scoreLs.Count; i++)
-            {
-                if (scoreLs[i].Score > scoreLs[top3ind[0]].Score)
+            if (scoreLs.Count >= 3)
+                for (int i = 0; i < scoreLs.Count; i++)
                 {
-                   top3ind[2] = top3ind[1];
-                    top3ind[1] = top3ind[0];
-                    
-                    top3ind[0] = i;
-                }
-                else if (scoreLs[i].Score > scoreLs[top3ind[1]].Score)
+                    if (scoreLs[i].Score > scoreLs[top3ind[0]].Score)
                     {
-                       
-                    top3ind[2] = top3ind[1];
-                    top3ind[1] = i;
-                }
+                        top3ind[2] = top3ind[1];
+                        top3ind[1] = top3ind[0];
+
+                        top3ind[0] = i;
+                    }
+                    else if (scoreLs[i].Score > scoreLs[top3ind[1]].Score)
+                    {
+
+                        top3ind[2] = top3ind[1];
+                        top3ind[1] = i;
+                    }
+                    else if (scoreLs[i].Score > scoreLs[top3ind[2]].Score)
+                    {
+                        top3ind[2] = i;
+                    }
+
+                    else if (scoreLs.Count == 2)
+                    {
+                        if (scoreLs[i].Score > scoreLs[top3ind[1]].Score)
+                        {
+
+                            top3ind[2] = top3ind[1];
+                            top3ind[1] = i;
+                        }
                         else if (scoreLs[i].Score > scoreLs[top3ind[2]].Score)
                         {
                             top3ind[2] = i;
                         }
-            }
-            
+                    }
+                    else if (scoreLs.Count == 1)
+                    {
+                        if (scoreLs.Count == 2)
+                        {
+                            
+                                top3ind[2] = i;
+                            
+                        }
+                    }
+                }
+
             return top3ind;// a legjobb 3 indexe igy egyszerübb volt 
         }   
 
