@@ -55,7 +55,7 @@ namespace _3.csapt_projekt.backend
             Shave shave = JsonSerializer.Deserialize<Shave>(File.ReadAllText(svFile));
             _me = shave;
         }
-        public int[] roppscore ()
+        public int[] roppscore ()// meghivás int[] topIndexes = manager.roppscore();
         {
             
             ;
