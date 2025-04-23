@@ -32,3 +32,5 @@ C:\Users\asbot\OneDrive\Asztali gép\egyetem\inf.p.1\infproj1\3.csapt_projekt\3.
 C:\Users\asbot\OneDrive\Asztali gép\egyetem\inf.p.1\infproj1\3.csapt_projekt\3.csapt_projektTests1\bin\Debug\3.csapt_projektTests1.dll.config
 D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projektTests1\obj\Debug\3.csapt_projektTests1.csproj.AssemblyReference.cache
 D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projektTests1\obj\Debug\3.csapt_projektTests1.csproj.CoreCompileInputs.cache
+D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projektTests1\obj\Debug\3.csapt_projektTests1.dll
+D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projektTests1\obj\Debug\3.csapt_projektTests1.pdb
