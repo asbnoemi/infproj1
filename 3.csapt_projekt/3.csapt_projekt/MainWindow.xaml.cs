@@ -2,6 +2,7 @@
 using _3.csapt_projekt.maps;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -15,6 +16,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static _3.csapt_projekt.backend.Shave;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace _3.csapt_projekt
@@ -26,6 +28,8 @@ namespace _3.csapt_projekt
     {
         public int difficulty = 1;
         public List<Button> enabled = new List<Button>();
+        public int time = 0;
+        Stopwatch stopwatch = new Stopwatch();
         public void ButtonEnableer()
         {
             foreach (Button button in enabled)
@@ -95,18 +99,34 @@ namespace _3.csapt_projekt
                     map1 = new Map1();
                     MainContent.Content = null;
                     GameContent.Content = map1;
+                    stopwatch.Start();
                     break;
                 case 2:
                     map2 = new Map2();
                     MainContent.Content = null;
                     GameContent.Content = map2;
+                    stopwatch.Start();
                     break;
                 case 3:
                     map3 = new Map3();
                     MainContent.Content = null;
                     GameContent.Content = map3;
+                    stopwatch.Start();
                     break;
             }
+        }
+
+        public void save()
+        {
+            stopwatch.Stop();
+            Shave shave = new Shave();
+            shave.scoreLs.Add(new ScoreC
+            {
+                TimeMinut = stopwatch.Elapsed.Seconds,
+                Mep = maps,
+                Score = wins
+            });
+            shave.ShaveFile();
         }
 
         public void GoScores()
