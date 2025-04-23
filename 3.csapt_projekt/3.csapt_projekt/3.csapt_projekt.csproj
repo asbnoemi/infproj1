@@ -117,6 +117,9 @@
     <Compile Include="StartMenuDark.xaml.cs">
       <DependentUpon>StartMenuDark.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Win.xaml.cs">
+      <DependentUpon>Win.xaml</DependentUpon>
+    </Compile>
     <Page Include="Jobs.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -167,6 +170,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="StartMenuDark.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Win.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -21,9 +21,9 @@ namespace _3.csapt_projekt.backend
             } }
         public class ScoreC
         {
-            public short TimeMinut { get; set; } //játékidö perc ben
-            public short Mep { get; set; }//pája sorszáma
-            public short Score { get; set; }//öszegyüjtött pontok
+            public int TimeMinut { get; set; } //játékidö perc ben
+            public int Mep { get; set; }//pája sorszáma
+            public int Score { get; set; }//öszegyüjtött pontok
         }
         public List<ScoreC> scoreLs { get; set; }=new List<ScoreC>();
 

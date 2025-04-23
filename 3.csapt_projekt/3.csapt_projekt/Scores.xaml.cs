@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _3.csapt_projekt.backend;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,9 @@ namespace _3.csapt_projekt
         public Scores()
         {
             InitializeComponent();
+            Shave shave = new Shave();
+            int[] top3ind = new int[3] { 0, 0, 0 };
+           // top3ind = shave.roppscore();
         }
 
         private void GoStartMenu_Click(object sender, RoutedEventArgs e)
