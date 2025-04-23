@@ -56,6 +56,7 @@ namespace _3.csapt_projekt.backend
             {
                 fc = false;
                 faultpoint = fault+1;
+                point = vpoint -1;
 
             } 
                 

@@ -17,6 +17,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using static _3.csapt_projekt.backend.Shave;
+using static _3.csapt_projekt.backend.appfunction;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace _3.csapt_projekt
