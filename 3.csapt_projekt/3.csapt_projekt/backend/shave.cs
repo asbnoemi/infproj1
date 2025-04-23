@@ -60,6 +60,7 @@ namespace _3.csapt_projekt.backend
             
             Shave[] top3 = new Shave[3] ;
             int[] top3ind = new int[3] { 0, 0, 0 };
+            
             for (int i = 0; i < scoreLs.Count; i++)
             {
                 if (scoreLs[i].Score > scoreLs[top3ind[0]].Score)
