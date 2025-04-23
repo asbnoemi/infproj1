@@ -228,5 +228,11 @@
   <ItemGroup>
     <Resource Include="Resources\Pc.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Win.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\GameOver.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
