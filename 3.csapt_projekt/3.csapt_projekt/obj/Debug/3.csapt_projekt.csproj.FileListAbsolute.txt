@@ -216,3 +216,7 @@ D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\3.
 D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\3.csapt_.4D1FE279.Up2Date
 D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\3.csapt_projekt.exe
 D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\3.csapt_projekt.pdb
+H:\FONTOS\fontos\egyetem\tanulás\6.félév\infproj\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\GameOver.g.cs
+H:\FONTOS\fontos\egyetem\tanulás\6.félév\infproj\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Win.g.cs
+H:\FONTOS\fontos\egyetem\tanulás\6.félév\infproj\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\GameOver.baml
+H:\FONTOS\fontos\egyetem\tanulás\6.félév\infproj\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Win.baml
