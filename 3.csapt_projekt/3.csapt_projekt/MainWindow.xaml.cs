@@ -72,7 +72,8 @@ namespace _3.csapt_projekt
                 MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
                 mainWindow.OpenSecondWindow();
             }
-            winlose = new Question.IsWin();
+            Question question = new Question();
+            winlose = question.IsWin();
             if (winlose == 1)
             {
                 MainContent.Content = new Win();
