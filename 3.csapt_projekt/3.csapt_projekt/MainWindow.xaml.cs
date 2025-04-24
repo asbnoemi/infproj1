@@ -19,6 +19,7 @@ using System.Windows.Shapes;
 using static _3.csapt_projekt.backend.Shave;
 using static _3.csapt_projekt.backend.appfunction;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using System.Diagnostics.Eventing.Reader;
 
 namespace _3.csapt_projekt
 {
@@ -69,6 +70,16 @@ namespace _3.csapt_projekt
                 second.GoQuestion();
                 MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
                 mainWindow.OpenSecondWindow();
+            }
+
+            if (Question.winlose == 1)
+            {
+                MainContent.Content = new Win();
+                save();
+            }
+            else if(winlose == 2)
+            {
+                MainContent.Content = new GameOver();
             }
         }
         List<UserControl> jobs = new List<UserControl>();
