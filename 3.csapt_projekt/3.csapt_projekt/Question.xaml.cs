@@ -86,7 +86,7 @@ namespace _3.csapt_projekt
                     sec.Close();
                 }
             }
-            winlose = appfunction.Victori(5, 10, l, w);
+            winlose = appfunction.Victori(5, 1, w, l);
 
         }
         public int IsWin()
