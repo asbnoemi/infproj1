@@ -6,18 +6,7 @@ namespace _3.csapt_projektTests1.backend
     [TestClass]
     public class shaveTest
     {
-        [TestMethod]
-        partial void ShaveTest()
-        {
-            var res = _3.csapt_projekt.backend.Shave.Me;
-            Assert.IsNotNull(res);
-        }
-        [TestMethod]
-        partial void ShaveFileTest()
-        {
-            var res = _3.csapt_projekt.backend.Shave.Me.ShaveFile();
-            Assert.IsTrue(res);
-        }
+        
         [TestMethod]
         public void ShaveFile()
         {

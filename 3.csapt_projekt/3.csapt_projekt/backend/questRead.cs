@@ -70,11 +70,21 @@ namespace _3.csapt_projekt.backend
             int lastid= questions[questions.Count - 1].id;
             Random random = new Random();   
             int newQ=random.Next(1,lastid);
-            while (questions[newQ].rank != rank)
-            {  
-                newQ++;
-            }
-
+            do
+            {
+                if (questions[newQ].rank == rank) 
+                {
+                    return questions[newQ];
+                    
+                }
+                else
+                {
+                    newQ++;
+                    if (newQ >= questions.Count)
+                    { newQ = 0; } //vissza az elejére ha elérte a végét
+                }
+            } while (newQ < rank);
+            
             return questions[newQ];
         }
     }
