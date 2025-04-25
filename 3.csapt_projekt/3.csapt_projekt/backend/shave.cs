@@ -27,7 +27,7 @@ namespace _3.csapt_projekt.backend
         }
         public List<ScoreC> scoreLs { get; set; }=new List<ScoreC>();
 
-        public Shave() 
+        private Shave() 
         {
             if(scoreLs.Count == 0)
             {
@@ -43,7 +43,7 @@ namespace _3.csapt_projekt.backend
             try
             {
                 
-               string json= JsonSerializer.Serialize<Shave>(_me );
+               string json= JsonSerializer.Serialize<List<ScoreC>>(_me.scoreLs );
                 File.WriteAllText(svFile, json);
                 return true;
             }
@@ -59,8 +59,8 @@ namespace _3.csapt_projekt.backend
                 svFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "shave.json");
             }
             var data= File.ReadAllText(svFile);
-            Shave shave = JsonSerializer.Deserialize<Shave>(data);
-            _me = shave;
+            scoreLs = JsonSerializer.Deserialize<List<ScoreC>>(data);
+            
         }
         public int[] roppscore ()// meghivás int[] topIndexes = manager.roppscore();
         {
