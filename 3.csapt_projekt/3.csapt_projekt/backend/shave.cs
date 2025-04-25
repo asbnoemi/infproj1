@@ -14,8 +14,8 @@ namespace _3.csapt_projekt.backend
     public class Shave //mentés fájl ját kezelö osztály
 
     {
-       
-        private static Shave _me; //hivatkozás Shave.me.ScoreLs.(lista fügvény)
+       //ne hivogasd a konstruktort NINCS OJAN hogy NEW SHAVE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        private static Shave _me; //hivatkozás Shave.me.ScoreLs.(lista fügvény)vagy Shave.me!!!!!!!!!!!!!!
         public static Shave Me { get {
             if (_me==null) _me=new Shave(); return _me;
             } }
