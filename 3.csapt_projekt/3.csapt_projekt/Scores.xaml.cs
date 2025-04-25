@@ -27,9 +27,18 @@ namespace _3.csapt_projekt
             
             int[] top3index = new int[3] { 0, 0, 0 };
             top3index = Shave.Me.roppscore();
-            first.Text = Shave.Me.scoreLs[top3index[0]].Score.ToString();
-            second.Text = Shave.Me.scoreLs[top3index[1]].Score.ToString();
-            third.Text = Shave.Me.scoreLs[top3index[2]].Score.ToString();
+            int time1 = Shave.Me.scoreLs[top3index[0]].TimeMinut / 60;
+            int time2 = Shave.Me.scoreLs[top3index[1]].TimeMinut / 60;
+            int time3 = Shave.Me.scoreLs[top3index[2]].TimeMinut / 60;
+            first.Text = time1.ToString();
+            second.Text = time2.ToString();
+            third.Text = time3.ToString();
+            List<string> ScoreComboBox = new List<string>();
+            for (int i = 0; i < Shave.Me.scoreLs.Count; i++)
+            {
+                ScoreComboBox.Add("map: " + Shave.Me.scoreLs[i].Mep.ToString() + " pont: " + Shave.Me.scoreLs[i].Score.ToString() + " idő:" + (Shave.Me.scoreLs[i].TimeMinut / 60).ToString());
+            }
+            ComboBox.ItemsSource = ScoreComboBox;
         }
 
         private void GoStartMenu_Click(object sender, RoutedEventArgs e)
