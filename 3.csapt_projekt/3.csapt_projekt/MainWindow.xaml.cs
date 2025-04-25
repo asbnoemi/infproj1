@@ -73,10 +73,7 @@ namespace _3.csapt_projekt
                 mainWindow.OpenSecondWindow();
             }
             winlose = appfunction.WinLous;
-            if (winlose == 1)
-            {
-                save();
-            }
+            
             
            
 
@@ -162,6 +159,12 @@ namespace _3.csapt_projekt
 
             pont.Content = "pont: " + w.ToString();
             hiba.Content = "hiba: " + l.ToString();
+            appfunction.WinLous = appfunction.Victori(appfunction.maxpoint, appfunction.maxfault, w, l);
+            winlose = appfunction.WinLous;
+            if (winlose == 1)
+            {
+                save();
+            }
         }
     }
 }

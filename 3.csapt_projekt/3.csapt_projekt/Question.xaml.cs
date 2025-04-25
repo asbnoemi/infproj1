@@ -27,8 +27,7 @@ namespace _3.csapt_projekt
     public partial class Question : UserControl
     {
         qestsC kerdes;
-        public int maxp=1;
-        public int maxl=10;
+        
 
         public Question()
         {
@@ -72,7 +71,7 @@ namespace _3.csapt_projekt
                 SecondWindow sec = Application.Current.Windows.OfType<SecondWindow>().FirstOrDefault();
                 if (sec != null)
                 {
-                    appfunction.WinLous = appfunction.Victori(maxp,maxl, w, l);
+                    appfunction.WinLous = appfunction.Victori(appfunction.maxpoint, appfunction.maxfault, w, l);
                     winlose = appfunction.WinLous;
                     if (winlose == 1)
                     {
@@ -98,7 +97,7 @@ namespace _3.csapt_projekt
                 SecondWindow sec = Application.Current.Windows.OfType<SecondWindow>().FirstOrDefault();
                 if (sec != null)
                 {
-                    appfunction.WinLous = appfunction.Victori(maxp, maxl, w, l);
+                    appfunction.WinLous = appfunction.Victori(appfunction.maxpoint,appfunction.maxfault, w, l);
                     winlose = appfunction.WinLous;
                     if (winlose == 1)
                     {
@@ -114,7 +113,7 @@ namespace _3.csapt_projekt
                 }
             }
 
-            appfunction.WinLous = appfunction.Victori(maxp, maxl, w, l);
+            
         }
     }
 }
