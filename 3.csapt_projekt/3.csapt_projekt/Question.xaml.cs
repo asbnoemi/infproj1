@@ -27,8 +27,8 @@ namespace _3.csapt_projekt
     public partial class Question : UserControl
     {
         qestsC kerdes;
+        
 
-       
         public Question()
         {
             InitializeComponent();
@@ -44,6 +44,7 @@ namespace _3.csapt_projekt
             button4.Content = kerdes.options[3];
         }
         public int winlose;
+
         private async void answer_Click(object sender, RoutedEventArgs e)
         {
             Button UsedButton = sender as Button;
@@ -70,8 +71,21 @@ namespace _3.csapt_projekt
                 SecondWindow sec = Application.Current.Windows.OfType<SecondWindow>().FirstOrDefault();
                 if (sec != null)
                 {
+                    appfunction.WinLous = appfunction.Victori(appfunction.maxpoint, appfunction.maxfault, w, l);
+                    winlose = appfunction.WinLous;
+                    if (winlose == 1)
+                    {
+                        MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
+                        mainwindow.GameContent.Content = new Win();
+
+                    }
+                    else if (winlose == 2)
+                    {
+                        MainWindow gameover = Application.Current.MainWindow as MainWindow;
+                        gameover.GameContent.Content = new GameOver();
+                    }
                     sec.Close();
-                }
+                }// MainWindow mainWindow = Application.Current.MainWindow as MainWindow; mainWindow.Play();
             }
             else
             {
@@ -83,11 +97,23 @@ namespace _3.csapt_projekt
                 SecondWindow sec = Application.Current.Windows.OfType<SecondWindow>().FirstOrDefault();
                 if (sec != null)
                 {
+                    appfunction.WinLous = appfunction.Victori(appfunction.maxpoint,appfunction.maxfault, w, l);
+                    winlose = appfunction.WinLous;
+                    if (winlose == 1)
+                    {
+                        MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
+                        mainwindow.GameContent.Content = new Win();
+                    }
+                    else if (winlose == 2)
+                    {
+                        MainWindow gameover = Application.Current.MainWindow as MainWindow;
+                        gameover.GameContent.Content = new GameOver();
+                    }
                     sec.Close();
                 }
             }
+
             
-            appfunction.WinLous = appfunction.Victori(5, 1, w, l);
         }
     }
 }
