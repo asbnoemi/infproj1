@@ -64,16 +64,28 @@ namespace _3.csapt_projekt.backend
                 
                 
         }
-        public qestsC randQestGen(int rank) 
+        public List<int> idQestready = new List<int>(); //kérdések id-jei amik már megvoltak
+        public qestsC randQestGen(int rank) //generál egy kérdést a rank alapján
         {
 
             int lastid= questions[questions.Count - 1].id;
             Random random = new Random();   
             int newQ=random.Next(1,lastid);
+            foreach (var q in idQestready)
+            { 
+                if (q == questions[newQ].id) //ha már megvolt a kérdés
+                {
+                    newQ++;
+                    if (newQ >= questions.Count)
+                    { newQ = 0; } //vissza az elejére ha elérte a végét
+                    break;
+                }
+            } //végigmegy a már megvolt kérdéseken
             do
             {
                 if (questions[newQ].rank == rank) 
                 {
+                    idQestready.Add(questions[newQ].id); //hozzáadja a kérdés id-jét a listához
                     return questions[newQ];
                     
                 }
