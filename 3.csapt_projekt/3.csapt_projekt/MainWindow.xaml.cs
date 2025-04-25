@@ -73,7 +73,7 @@ namespace _3.csapt_projekt
                 mainWindow.OpenSecondWindow();
             }
             Question question = new Question();
-            winlose = question.IsWin();
+            winlose = actualWin.WinLous;
             if (winlose == 1)
             {
                 MainContent.Content = new Win();
