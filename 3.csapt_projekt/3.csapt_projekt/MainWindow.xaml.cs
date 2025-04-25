@@ -72,7 +72,6 @@ namespace _3.csapt_projekt
                 MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
                 mainWindow.OpenSecondWindow();
             }
-            Question question = new Question();
             winlose =appfunction.WinLous;
             if (winlose == 1)
             {
@@ -83,6 +82,9 @@ namespace _3.csapt_projekt
             {
                 MainContent.Content = new GameOver();
             }
+            
+            winlose = appfunction.WinLous;
+            
         }
         List<UserControl> jobs = new List<UserControl>();
         private Map1 map1;
@@ -165,6 +167,12 @@ namespace _3.csapt_projekt
 
             pont.Content = "pont: " + w.ToString();
             hiba.Content = "hiba: " + l.ToString();
+            appfunction.WinLous = appfunction.Victori(appfunction.maxpoint, appfunction.maxfault, w, l);
+            winlose = appfunction.WinLous;
+            if (winlose == 1)
+            {
+                save();
+            }
         }
     }
 }

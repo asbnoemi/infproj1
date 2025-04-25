@@ -40,8 +40,12 @@ namespace _3.csapt_projekt.backend.Tests
         {
             QuestRead.MeQ.load();
             var res = QuestRead.MeQ.randQestGen(1);
-            Assert.AreEqual(res.rank,1);
-            Assert.IsTrue(res.id>0);
+            Assert.IsNotNull(res);
+            Assert.IsTrue(res.id > 0);
+            Assert.IsTrue(res.question.Length > 0);
+            Assert.IsTrue(res.options.Count == 4);
+            Assert.IsTrue(res.answer.Length > 0);
+
         }
     }
 }

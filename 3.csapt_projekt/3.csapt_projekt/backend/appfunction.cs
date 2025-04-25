@@ -10,7 +10,9 @@ namespace _3.csapt_projekt.backend
     {
 
         public static int WinLous { get; set; }
-        
+        public static int maxpoint { get; set; } = 1;
+        public static int maxfault { get; set; } = 10;
+
         //public static appfunction.win actualvin { get;set } = new appfunction.win();
         public static int Victori(int maxpoint, int maxfault, int actualpoint, int actualfauli)
         {
