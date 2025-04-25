@@ -72,17 +72,15 @@ namespace _3.csapt_projekt
                 MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
                 mainWindow.OpenSecondWindow();
             }
-            Question question = new Question();
-            winlose =appfunction.WinLous;
+            winlose = appfunction.WinLous;
             if (winlose == 1)
             {
-                MainContent.Content = new Win();
+                
                 save();
             }
-            else if(winlose == 2)
-            {
-                MainContent.Content = new GameOver();
-            }
+            
+           
+
         }
         List<UserControl> jobs = new List<UserControl>();
         private Map1 map1;
