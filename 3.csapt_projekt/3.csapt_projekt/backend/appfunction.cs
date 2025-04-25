@@ -8,11 +8,10 @@ namespace _3.csapt_projekt.backend
 {
     public static class appfunction
     {
-        public class win
-        {
-            public int WinLous { get; set; }
-        }
 
+        public static int WinLous { get; set; }
+        
+        //public static appfunction.win actualvin { get;set } = new appfunction.win();
         public static int Victori(int maxpoint, int maxfault, int actualpoint, int actualfauli)
         {
             int actual = 0;//0=nincs vége 1=nyert 2=vesztett
