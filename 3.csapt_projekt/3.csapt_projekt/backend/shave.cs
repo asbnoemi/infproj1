@@ -27,7 +27,13 @@ namespace _3.csapt_projekt.backend
         }
         public List<ScoreC> scoreLs { get; set; }=new List<ScoreC>();
 
-        public Shave() { load(); }
+        public Shave() 
+        {
+            if(scoreLs.Count == 0)
+            {
+                load();
+            }
+        }
         public bool ShaveFile( string svFile ="") 
         {
             if (svFile == "")
@@ -46,19 +52,20 @@ namespace _3.csapt_projekt.backend
                 return false;
             }
         }
-        public void load(string svFile ="") 
+        private void load(string svFile ="") 
         {
             if (svFile == "")
             {
                 svFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "shave.json");
             }
-            Shave shave = JsonSerializer.Deserialize<Shave>(File.ReadAllText(svFile));
+            var data= File.ReadAllText(svFile);
+            Shave shave = JsonSerializer.Deserialize<Shave>(data);
             _me = shave;
         }
         public int[] roppscore ()// meghivás int[] topIndexes = manager.roppscore();
         {
             
-            ;
+            
             int[] top3ind = new int[3] { 0, 0, 0 };
             if (scoreLs.Count >= 3)
                 for (int i = 0; i < scoreLs.Count; i++)

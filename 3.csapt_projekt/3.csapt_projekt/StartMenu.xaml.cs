@@ -33,7 +33,7 @@ namespace _3.csapt_projekt
         private void Button_ClickMain(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = new MainWindow();
-            Shave.Me.load();
+            
             var a =new Shave.ScoreC()
             {
                 Mep = 0,

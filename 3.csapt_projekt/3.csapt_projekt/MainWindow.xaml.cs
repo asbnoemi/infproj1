@@ -120,14 +120,13 @@ namespace _3.csapt_projekt
         public void save()
         {
             stopwatch.Stop();
-            Shave shave = new Shave();
-            shave.scoreLs.Add(new ScoreC
+            Shave.Me.scoreLs.Add(new ScoreC
             {
                 TimeMinut = stopwatch.Elapsed.Seconds,
                 Mep = maps,
                 Score = wins
             });
-            shave.ShaveFile();
+            Shave.Me.ShaveFile();
         }
 
         public void GoScores()

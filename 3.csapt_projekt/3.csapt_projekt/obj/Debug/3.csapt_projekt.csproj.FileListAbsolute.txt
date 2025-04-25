@@ -220,3 +220,7 @@ H:\FONTOS\fontos\egyetem\tanulás\6.félév\infproj\infproj1\3.csapt_projekt\3.c
 H:\FONTOS\fontos\egyetem\tanulás\6.félév\infproj\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Win.g.cs
 H:\FONTOS\fontos\egyetem\tanulás\6.félév\infproj\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\GameOver.baml
 H:\FONTOS\fontos\egyetem\tanulás\6.félév\infproj\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Win.baml
+C:\Users\asbot\OneDrive\Asztali gép\egyetem\inf.p.1\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\GameOver.g.cs
+C:\Users\asbot\OneDrive\Asztali gép\egyetem\inf.p.1\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Win.g.cs
+C:\Users\asbot\OneDrive\Asztali gép\egyetem\inf.p.1\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\GameOver.baml
+C:\Users\asbot\OneDrive\Asztali gép\egyetem\inf.p.1\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Win.baml

@@ -24,12 +24,12 @@ namespace _3.csapt_projekt
         public Scores()
         {
             InitializeComponent();
-            Shave shave = new Shave();
+            
             int[] top3index = new int[3] { 0, 0, 0 };
-            top3index = shave.roppscore();
-            first.Text = shave.scoreLs[top3index[0]].Score.ToString();
-            second.Text = shave.scoreLs[top3index[1]].Score.ToString();
-            third.Text = shave.scoreLs[top3index[2]].Score.ToString();
+            top3index = Shave.Me.roppscore();
+            first.Text = Shave.Me.scoreLs[top3index[0]].Score.ToString();
+            second.Text = Shave.Me.scoreLs[top3index[1]].Score.ToString();
+            third.Text = Shave.Me.scoreLs[top3index[2]].Score.ToString();
         }
 
         private void GoStartMenu_Click(object sender, RoutedEventArgs e)
