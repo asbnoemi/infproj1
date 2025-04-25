@@ -28,7 +28,7 @@ namespace _3.csapt_projekt
     {
         qestsC kerdes;
 
-
+        appfunction.win actualWin = new appfunction.win();
         public Question()
         {
             InitializeComponent();
@@ -86,12 +86,8 @@ namespace _3.csapt_projekt
                     sec.Close();
                 }
             }
-            winlose = appfunction.Victori(5, 1, w, l);
-
-        }
-        public int IsWin()
-        {
-            return winlose;
+            
+            actualWin.WinLous = appfunction.Victori(5, 1, w, l);
         }
     }
 }
