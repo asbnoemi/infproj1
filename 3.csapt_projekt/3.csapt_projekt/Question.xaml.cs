@@ -15,6 +15,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using static _3.csapt_projekt.backend.QuestRead;
+using static _3.csapt_projekt.backend.appfunction;
+using System.Runtime.Remoting.Messaging;
 
 
 namespace _3.csapt_projekt
@@ -41,7 +43,7 @@ namespace _3.csapt_projekt
             button3.Content = kerdes.options[2];
             button4.Content = kerdes.options[3];
         }
-        
+        public int winlose;
         private async void answer_Click(object sender, RoutedEventArgs e)
         {
             Button UsedButton = sender as Button;
@@ -58,7 +60,7 @@ namespace _3.csapt_projekt
 
             if (answer)
             {
-                
+
                 eredmeny.Content = "Jó válasz";
                 eredmeny.Foreground = new SolidColorBrush(Colors.White);
                 eredmeny.Visibility = Visibility.Visible;
@@ -84,8 +86,12 @@ namespace _3.csapt_projekt
                     sec.Close();
                 }
             }
-            
+            winlose = appfunction.Victori(5, 10, l, w);
 
+        }
+        public int IsWin()
+        {
+            return winlose;
         }
     }
 }

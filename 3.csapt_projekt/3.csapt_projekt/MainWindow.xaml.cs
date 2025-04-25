@@ -17,8 +17,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using static _3.csapt_projekt.backend.Shave;
-using static _3.csapt_projekt.backend.appfunction;
+using static _3.csapt_projekt.Question;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using System.Diagnostics.Eventing.Reader;
 
 namespace _3.csapt_projekt
 {
@@ -51,6 +52,7 @@ namespace _3.csapt_projekt
         {
             maps = job;
         }
+        public int winlose;
         public void Question_Click(Button Button, List<Button> locked)
         {
             int diff = int.Parse(Button.Content as string);
@@ -69,6 +71,17 @@ namespace _3.csapt_projekt
                 second.GoQuestion();
                 MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
                 mainWindow.OpenSecondWindow();
+            }
+            Question question = new Question();
+            winlose = question.IsWin();
+            if (winlose == 1)
+            {
+                MainContent.Content = new Win();
+                save();
+            }
+            else if(winlose == 2)
+            {
+                MainContent.Content = new GameOver();
             }
         }
         List<UserControl> jobs = new List<UserControl>();
