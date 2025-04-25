@@ -75,7 +75,6 @@ namespace _3.csapt_projekt
             winlose = appfunction.WinLous;
             if (winlose == 1)
             {
-                
                 save();
             }
             

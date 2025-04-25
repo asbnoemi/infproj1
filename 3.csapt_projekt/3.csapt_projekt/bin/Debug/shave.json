@@ -3,46 +3,6 @@
     "TimeMinut": 20,
     "Mep": 0,
     "Score": 10
-  },
-
-  {
-    "TimeMinut": 30,
-    "Mep": 2,
-    "Score": 10
-  },
-  {
-    "TimeMinut": 40,
-    "Mep": 0,
-    "Score": 10
-  },
-  {
-    "TimeMinut": 50,
-    "Mep": 3,
-    "Score": 10
-  },
-  {
-    "TimeMinut": 60,
-    "Mep": 0,
-    "Score": 10
-  },
-  {
-    "TimeMinut": 70,
-    "Mep": 0,
-    "Score": 10
-  },
-  {
-    "TimeMinut": 80,
-    "Mep": 0,
-    "Score": 10
-  },
-  {
-    "TimeMinut": 90,
-    "Mep": 0,
-    "Score": 10
-  },
-  {
-    "TimeMinut": 100,
-    "Mep": 0,
-    "Score": 10
   }
+  
 ]
