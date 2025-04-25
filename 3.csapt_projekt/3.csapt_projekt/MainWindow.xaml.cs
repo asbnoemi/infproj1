@@ -72,9 +72,6 @@ namespace _3.csapt_projekt
                 MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
                 mainWindow.OpenSecondWindow();
             }
-<<<<<<< HEAD
-            
-
             winlose =appfunction.WinLous;
             if (winlose == 1)
             {
@@ -85,13 +82,9 @@ namespace _3.csapt_projekt
             {
                 MainContent.Content = new GameOver();
             }
-=======
+            
             winlose = appfunction.WinLous;
             
-            
-           
-
->>>>>>> c0eedead316fa403957224a800816d956c6198d7
         }
         List<UserControl> jobs = new List<UserControl>();
         private Map1 map1;
