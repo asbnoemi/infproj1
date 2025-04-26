@@ -42,6 +42,7 @@ namespace _3.csapt_projekt
             ButtonList.Add(e1);
             ButtonList.Add(e2);
             ButtonList.Add(e2);
+            ButtonList.Add(e3);
             ButtonList.Add((Button)UsedButton);
             Question(UsedButton, ButtonList);
         }
