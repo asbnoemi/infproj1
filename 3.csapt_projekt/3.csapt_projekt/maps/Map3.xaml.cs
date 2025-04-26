@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _3.csapt_projekt.backend;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +25,8 @@ namespace _3.csapt_projekt.maps
         public Map3()
         {
             InitializeComponent();
+            appfunction.maxpoint = 20;
+            appfunction.maxfault = 5;
         }
         private void Question(Button usedbutton, List<Button> locked)
         {
