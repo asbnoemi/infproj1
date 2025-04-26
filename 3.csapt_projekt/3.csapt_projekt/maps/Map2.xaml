@@ -17,25 +17,25 @@
                 </Image.Source>
             </Image>
             
-            <Button  HorizontalAlignment="Center" Margin="0,231,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Height="90" Width="90"/>
-            <Button HorizontalAlignment="Left" Margin="500,306,0,0" VerticalAlignment="Top" Style="{StaticResource Mobile}" Height="50" Width="50"/>
-            <Button HorizontalAlignment="Left" Margin="575,360,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Height="90" Width="90"/>
-            <Button HorizontalAlignment="Left" Margin="720,370,0,0" VerticalAlignment="Top" Style="{StaticResource server}"/>
-            <Button HorizontalAlignment="Left" Margin="620,286,0,0" VerticalAlignment="Top" Style="{StaticResource Mobile}" Height="50" Width="50"/>
-            <Button HorizontalAlignment="Left" Margin="515,195,0,0" VerticalAlignment="Top" Style="{StaticResource Laptop}" Height="70" Width="70"/>
-            <Button HorizontalAlignment="Center" Margin="0,124,0,0" VerticalAlignment="Top" Style="{StaticResource server}"/>
-            <Button HorizontalAlignment="Center" Margin="0,23,0,0" VerticalAlignment="Top" Style="{StaticResource Laptop}" Height="70" Width="70"/>
-            <Button HorizontalAlignment="Left" Margin="515,58,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Height="90" Width="90"/>
-            <Button HorizontalAlignment="Left" Margin="642,114,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Height="90" Width="90"/>
-            <Button HorizontalAlignment="Left" Margin="697,225,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Height="90" Width="90"/>
-            <Button HorizontalAlignment="Left" Margin="226,170,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Height="90" Width="90"/>
-            <Button HorizontalAlignment="Left" Margin="253,336,0,0" VerticalAlignment="Top" Style="{StaticResource Mobile}" Height="50" Width="50"/>
-            <Button HorizontalAlignment="Left" Margin="77,360,0,0" VerticalAlignment="Top" Style="{StaticResource Laptop}" Height="70" Width="70"/>
-            <Button HorizontalAlignment="Left" Margin="59,231,0,0" VerticalAlignment="Top" Style="{StaticResource Mobile}" Height="50" Width="50"/>
-            <Button HorizontalAlignment="Left" Margin="131,246,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Height="90" Width="90"/>
-            <Button HorizontalAlignment="Left" Margin="208,40,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Height="90" Width="90"/>
-            <Button HorizontalAlignment="Left" Margin="102,114,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Height="90" Width="90"/>
-            <Button HorizontalAlignment="Left" Margin="39,23,0,0" VerticalAlignment="Top" Style="{StaticResource server}"/>
+            <Button  HorizontalAlignment="Center" Margin="0,231,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Height="90" Width="90" Name="starter" Click="Question_Starter"/>
+            <Button HorizontalAlignment="Left" Margin="500,306,0,0" VerticalAlignment="Top" Style="{StaticResource Mobile}" Height="50" Width="50" Name="m31" Click="Question_M31"/>
+            <Button x:Name="o1" HorizontalAlignment="Left" Margin="575,360,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Height="90" Width="90" Click="Question_O1"/>
+            <Button x:Name="n3" HorizontalAlignment="Left" Margin="720,370,0,0" VerticalAlignment="Top" Style="{StaticResource server}" Click="Question_N3"/>
+            <Button HorizontalAlignment="Left" Margin="620,286,0,0" VerticalAlignment="Top" Style="{StaticResource Mobile}" Height="50" Width="50" Name="m32" Click="Question_M32"/>
+            <Button HorizontalAlignment="Left" Margin="515,195,0,0" VerticalAlignment="Top" Style="{StaticResource Laptop}" Height="70" Width="70" Name="e3" Click="Question_E3"/>
+            <Button HorizontalAlignment="Center" Margin="0,124,0,0" VerticalAlignment="Top" Style="{StaticResource server}" Name="e2" Click="Question_E2"/>
+            <Button HorizontalAlignment="Center" Margin="0,23,0,0" VerticalAlignment="Top" Style="{StaticResource Laptop}" Height="70" Width="70" Name="m23" Click="Question_M23"/>
+            <Button HorizontalAlignment="Left" Margin="515,58,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Height="90" Width="90" Name="m24" Click="Question_M24"/>
+            <Button HorizontalAlignment="Left" Margin="642,114,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Height="90" Width="90" Name="m33" Click="Question_M33"/>
+            <Button x:Name="h3" HorizontalAlignment="Left" Margin="697,225,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Height="90" Width="90" Click="Question_H3"/>
+            <Button HorizontalAlignment="Left" Margin="226,170,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Height="90" Width="90" Name="m21" Click="Question_M21"/>
+            <Button HorizontalAlignment="Left" Margin="253,336,0,0" VerticalAlignment="Top" Style="{StaticResource Mobile}" Height="50" Width="50" Name="e1" Click="Question_E1"/>
+            <Button x:Name="h1" HorizontalAlignment="Left" Margin="77,360,0,0" VerticalAlignment="Top" Style="{StaticResource Laptop}" Height="70" Width="70" Click="Question_H1"/>
+            <Button x:Name="n1" HorizontalAlignment="Left" Margin="59,231,0,0" VerticalAlignment="Top" Style="{StaticResource Mobile}" Height="50" Width="50" Click="Question_N1"/>
+            <Button HorizontalAlignment="Left" Margin="131,246,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Height="90" Width="90" Name="m1" Click="Question_M1"/>
+            <Button HorizontalAlignment="Left" Margin="208,40,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Height="90" Width="90" Name="m22" Click="Question_M22"/>
+            <Button x:Name="n2" HorizontalAlignment="Left" Margin="102,114,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Height="90" Width="90" Click="Question_N2"/>
+            <Button x:Name="h2" HorizontalAlignment="Left" Margin="39,23,0,0" VerticalAlignment="Top" Style="{StaticResource server}" Click="Question_H2"/>
             <Button Content="Menu" HorizontalAlignment="Left" Height="28" Margin="697,23,0,0" VerticalAlignment="Top" Width="81" BorderBrush="White" Foreground="White" FontSize="18" FontWeight="Bold" FontFamily="Impact" Click="GoStartMenu_Click">
                 <Button.Background>
                     <SolidColorBrush Color="Black" Opacity="0.2"/>
