@@ -197,6 +197,7 @@ namespace _3.csapt_projekt
         private void GoStartMenu_Click(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
+            mainWindow.ScoreReset();
             mainWindow.GoStartMenu();
         }
     }

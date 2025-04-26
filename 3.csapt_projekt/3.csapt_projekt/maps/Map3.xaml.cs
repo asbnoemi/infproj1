@@ -276,6 +276,7 @@ namespace _3.csapt_projekt.maps
         private void GoStartMenu_Click(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
+            mainWindow.ScoreReset();
             mainWindow.GoStartMenu();
         }
     }

@@ -174,5 +174,10 @@ namespace _3.csapt_projekt
                 save();
             }
         }
+        public void ScoreReset()
+        {
+            wins = 0;
+            faults = 0;
+        }
     }
 }
