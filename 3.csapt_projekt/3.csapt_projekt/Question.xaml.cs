@@ -37,7 +37,18 @@ namespace _3.csapt_projekt
                             .FirstOrDefault();
             kerdes = QuestRead.MeQ.randQestGen(mainwindow.difficulty);
             question.Content = kerdes.question;
-
+            switch (mainwindow.difficulty)
+            {
+                case 1:
+                    difficulty.Content = "kérdés nehézsége: Könnyű";
+                    break;
+                case 2:
+                    difficulty.Content = "kérdés nehézsége: Közepes";
+                    break;
+                case 3:
+                    difficulty.Content = "kérdés nehézsége: Nehéz";
+                    break;
+            }
             button1.Content = kerdes.options[0];
             button2.Content = kerdes.options[1];
             button3.Content = kerdes.options[2];
