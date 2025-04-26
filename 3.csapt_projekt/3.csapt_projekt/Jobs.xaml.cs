@@ -34,6 +34,7 @@ namespace _3.csapt_projekt
 
                 string ButtonName = UsedButton.Name;
                 int job = int.Parse(ButtonName.Substring(3).ToString());
+                lbl.Content = "Választott Map: " + job;
                 MainWindow mainwindow = Application.Current.Windows
                             .OfType<MainWindow>()
                             .FirstOrDefault();

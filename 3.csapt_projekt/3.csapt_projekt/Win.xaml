@@ -10,7 +10,7 @@
         <Image Stretch="Uniform">
             <Image.Source>/Resources/Win.png</Image.Source>
         </Image>
-        <Button Content="Menu" HorizontalAlignment="Right" Height="28" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="82" BorderBrush="White" Foreground="White" FontSize="18" FontWeight="Bold" FontFamily="Impact" Click="GoStartMenu_Click">
+        <Button Content="Menu" HorizontalAlignment="Right" Height="28" Margin="0,0,10,36" VerticalAlignment="Bottom" Width="82" BorderBrush="White" Foreground="White" FontSize="18" FontWeight="Bold" FontFamily="Impact" Click="GoStartMenu_Click">
             <Button.Background>
                 <SolidColorBrush Color="Black" Opacity="0.2"/>
             </Button.Background>
