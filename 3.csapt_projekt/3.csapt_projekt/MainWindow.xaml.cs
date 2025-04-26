@@ -178,6 +178,8 @@ namespace _3.csapt_projekt
         {
             wins = 0;
             faults = 0;
+            pont.Content = "pont: 0" ;
+            hiba.Content = "hiba: 0" ;
         }
     }
 }
