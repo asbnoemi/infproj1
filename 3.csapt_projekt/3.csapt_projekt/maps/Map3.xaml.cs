@@ -25,8 +25,7 @@ namespace _3.csapt_projekt.maps
         public Map3()
         {
             InitializeComponent();
-            appfunction.maxpoint = 20;
-            appfunction.maxfault = 5;
+            
             MainWindow mainwindow = Application.Current.Windows
                             .OfType<MainWindow>()
                             .FirstOrDefault();
