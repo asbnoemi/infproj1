@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:_3.csapt_projekt.maps"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <Viewbox Stretch="Uniform">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/Resources/MainBG.png" Stretch="Fill"/>
@@ -318,4 +319,5 @@
             </Rectangle>
         </Grid>
     </Grid>
+    </Viewbox>
 </UserControl>
