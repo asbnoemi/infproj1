@@ -9,7 +9,7 @@
         ResizeMode="NoResize">
     <Grid>
         <ContentControl x:Name="SecondContent"/>
-        <Button Content="Close" HorizontalAlignment="Right" Height="29" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="81" Click="closeBttn_Click" BorderBrush="White" Foreground="White" FontFamily="Impact" FontSize="18">
+        <Button x:Name="CloseBttn" Content="Close" HorizontalAlignment="Right" Height="29" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="81" Click="closeBttn_Click" BorderBrush="White" Foreground="White" FontFamily="Impact" FontSize="18">
             <Button.Background>
                 <SolidColorBrush Color="Black" Opacity="0.4"/>
             </Button.Background>

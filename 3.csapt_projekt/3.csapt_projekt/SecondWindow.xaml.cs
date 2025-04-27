@@ -27,6 +27,8 @@ namespace _3.csapt_projekt
         public void GoJobs()
         {
             SecondContent.Content = new Jobs();
+            CloseBttn.Visibility = Visibility.Visible;
+            CloseBttn.IsEnabled = true;
         }
         public void closeBttn_Click(object sender, RoutedEventArgs e)
         {
@@ -36,6 +38,8 @@ namespace _3.csapt_projekt
         public void GoQuestion()
         {
             SecondContent.Content = new Question();
+            CloseBttn.Visibility = Visibility.Hidden;
+            CloseBttn.IsEnabled = false;
         }
     }
 }
