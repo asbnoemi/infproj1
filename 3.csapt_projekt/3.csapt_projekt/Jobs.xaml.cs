@@ -20,9 +20,13 @@ namespace _3.csapt_projekt
     /// </summary>
     public partial class Jobs : UserControl
     {
+        MainWindow mainwindow = Application.Current.Windows
+                            .OfType<MainWindow>()
+                            .FirstOrDefault();
         public Jobs()
         {
             InitializeComponent();
+            lbl.Content = "Választott Map: " + mainwindow.maps;
         }
         
         private void mapchange_Click(object sender, RoutedEventArgs e)
@@ -35,9 +39,7 @@ namespace _3.csapt_projekt
                 string ButtonName = UsedButton.Name;
                 int job = int.Parse(ButtonName.Substring(3).ToString());
                 lbl.Content = "Választott Map: " + job;
-                MainWindow mainwindow = Application.Current.Windows
-                            .OfType<MainWindow>()
-                            .FirstOrDefault();
+                
                 mainwindow.mapchange(job);
             }
         }
