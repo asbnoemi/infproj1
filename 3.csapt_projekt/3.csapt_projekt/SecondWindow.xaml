@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_3.csapt_projekt"
         mc:Ignorable="d"
-        Title="SecondWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="SecondWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
     <Grid>
         <ContentControl x:Name="SecondContent"/>
         <Button Content="Close" HorizontalAlignment="Right" Height="29" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="81" Click="closeBttn_Click" BorderBrush="White" Foreground="White" FontFamily="Impact" FontSize="18">

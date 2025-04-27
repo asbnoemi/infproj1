@@ -25,11 +25,16 @@ namespace _3.csapt_projekt.maps
     public partial class Map1 : UserControl
     {
         private List<Button> ButtonList = new List<Button>();
+        MainWindow mainwindow = Application.Current.Windows
+                            .OfType<MainWindow>()
+                            .FirstOrDefault();
         public Map1()
         {
             InitializeComponent();
             appfunction.maxfault = 10;
             appfunction.maxpoint = 7;
+            
+            mainwindow.MaxHiba();
         }
         
 
@@ -37,9 +42,7 @@ namespace _3.csapt_projekt.maps
 
         private void Question(Button usedbutton, List<Button> locked)
         {
-            MainWindow mainwindow = Application.Current.Windows
-                            .OfType<MainWindow>()
-                            .FirstOrDefault();
+            
             mainwindow.Question_Click(usedbutton, locked);
         }
 
