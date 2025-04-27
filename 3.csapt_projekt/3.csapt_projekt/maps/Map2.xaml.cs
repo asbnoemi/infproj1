@@ -29,7 +29,6 @@ namespace _3.csapt_projekt
             MainWindow mainwindow = Application.Current.Windows
                             .OfType<MainWindow>()
                             .FirstOrDefault();
-            mainwindow.MaxHiba();
         }
         private void Question(Button usedbutton, List<Button> locked)
         {
