@@ -12,7 +12,7 @@
     <Viewbox Stretch="Uniform">
     <Grid>
         
-        <Grid Background="{StaticResource MainBG}">
+        <Grid >
 
             <Canvas>
                 <Line

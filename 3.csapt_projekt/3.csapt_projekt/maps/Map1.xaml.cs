@@ -25,14 +25,15 @@ namespace _3.csapt_projekt.maps
     public partial class Map1 : UserControl
     {
         private List<Button> ButtonList = new List<Button>();
+        MainWindow mainwindow = Application.Current.Windows
+                            .OfType<MainWindow>()
+                            .FirstOrDefault();
         public Map1()
         {
             InitializeComponent();
             appfunction.maxfault = 10;
             appfunction.maxpoint = 7;
-            MainWindow mainwindow = Application.Current.Windows
-                            .OfType<MainWindow>()
-                            .FirstOrDefault(); 
+            
             mainwindow.MaxHiba();
         }
         
