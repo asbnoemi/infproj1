@@ -41,5 +41,10 @@ namespace _3.csapt_projekt
             CloseBttn.Visibility = Visibility.Hidden;
             CloseBttn.IsEnabled = false;
         }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
+        }
     }
 }
