@@ -19,9 +19,9 @@
                 <TextBox HorizontalAlignment="Left" Height="34" Margin="210,178,0,0" TextWrapping="Wrap" Text="2nd" VerticalAlignment="Top" Width="106" Foreground="White" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Impact" FontSize="25" TextAlignment="Center" IsReadOnly="True"/>
                 <TextBox HorizontalAlignment="Right" Height="34" Margin="0,202,202,0" TextWrapping="Wrap" Text="3rd" VerticalAlignment="Top" Width="106" Foreground="White" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Impact" FontSize="25" TextAlignment="Center" IsReadOnly="True"/>
                 <Button Content="Back" HorizontalAlignment="Left" Height="32" Margin="691,408,0,0" VerticalAlignment="Top" Width="99" FontFamily="Impact" FontSize="20" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}" Click="GoStartMenu_Click"/>
-                <TextBox x:Name="thirdScore" HorizontalAlignment="Left" Margin="492,282,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="106" Height="29" TextAlignment="Center" BorderBrush="{x:Null}" FontFamily="Microsoft New Tai Lue" FontSize="16"/>
-                <TextBox x:Name="firstScore" HorizontalAlignment="Center" Margin="0,253,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="103" Height="29" TextAlignment="Center" BorderBrush="{x:Null}" FontFamily="Microsoft New Tai Lue" FontSize="16"/>
-                <TextBox x:Name="secondScore" HorizontalAlignment="Left" Margin="217,268,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="94" Height="28" TextAlignment="Center" BorderBrush="{x:Null}" FontFamily="Microsoft New Tai Lue" FontSize="16"/>
+                <TextBox x:Name="thirdScore" HorizontalAlignment="Left" Margin="492,282,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="106" Height="29" TextAlignment="Center" BorderBrush="{x:Null}" FontFamily="Microsoft New Tai Lue" FontSize="18"/>
+                <TextBox x:Name="firstScore" HorizontalAlignment="Center" Margin="0,253,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="103" Height="29" TextAlignment="Center" BorderBrush="{x:Null}" FontFamily="Microsoft New Tai Lue" FontSize="18"/>
+                <TextBox x:Name="secondScore" HorizontalAlignment="Left" Margin="217,268,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="94" Height="28" TextAlignment="Center" BorderBrush="{x:Null}" FontFamily="Microsoft New Tai Lue" FontSize="18"/>
             </Grid>
         </Grid>
     </Viewbox>
