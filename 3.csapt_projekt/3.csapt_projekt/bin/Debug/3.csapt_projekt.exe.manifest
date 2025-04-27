@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="3.csapt_projekt.exe" size="16997312">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="3.csapt_projekt.exe" size="16997824">
       <assemblyIdentity name="3.csapt_projekt" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>SqG1vFKcxiuKZsRAStzdd5nmjDGiykj9hxyLgsBmxcI=</dsig:DigestValue>
+        <dsig:DigestValue>1HeHTYFkCHxqc20gwJoBeCqG+Lv8lJOP0uqs8zVART0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

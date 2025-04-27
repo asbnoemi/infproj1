@@ -232,3 +232,7 @@ D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\bin\Debug\3.
 D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\bin\Debug\3.csapt_projekt.application
 D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\3.csapt_projekt.exe.manifest
 D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\3.csapt_projekt.application
+H:\FONTOS\fontos\egyetem\tanulás\6.félév\infproj\infproj1\3.csapt_projekt\3.csapt_projekt\bin\Debug\3.csapt_projekt.exe.manifest
+H:\FONTOS\fontos\egyetem\tanulás\6.félév\infproj\infproj1\3.csapt_projekt\3.csapt_projekt\bin\Debug\3.csapt_projekt.application
+H:\FONTOS\fontos\egyetem\tanulás\6.félév\infproj\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\3.csapt_projekt.exe.manifest
+H:\FONTOS\fontos\egyetem\tanulás\6.félév\infproj\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\3.csapt_projekt.application

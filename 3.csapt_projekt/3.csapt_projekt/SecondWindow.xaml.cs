@@ -19,6 +19,9 @@ namespace _3.csapt_projekt
     /// </summary>
     public partial class SecondWindow : Window
     {
+        MainWindow mainwindow = Application.Current.Windows
+                            .OfType<MainWindow>()
+                            .FirstOrDefault();
         public SecondWindow()
         {
             InitializeComponent();
@@ -35,16 +38,35 @@ namespace _3.csapt_projekt
             Close();
         }
 
+        Question question = new Question();
+
         public void GoQuestion()
         {
-            SecondContent.Content = new Question();
+            SecondContent.Content = question;
             CloseBttn.Visibility = Visibility.Hidden;
             CloseBttn.IsEnabled = false;
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
+            if (SecondContent.Content == question && question.ManualClose == true)
+            {
+                var result = MessageBox.Show(
+                "A kilépés pontvesztéssel jár! \nBiztos ki akarsz lépni?",
+                "Megerősítés",
+                MessageBoxButton.YesNo);
 
+                if (result != MessageBoxResult.Yes)
+                {
+                    
+                    e.Cancel = true;
+                }
+                else
+                {
+                    mainwindow.faults++;
+                    mainwindow.scores(mainwindow.wins, mainwindow.faults);
+                }
+            }
         }
     }
 }

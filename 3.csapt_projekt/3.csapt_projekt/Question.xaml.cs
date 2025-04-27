@@ -58,15 +58,17 @@ namespace _3.csapt_projekt
             button4.Content = shuffle[3];
         }
         public int winlose;
-
+        public bool answer;
+        public int w = 0;
+        public int l = 0;
+        public bool ManualClose = true;
         private async void answer_Click(object sender, RoutedEventArgs e)
         {
             Button UsedButton = sender as Button;
             string button = UsedButton.Content as string;
             Map1 map1 = new Map1();
 
-            bool answer;
-            int w = 0, l = 0;
+            
 
             MainWindow mainwindow = Application.Current.Windows
                             .OfType<MainWindow>()
@@ -110,7 +112,9 @@ namespace _3.csapt_projekt
                         winlose = 0;
                         appfunction.WinLous = 0;
                     }
+                    ManualClose = false;
                     sec.Close();
+                    ManualClose = true;
                 }// MainWindow mainWindow = Application.Current.MainWindow as MainWindow; mainWindow.Play();
             }
             else
@@ -148,7 +152,9 @@ namespace _3.csapt_projekt
                         winlose = 0;
                         appfunction.WinLous = 0;
                     }
+                    ManualClose = false;
                     sec.Close();
+                    ManualClose = true;
                 }
             }
 
