@@ -11,8 +11,28 @@
     </Window.Resources>
     <Grid Background="{StaticResource MainBG}">
         <Grid x:Name="Top" Background="DarkBlue" Height="50" VerticalAlignment="Top">
-            <Label x:Name="hiba" Content="hiba: 0" Foreground="White" HorizontalAlignment="Left" Height="30" Margin="592,0,0,0" VerticalAlignment="Center" Width="60"/>
-            <Label x:Name="pont" Content="pont: 0" Foreground="White" HorizontalAlignment="Left" Height="30" Margin="657,0,0,0" VerticalAlignment="Center" Width="81"/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <!-- bal oldal -->
+                <ColumnDefinition Width="Auto" />
+                <!-- hiba label -->
+                <ColumnDefinition Width="Auto" />
+                <!-- pont label -->
+            </Grid.ColumnDefinitions>
+            <Label x:Name="hiba" Content="hiba: 0" 
+           Foreground="White" 
+           VerticalAlignment="Center" 
+           Height="30" 
+           Width="60"
+           Grid.Column="1" 
+           Margin="10,0"/>
+            <Label x:Name="pont" Content="pont: 0" 
+           Foreground="White" 
+           VerticalAlignment="Center" 
+           Height="30" 
+           Width="81"
+           Grid.Column="2" 
+           Margin="10,0"/>
         </Grid>
         <Grid>
             <ContentControl x:Name="GameContent" Margin="0,51,0,-26"/>
