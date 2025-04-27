@@ -52,7 +52,7 @@ namespace _3.csapt_projekt
             if (SecondContent.Content == question && question.ManualClose == true)
             {
                 var result = MessageBox.Show(
-                "A kilépés pontvesztéssel jár! \nBiztos ki akarsz lépni?",
+                "A kilépés plussz hibával jár! \nBiztos ki akarsz lépni?",
                 "Megerősítés",
                 MessageBoxButton.YesNo);
 
