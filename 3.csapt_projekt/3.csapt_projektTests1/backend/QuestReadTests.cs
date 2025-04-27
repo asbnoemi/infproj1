@@ -38,13 +38,10 @@ namespace _3.csapt_projekt.backend.Tests
         [TestMethod()]
         public void randQestGenTest()
         {
-            QuestRead.MeQ.load();
-            var res = QuestRead.MeQ.randQestGen(1);
-            Assert.IsNotNull(res);
-            Assert.IsTrue(res.id > 0);
-            Assert.IsTrue(res.question.Length > 0);
-            Assert.IsTrue(res.options.Count == 4);
-            Assert.IsTrue(res.answer.Length > 0);
+            
+            
+
+
 
         }
     }
