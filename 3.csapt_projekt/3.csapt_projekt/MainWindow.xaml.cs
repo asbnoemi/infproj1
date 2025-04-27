@@ -181,5 +181,9 @@ namespace _3.csapt_projekt
             pont.Content = "pont: 0" ;
             hiba.Content = "hiba: 0" ;
         }
+        public void MaxHiba()
+        {
+            maxHiba.Content = "Maxhiba: " + appfunction.maxfault;
+        }
     }
 }

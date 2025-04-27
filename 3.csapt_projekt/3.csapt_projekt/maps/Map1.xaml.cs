@@ -30,6 +30,10 @@ namespace _3.csapt_projekt.maps
             InitializeComponent();
             appfunction.maxfault = 10;
             appfunction.maxpoint = 7;
+            MainWindow mainwindow = Application.Current.Windows
+                            .OfType<MainWindow>()
+                            .FirstOrDefault(); 
+            mainwindow.MaxHiba();
         }
         
 
@@ -37,9 +41,7 @@ namespace _3.csapt_projekt.maps
 
         private void Question(Button usedbutton, List<Button> locked)
         {
-            MainWindow mainwindow = Application.Current.Windows
-                            .OfType<MainWindow>()
-                            .FirstOrDefault();
+            
             mainwindow.Question_Click(usedbutton, locked);
         }
 
