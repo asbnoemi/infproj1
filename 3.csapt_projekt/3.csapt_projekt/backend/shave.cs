@@ -110,6 +110,21 @@ namespace _3.csapt_projekt.backend
                         }
                     }
                 }
+            switch (scoreLs.Count)
+            {
+                case 0:
+                    top3ind[0] = -1;
+                    top3ind[1] = -1;
+                    top3ind[2] = -1;
+                    break;
+                case 1:
+                    top3ind[1] = -1;
+                    top3ind[2] = -1;
+                    break;
+                case 2:
+                    top3ind[2] = -1;
+                    break;
+            }
 
             return top3ind;// a legjobb 3 indexe igy egyszerübb volt 
         }   

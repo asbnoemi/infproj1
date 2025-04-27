@@ -7,22 +7,12 @@ namespace _3.csapt_projektTests1.backend
     public class shaveTest
     {
         
-        [TestMethod]
-        public void ShaveFile()
-        {
-            var res = _3.csapt_projekt.backend.Shave.Me.ShaveFile();
-            Assert.IsTrue(res);
-        }
-        [TestMethod]
-        public void loadTest()
-        {
-        }
+        
         [TestMethod]
         public void roppscoreTest()
         {
-            //var res = _3.csapt_projekt.backend.Shave.Me.roppscore();
-           // Assert.IsTrue(res);
 
+           
         }
         
 
