@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:_3.csapt_projekt"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <Viewbox Stretch="Uniform">
     <Grid Background="#FF274CB2">
         <Grid Height="450" Width="800">
             <TextBox x:Name="first" HorizontalAlignment="Center" Height="141" Margin="0,181,0,0" Text="1" VerticalAlignment="Top" Width="144" FontSize="50" FontFamily="Microsoft New Tai Lue" TextAlignment="Center" FontWeight="Bold" TextWrapping="Wrap" BorderThickness="1,1,1,1" Background="White" BorderBrush="Black" IsReadOnly="True"/>
@@ -19,4 +20,5 @@
             <Button Content="Back" HorizontalAlignment="Left" Height="32" Margin="691,408,0,0" VerticalAlignment="Top" Width="99" FontFamily="Impact" FontSize="20" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}" Click="GoStartMenu_Click"/>
         </Grid>
     </Grid>
+        </Viewbox>
 </UserControl>

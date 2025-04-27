@@ -10,30 +10,30 @@
         <ImageBrush x:Key="MainBG" ImageSource="/Resources/MainBG.png"/>
     </UserControl.Resources>
     <Grid Background="{StaticResource MainBG}">
-        <Label x:Name="question" Content="Label" Foreground="White" HorizontalAlignment="Center" Margin="0,134,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Impact"/>
-        <Button x:Name="button1" Content="Button" HorizontalAlignment="Center" Margin="-300,220,0,0" VerticalAlignment="Top" Click="answer_Click" BorderBrush="White" Foreground="White" FontSize="16" FontFamily="Impact">
-            <Button.Background>
-                <SolidColorBrush Color="Black" Opacity="0.4"/>
-            </Button.Background>
-        </Button>
-        <Button x:Name="button2" Content="Button" HorizontalAlignment="Center" Margin="300,220,0,0" VerticalAlignment="Top" Click="answer_Click" FontSize="16" FontFamily="Impact" BorderBrush="White" Foreground="White">
-            <Button.Background>
-                <SolidColorBrush Color="Black" Opacity="0.4"/>
-            </Button.Background>
-        </Button>
-        <Button x:Name="button3" Content="Button" HorizontalAlignment="Center" Margin="-300,349,0,0" VerticalAlignment="Top" Click="answer_Click" FontSize="16" FontFamily="Impact" BorderBrush="White" Foreground="White">
-            <Button.Background>
-                <SolidColorBrush Color="Black" Opacity="0.4"/>
-            </Button.Background>
-        </Button>
-        <Button x:Name="button4" Content="Button" HorizontalAlignment="Center" Margin="300,349,0,0" VerticalAlignment="Top" Click="answer_Click" BorderBrush="White" Foreground="White" FontSize="16" FontFamily="Impact">
-            <Button.Background>
-                <SolidColorBrush Color="Black" Opacity="0.4"/>
-            </Button.Background>
-        </Button>
-        <Label x:Name="eredmeny" Content="Label" Foreground="White" HorizontalAlignment="Center" Margin="0,283,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
-        <Label Content="" HorizontalAlignment="Center" Margin="0,424,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="difficulty" Content="" Foreground="White" HorizontalAlignment="Center" Margin="0,59,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="question" Content="Label" Foreground="White" HorizontalAlignment="Center" Margin="0,134,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Impact"/>
+            <Button x:Name="button1" Content="Button" HorizontalAlignment="Center" Margin="-300,220,0,0" VerticalAlignment="Top" Click="answer_Click" BorderBrush="White" Foreground="White" FontSize="16" FontFamily="Impact">
+                <Button.Background>
+                    <SolidColorBrush Color="Black" Opacity="0.4"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="button2" Content="Button" HorizontalAlignment="Center" Margin="300,220,0,0" VerticalAlignment="Top" Click="answer_Click" FontSize="16" FontFamily="Impact" BorderBrush="White" Foreground="White">
+                <Button.Background>
+                    <SolidColorBrush Color="Black" Opacity="0.4"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="button3" Content="Button" HorizontalAlignment="Center" Margin="-300,349,0,0" VerticalAlignment="Top" Click="answer_Click" FontSize="16" FontFamily="Impact" BorderBrush="White" Foreground="White">
+                <Button.Background>
+                    <SolidColorBrush Color="Black" Opacity="0.4"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="button4" Content="Button" HorizontalAlignment="Center" Margin="300,349,0,0" VerticalAlignment="Top" Click="answer_Click" BorderBrush="White" Foreground="White" FontSize="16" FontFamily="Impact">
+                <Button.Background>
+                    <SolidColorBrush Color="Black" Opacity="0.4"/>
+                </Button.Background>
+            </Button>
+            <Label x:Name="eredmeny" Content="Label" Foreground="White" HorizontalAlignment="Center" Margin="0,283,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+            <Label Content="" HorizontalAlignment="Center" Margin="0,424,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="difficulty" Content="" Foreground="White" HorizontalAlignment="Center" Margin="0,59,0,0" VerticalAlignment="Top"/>
 
-    </Grid>
+        </Grid>
 </UserControl>
