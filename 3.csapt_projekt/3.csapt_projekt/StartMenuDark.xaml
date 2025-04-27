@@ -15,7 +15,24 @@
             <Button  Content="Play" Height="70" Margin="0,60,0,0" VerticalAlignment="Top" Width="145" HorizontalAlignment="Center" Foreground="White" FontFamily="Impact" FontSize="30" BorderBrush="{x:Null}" Background="{x:Null}" BorderThickness="3,1,1,1" Click="Play_Click"/>
             <Button  Content="Jobs" Height="70" VerticalAlignment="Top" Width="145" HorizontalAlignment="Center" Margin="0,190,0,0" FontFamily="Impact" FontSize="30" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}" Click="Jobs_Click"/>
             <Button Content="Scores" Height="70" Margin="0,320,0,0" VerticalAlignment="Top" Width="144" HorizontalAlignment="Center" FontFamily="Impact" FontSize="30" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}" Click="GoScores_Click"/>
-            <Label Content="Label" HorizontalAlignment="Left" Height="430" Margin="10,0,0,0" VerticalAlignment="Center" Width="269" Foreground="White" FontFamily="Impact" FontSize="16">
+            <Label Content="Játék indítása: &#10;
+Az alkalmazás indítása után azonnal &#10;elérhető a főmenü: 
+Play: Azonnal &#10;kezdhetsz egy alap pályán.&#10;
+Jobs: Itt választhatod ki, hogy melyik &#10;nehézségi szinten szeretnél játszani:
+&#10;Map1: Könnyű
+&#10;Map2: Közepes
+&#10;Map3: Nehéz&#10;
+A nehézségi szint kiválasztása után &#10;ismét a Play gomb megnyomásával &#10;indul el az adott pálya.
+&#10;A Jobs ablakban láthatod, hogy &#10;aktuálisan melyik map van kiválasztva.
+&#10;Pontozás és eredmény mentése:&#10;
+Csak a győztes játékaid eredményei &#10;kerülnek elmentésre.
+Az elért &#10;eredményeket a Scores menüpontban &#10;tudod megtekinteni." 
+                   HorizontalAlignment="Left" Height="430" Margin="10,0,0,0" VerticalAlignment="Center" Width="269" Foreground="White" FontFamily="Impact" FontSize="16">
+                <Label.Background>
+                    <SolidColorBrush Color="Black" Opacity="0.4"/>
+                </Label.Background>
+            </Label>
+            <Label Content="Nehézségi szintek:&#10;A különböző elemek különböző &#10;nehézségű kérdések &#10;megválaszolásával győzhetők le: &#10;PC és Telefon:    1. szint    Könnyű &#10;Laptop:    2. szint   Közepes &#10;Szerver:    3. szint    Nehéz &#10;Minél magasabb szintű az eszköz, &#10;annál nehezebb kérdést kell &#10;megválaszolnod a legyőzéséhez." HorizontalAlignment="Left" Height="430" Margin="521,0,0,0" VerticalAlignment="Center" Width="269" Foreground="White" FontFamily="Impact" FontSize="16">
                 <Label.Background>
                     <SolidColorBrush Color="Black" Opacity="0.4"/>
                 </Label.Background>

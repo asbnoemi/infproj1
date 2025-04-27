@@ -33,6 +33,10 @@ namespace _3.csapt_projekt
             string time2 = $"{ts.Minutes}:{ts.Seconds:D2}";
             ts = TimeSpan.FromSeconds(Shave.Me.scoreLs[top3index[2]].TimeMinut);
             string time3 = $"{ts.Minutes}:{ts.Seconds:D2}";
+
+            firstScore.Text = (Shave.Me.scoreLs[top3index[0]]).ToString();
+            secondScore.Text = (Shave.Me.scoreLs[top3index[1]]).ToString();
+            thirdScore.Text = (Shave.Me.scoreLs[top3index[2]]).ToString();
             //int sec1 = Shave.Me.scoreLs[top3index[0]].TimeMinut / 60;
             //string time1 = sec1 / 60 + ":" + sec1 % 60;
             //int sec2 = Shave.Me.scoreLs[top3index[1]].TimeMinut / 60;
