@@ -25,11 +25,9 @@ namespace _3.csapt_projekt.maps
         public Map3()
         {
             InitializeComponent();
-            
             MainWindow mainwindow = Application.Current.Windows
                             .OfType<MainWindow>()
                             .FirstOrDefault();
-            mainwindow.MaxHiba();
         }
         private void Question(Button usedbutton, List<Button> locked)
         {

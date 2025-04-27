@@ -118,6 +118,8 @@ namespace _3.csapt_projekt
                     stopwatch.Start();
                     appfunction.maxfault = 5;
                     appfunction.maxpoint = 7;
+                    ScoreReset();
+                    MaxHiba();
                     break;
                 case 2:
                     map2 = new Map2();
@@ -126,6 +128,8 @@ namespace _3.csapt_projekt
                     stopwatch.Start();
                     appfunction.maxfault = 7;
                     appfunction.maxpoint = 19;
+                    ScoreReset();
+                    MaxHiba();
                     break;
                 case 3:
                     map3 = new Map3();
@@ -134,6 +138,8 @@ namespace _3.csapt_projekt
                     stopwatch.Start();
                     appfunction.maxpoint = 20;
                     appfunction.maxfault = 5;
+                    ScoreReset();
+                    MaxHiba();
                     break;
             }
         }

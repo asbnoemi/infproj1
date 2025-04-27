@@ -31,9 +31,6 @@ namespace _3.csapt_projekt.maps
         public Map1()
         {
             InitializeComponent();
-            
-            
-            mainwindow.MaxHiba();
         }
         
 
