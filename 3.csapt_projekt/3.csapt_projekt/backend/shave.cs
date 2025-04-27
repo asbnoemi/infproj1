@@ -64,39 +64,38 @@ namespace _3.csapt_projekt.backend
         }
         public int[] roppscore ()// meghivás int[] topIndexes = manager.roppscore();
         {
-            
-            
+
             int[] top3ind = new int[3] { 0, 0, 0 };
             if (scoreLs.Count >= 3)
                 for (int i = 0; i < scoreLs.Count; i++)
                 {
-                    if (scoreLs[i].Score > scoreLs[top3ind[0]].Score)
+                    if (scoreLs[i].TimeMinut< scoreLs[top3ind[0]].TimeMinut|| scoreLs[i].Mep > scoreLs[top3ind[0]].Mep)
                     {
                         top3ind[2] = top3ind[1];
                         top3ind[1] = top3ind[0];
 
                         top3ind[0] = i;
                     }
-                    else if (scoreLs[i].Score > scoreLs[top3ind[1]].Score)
+                    else if (scoreLs[i].TimeMinut < scoreLs[top3ind[1]].TimeMinut || scoreLs[i].Mep > scoreLs[top3ind[1]].Mep)
                     {
 
                         top3ind[2] = top3ind[1];
                         top3ind[1] = i;
                     }
-                    else if (scoreLs[i].Score > scoreLs[top3ind[2]].Score)
+                    else if (scoreLs[i].TimeMinut< scoreLs[top3ind[2]].TimeMinut || scoreLs[i].Mep > scoreLs[top3ind[2]].Mep)
                     {
                         top3ind[2] = i;
                     }
 
                     else if (scoreLs.Count == 2)
                     {
-                        if (scoreLs[i].Score > scoreLs[top3ind[1]].Score)
+                        if (scoreLs[i].TimeMinut < scoreLs[top3ind[1]].TimeMinut || scoreLs[i].Mep > scoreLs[top3ind[1]].Mep)
                         {
 
                             top3ind[2] = top3ind[1];
                             top3ind[1] = i;
                         }
-                        else if (scoreLs[i].Score > scoreLs[top3ind[2]].Score)
+                        else if (scoreLs[i].TimeMinut < scoreLs[top3ind[2]].TimeMinut || scoreLs[i].Mep > scoreLs[top3ind[2]].Mep)
                         {
                             top3ind[2] = i;
                         }
