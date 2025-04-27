@@ -31,8 +31,7 @@ namespace _3.csapt_projekt.maps
         public Map1()
         {
             InitializeComponent();
-            appfunction.maxfault = 10;
-            appfunction.maxpoint = 7;
+            
             
             mainwindow.MaxHiba();
         }

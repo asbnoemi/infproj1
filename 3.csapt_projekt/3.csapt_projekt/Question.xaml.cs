@@ -27,8 +27,9 @@ namespace _3.csapt_projekt
     public partial class Question : UserControl
     {
         qestsC kerdes;
-        
-
+        Random rand = new Random();
+        List<string> q = new List<string>();
+        List<string> shuffle = new List<string>();
         public Question()
         {
             InitializeComponent();
@@ -49,10 +50,12 @@ namespace _3.csapt_projekt
                     difficulty.Content = "kérdés nehézsége: Nehéz";
                     break;
             }
-            button1.Content = kerdes.options[0];
-            button2.Content = kerdes.options[1];
-            button3.Content = kerdes.options[2];
-            button4.Content = kerdes.options[3];
+            q = kerdes.options;
+            shuffle = q.OrderBy(x => rand.Next()).ToList();
+            button1.Content = shuffle[0];
+            button2.Content = shuffle[1];
+            button3.Content = shuffle[2];
+            button4.Content = shuffle[3];
         }
         public int winlose;
 

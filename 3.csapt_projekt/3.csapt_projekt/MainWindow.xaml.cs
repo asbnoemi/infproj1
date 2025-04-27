@@ -116,18 +116,24 @@ namespace _3.csapt_projekt
                     MainContent.Content = null;
                     GameContent.Content = map1;
                     stopwatch.Start();
+                    appfunction.maxfault = 5;
+                    appfunction.maxpoint = 7;
                     break;
                 case 2:
                     map2 = new Map2();
                     MainContent.Content = null;
                     GameContent.Content = map2;
                     stopwatch.Start();
+                    appfunction.maxfault = 7;
+                    appfunction.maxpoint = 19;
                     break;
                 case 3:
                     map3 = new Map3();
                     MainContent.Content = null;
                     GameContent.Content = map3;
                     stopwatch.Start();
+                    appfunction.maxpoint = 20;
+                    appfunction.maxfault = 5;
                     break;
             }
         }
