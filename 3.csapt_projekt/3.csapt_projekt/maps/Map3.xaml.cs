@@ -22,6 +22,7 @@ namespace _3.csapt_projekt.maps
     public partial class Map3 : UserControl
     {
         private List<Button> ButtonList = new List<Button>();
+        private List<Rectangle> BrushList = new List<Rectangle>();
         public Map3()
         {
             InitializeComponent();
@@ -29,12 +30,12 @@ namespace _3.csapt_projekt.maps
                             .OfType<MainWindow>()
                             .FirstOrDefault();
         }
-        private void Question(Button usedbutton, List<Button> locked)
+        private void Question(Button usedbutton, List<Button> locked, List<Rectangle> rec)
         {
             MainWindow mainwindow = Application.Current.Windows
                             .OfType<MainWindow>()
                             .FirstOrDefault();
-            mainwindow.Question_Click(usedbutton, locked);
+            mainwindow.Question_Click(usedbutton, locked, rec);
         }
         private void Question_Starter(object sender, RoutedEventArgs e)
         {
@@ -42,7 +43,7 @@ namespace _3.csapt_projekt.maps
             ButtonList.Clear();
             ButtonList.Add(e1);
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_E1(object sender, RoutedEventArgs e)
         {
@@ -50,7 +51,7 @@ namespace _3.csapt_projekt.maps
             ButtonList.Add(m);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_M(object sender, RoutedEventArgs e)
         {
@@ -58,7 +59,7 @@ namespace _3.csapt_projekt.maps
             ButtonList.Add(h);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_H(object sender, RoutedEventArgs e)
         {
@@ -66,7 +67,7 @@ namespace _3.csapt_projekt.maps
             ButtonList.Add(o);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_O(object sender, RoutedEventArgs e)
         {
@@ -74,7 +75,7 @@ namespace _3.csapt_projekt.maps
             ButtonList.Add(ha);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_HA(object sender, RoutedEventArgs e)
         {
@@ -84,7 +85,7 @@ namespace _3.csapt_projekt.maps
             ButtonList.Add(he3);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_He1(object sender, RoutedEventArgs e)
         {
@@ -94,14 +95,14 @@ namespace _3.csapt_projekt.maps
             ButtonList.Add(ny13);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_He2(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_He3(object sender, RoutedEventArgs e)
         {
@@ -109,14 +110,14 @@ namespace _3.csapt_projekt.maps
             ButtonList.Add(ny3);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_Ny11(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_Ny12(object sender, RoutedEventArgs e)
         {
@@ -125,7 +126,7 @@ namespace _3.csapt_projekt.maps
             ButtonList.Add(k22);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_Ny13(object sender, RoutedEventArgs e)
         {
@@ -134,14 +135,14 @@ namespace _3.csapt_projekt.maps
             ButtonList.Add(k41);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_Ny2(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_Ny3(object sender, RoutedEventArgs e)
         {
@@ -149,14 +150,14 @@ namespace _3.csapt_projekt.maps
             ButtonList.Add(ny2);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_K11(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_K21(object sender, RoutedEventArgs e)
         {
@@ -164,21 +165,21 @@ namespace _3.csapt_projekt.maps
             ButtonList.Add(k11);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_K22(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_K31(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_K41(object sender, RoutedEventArgs e)
         {
@@ -186,14 +187,14 @@ namespace _3.csapt_projekt.maps
             ButtonList.Add(t);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_T(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void GoStartMenu_Click(object sender, RoutedEventArgs e)
         {

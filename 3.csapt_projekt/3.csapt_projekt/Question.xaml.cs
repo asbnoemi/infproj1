@@ -81,6 +81,7 @@ namespace _3.csapt_projekt
                 eredmeny.Visibility = Visibility.Visible;
                 await Task.Delay(1000);
                 mainwindow.ButtonEnableer();
+                mainwindow.ChangeColor();
                 mainwindow.scores(w, l);
                 SecondWindow sec = Application.Current.Windows.OfType<SecondWindow>().FirstOrDefault();
                 if (sec != null)

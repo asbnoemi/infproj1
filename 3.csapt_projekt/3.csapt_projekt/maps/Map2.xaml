@@ -39,7 +39,7 @@
                     <SolidColorBrush Color="Black" Opacity="0.2"/>
                 </Button.Background>
             </Button>
-            <Rectangle HorizontalAlignment="Left" Height="10" Margin="397,311,0,0" Stroke="#FF1BBD42" VerticalAlignment="Top" Width="3" RenderTransformOrigin="0.5,0.5" Fill="#FF1BBD42">
+            <Rectangle x:Name="StarterStroke" HorizontalAlignment="Left" Height="10" Margin="397,311,0,0" Stroke="#FF1BBD42" VerticalAlignment="Top" Width="3" RenderTransformOrigin="0.5,0.5" Fill="#FF1BBD42">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>
@@ -49,7 +49,7 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle HorizontalAlignment="Left" Height="32" Margin="396,199,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+            <Rectangle x:Name="SecondStroke" HorizontalAlignment="Left" Height="32" Margin="396,199,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>
@@ -139,7 +139,7 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle HorizontalAlignment="Left" Height="44" Margin="323,297,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+            <Rectangle x:Name="FirstStroke" HorizontalAlignment="Left" Height="44" Margin="323,297,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>
@@ -159,7 +159,7 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle HorizontalAlignment="Left" Height="55" Margin="484,239,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+            <Rectangle x:Name="ThirdStroke" HorizontalAlignment="Left" Height="55" Margin="484,239,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>

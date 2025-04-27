@@ -8,11 +8,13 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Ink;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static System.Resources.ResXFileRef;
 
 namespace _3.csapt_projekt
 {
@@ -22,6 +24,7 @@ namespace _3.csapt_projekt
     public partial class Map2 : UserControl
     {
         private List<Button> ButtonList = new List<Button>();
+        private List<Rectangle> BrushList = new List<Rectangle>();
         public Map2()
         {
             InitializeComponent();
@@ -30,13 +33,14 @@ namespace _3.csapt_projekt
                             .OfType<MainWindow>()
                             .FirstOrDefault();
         }
-        private void Question(Button usedbutton, List<Button> locked)
+        private void Question(Button usedbutton, List<Button> locked, List<Rectangle> rec)
         {
             MainWindow mainwindow = Application.Current.Windows
                             .OfType<MainWindow>()
                             .FirstOrDefault();
-            mainwindow.Question_Click(usedbutton, locked);
+            mainwindow.Question_Click(usedbutton, locked, rec);
         }
+        Brush greenStroke = Brushes.Green;
         private void Question_Starter(object sender, RoutedEventArgs e)
         {
             Button UsedButton = sender as Button;
@@ -45,7 +49,10 @@ namespace _3.csapt_projekt
             ButtonList.Add(e2);
             ButtonList.Add(e3);
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            BrushList.Add(FirstStroke);
+            BrushList.Add(SecondStroke);
+            BrushList.Add(ThirdStroke);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_E1(object sender, RoutedEventArgs e)
         {
@@ -53,7 +60,12 @@ namespace _3.csapt_projekt
             ButtonList.Add(m1);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
+            if (e1.IsEnabled)
+            {
+                FirstStroke.Stroke = greenStroke;
+                FirstStroke.Fill = greenStroke;
+            }
         }
         private void Question_E2(object sender, RoutedEventArgs e)
         {
@@ -64,7 +76,12 @@ namespace _3.csapt_projekt
             ButtonList.Add(m24);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
+            if (e2.IsEnabled)
+            {
+                SecondStroke.Stroke = greenStroke;
+                SecondStroke.Fill = greenStroke;
+            }
         }
         private void Question_E3(object sender, RoutedEventArgs e)
         {
@@ -74,7 +91,12 @@ namespace _3.csapt_projekt
             ButtonList.Add(m33);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
+            if (e3.IsEnabled)
+            {
+                ThirdStroke.Stroke = greenStroke;
+                ThirdStroke.Fill = greenStroke;
+            }
         }
         private void Question_M1(object sender, RoutedEventArgs e)
         {
@@ -82,14 +104,14 @@ namespace _3.csapt_projekt
             ButtonList.Add(h1);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_M21(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_M22(object sender, RoutedEventArgs e)
         {
@@ -97,35 +119,35 @@ namespace _3.csapt_projekt
             ButtonList.Add(h2);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_M23(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_M24(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_M31(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_M32(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_M33(object sender, RoutedEventArgs e)
         {
@@ -133,7 +155,7 @@ namespace _3.csapt_projekt
             ButtonList.Add(h3);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_H1(object sender, RoutedEventArgs e)
         {
@@ -141,7 +163,7 @@ namespace _3.csapt_projekt
             ButtonList.Add(n1);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_H2(object sender, RoutedEventArgs e)
         {
@@ -149,7 +171,7 @@ namespace _3.csapt_projekt
             ButtonList.Add(n2);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_H3(object sender, RoutedEventArgs e)
         {
@@ -157,21 +179,21 @@ namespace _3.csapt_projekt
             ButtonList.Add(n3);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_N1(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_N2(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_N3(object sender, RoutedEventArgs e)
         {
@@ -179,14 +201,14 @@ namespace _3.csapt_projekt
             ButtonList.Add(o1);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_O1(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void GoStartMenu_Click(object sender, RoutedEventArgs e)
         {

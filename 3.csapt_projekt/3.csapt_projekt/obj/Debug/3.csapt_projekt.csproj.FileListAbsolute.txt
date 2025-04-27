@@ -164,6 +164,23 @@ C:\Users\asbot\OneDrive\Asztali gép\egyetem\inf.p.1\infproj1\3.csapt_projekt\3.
 C:\Users\asbot\OneDrive\Asztali gép\egyetem\inf.p.1\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Win.g.cs
 C:\Users\asbot\OneDrive\Asztali gép\egyetem\inf.p.1\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\GameOver.baml
 C:\Users\asbot\OneDrive\Asztali gép\egyetem\inf.p.1\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Win.baml
+D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\3.csapt_projekt.csproj.AssemblyReference.cache
+D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Resources\ResourceDictionary.baml
+D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\GameOver.g.cs
+D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Jobs.g.cs
+D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\MainWindow.g.cs
+D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\maps\Map2.g.cs
+D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\maps\Map1.g.cs
+D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\maps\Map3.g.cs
+D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Question.g.cs
+D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Scores.g.cs
+D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\SecondWindow.g.cs
+D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\StartMenu.g.cs
+D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\StartMenuDark.g.cs
+D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Win.g.cs
+D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\App.g.cs
+D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\3.csapt_projekt_MarkupCompile.cache
+D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\3.csapt_projekt_MarkupCompile.lref
 D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\bin\Debug\3.csapt_projekt.exe.config
 D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\bin\Debug\3.csapt_projekt.exe
 D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\bin\Debug\3.csapt_projekt.pdb
@@ -187,23 +204,6 @@ D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\bin\Debug\Sy
 D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\bin\Debug\System.Text.Json.xml
 D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\bin\Debug\System.ValueTuple.xml
-D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\3.csapt_projekt.csproj.AssemblyReference.cache
-D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Resources\ResourceDictionary.baml
-D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\GameOver.g.cs
-D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Jobs.g.cs
-D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\MainWindow.g.cs
-D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\maps\Map2.g.cs
-D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\maps\Map1.g.cs
-D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\maps\Map3.g.cs
-D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Question.g.cs
-D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Scores.g.cs
-D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\SecondWindow.g.cs
-D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\StartMenu.g.cs
-D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\StartMenuDark.g.cs
-D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Win.g.cs
-D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\App.g.cs
-D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\3.csapt_projekt_MarkupCompile.cache
-D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\3.csapt_projekt_MarkupCompile.lref
 D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\App.baml
 D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\GameOver.baml
 D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\Jobs.baml

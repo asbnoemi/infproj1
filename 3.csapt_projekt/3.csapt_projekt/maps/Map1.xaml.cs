@@ -25,6 +25,7 @@ namespace _3.csapt_projekt.maps
     public partial class Map1 : UserControl
     {
         private List<Button> ButtonList = new List<Button>();
+        private List<Rectangle> BrushList = new List<Rectangle>();
         MainWindow mainwindow = Application.Current.Windows
                             .OfType<MainWindow>()
                             .FirstOrDefault();
@@ -36,10 +37,10 @@ namespace _3.csapt_projekt.maps
 
         
 
-        private void Question(Button usedbutton, List<Button> locked)
+        private void Question(Button usedbutton, List<Button> locked, List<Rectangle> rec)
         {
             
-            mainwindow.Question_Click(usedbutton, locked);
+            mainwindow.Question_Click(usedbutton, locked, rec);
         }
 
         private void Question_Click1(object sender, RoutedEventArgs e)
@@ -49,7 +50,7 @@ namespace _3.csapt_projekt.maps
             ButtonList.Add(firstrow1);
             ButtonList.Add(firstrow2);
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
 
         private void Question_Click2(object sender, RoutedEventArgs e)
@@ -58,7 +59,7 @@ namespace _3.csapt_projekt.maps
             ButtonList.Add(secondrow2);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_Click3(object sender, RoutedEventArgs e)
         {
@@ -66,7 +67,7 @@ namespace _3.csapt_projekt.maps
             ButtonList.Add(secondrow1);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
 
             
         }
@@ -77,7 +78,7 @@ namespace _3.csapt_projekt.maps
             ButtonList.Add(thirdrow2);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
 
             
         }
@@ -86,7 +87,7 @@ namespace _3.csapt_projekt.maps
             ButtonList.Clear();
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
-            Question(UsedButton, ButtonList);
+            Question(UsedButton, ButtonList, BrushList);
         }
         private void GoStartMenu_Click(object sender, RoutedEventArgs e)
         {

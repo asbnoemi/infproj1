@@ -12,7 +12,7 @@
 
     <Grid Background="{StaticResource MainBG}">
         <Label x:Name="question" Content="Label" Foreground="White" HorizontalAlignment="Center" Margin="0,134,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Impact"/>
-        <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Margin="166,220,0,0" VerticalAlignment="Top" Click="answer_Click" BorderBrush="White" Foreground="White" FontSize="16" FontFamily="Impact" RenderTransformOrigin="0.226,0.467">
+        <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Margin="85,220,0,0" VerticalAlignment="Top" Click="answer_Click" BorderBrush="White" Foreground="White" FontSize="16" FontFamily="Impact" RenderTransformOrigin="0.226,0.467">
             <Button.Background>
                 <SolidColorBrush Color="Black" Opacity="0.4"/>
             </Button.Background>
@@ -22,7 +22,7 @@
                 <SolidColorBrush Color="Black" Opacity="0.4"/>
             </Button.Background>
         </Button>
-        <Button x:Name="button3" Content="Button" HorizontalAlignment="Left" Margin="166,349,0,0" VerticalAlignment="Top" Click="answer_Click" FontSize="16" FontFamily="Impact" BorderBrush="White" Foreground="White">
+        <Button x:Name="button3" Content="Button" HorizontalAlignment="Left" Margin="85,349,0,0" VerticalAlignment="Top" Click="answer_Click" FontSize="16" FontFamily="Impact" BorderBrush="White" Foreground="White">
             <Button.Background>
                 <SolidColorBrush Color="Black" Opacity="0.4"/>
             </Button.Background>
