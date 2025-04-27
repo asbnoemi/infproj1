@@ -28,28 +28,43 @@ namespace _3.csapt_projekt
             int[] top3index = new int[3] { 0, 0, 0 };
             top3index = Shave.Me.roppscore();
             TimeSpan ts;
+            string time1 = "";
+            string time2 = "";
+            string time3 = "";
 
-            if (top3index[0] == -1)
+            if (top3index[0] != -1)
             {
                 ts = TimeSpan.FromSeconds(Shave.Me.scoreLs[top3index[0]].TimeMinut);
-                string time1 = $"{ts.Minutes}:{ts.Seconds:D2}";
+                time1 = $"{ts.Minutes}:{ts.Seconds:D2}";
                 firstScore.Text = (Shave.Me.scoreLs[top3index[0]].Score).ToString();
                 firstScore.Text += "\nmap " + (Shave.Me.scoreLs[top3index[0]].Mep).ToString();
             }
+            else 
+            {
+                firstScore.Text = "";
+            }
 
-            if (top3index[1] == -1)
+            if (top3index[1] != -1)
             {
                 ts = TimeSpan.FromSeconds(Shave.Me.scoreLs[top3index[1]].TimeMinut);
-                string time2 = $"{ts.Minutes}:{ts.Seconds:D2}";
+                time2 = $"{ts.Minutes}:{ts.Seconds:D2}";
                 secondScore.Text = (Shave.Me.scoreLs[top3index[1]].Score).ToString();
                 secondScore.Text += "\nmap " + (Shave.Me.scoreLs[top3index[1]].Mep).ToString();
             }
-            if (top3index[2] == -1)
+            else
+            {
+                firstScore.Text = "";
+            }
+            if (top3index[2] != -1)
             {
                 ts = TimeSpan.FromSeconds(Shave.Me.scoreLs[top3index[2]].TimeMinut);
-                string time3 = $"{ts.Minutes}:{ts.Seconds:D2}";
+                time3 = $"{ts.Minutes}:{ts.Seconds:D2}";
                 thirdScore.Text = (Shave.Me.scoreLs[top3index[2]].Score).ToString();
                 thirdScore.Text += "\nmap " + (Shave.Me.scoreLs[top3index[2]].Mep).ToString();
+            }
+            else
+            {
+                firstScore.Text = "";
             }
 
 
