@@ -214,27 +214,7 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle HorizontalAlignment="Left" Height="79" Margin="603,145,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
-                <Rectangle.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform ScaleX="-1"/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="145.78"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Rectangle.RenderTransform>
-            </Rectangle>
-            <Rectangle HorizontalAlignment="Left" Height="93" Margin="669,120,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
-                <Rectangle.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform ScaleX="-1"/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="194.44"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Rectangle.RenderTransform>
-            </Rectangle>
-            <Rectangle HorizontalAlignment="Left" Height="22" Margin="603,271,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+                <Rectangle HorizontalAlignment="Left" Height="22" Margin="603,271,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>

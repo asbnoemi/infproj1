@@ -30,6 +30,7 @@ namespace _3.csapt_projekt
     {
         public int difficulty = 1;
         public List<Button> enabled = new List<Button>();
+        public List<Rectangle> brushes = new List<Rectangle>();
         public int time = 0;
         Stopwatch stopwatch = new Stopwatch();
         public void ButtonEnableer()
@@ -47,13 +48,22 @@ namespace _3.csapt_projekt
                 
             }
         }
+        public void ChangeColor()
+        {
+            foreach(Rectangle rec in brushes)
+            {
+                Brush greenStroke = Brushes.Green;
+                rec.Stroke= greenStroke;
+                rec.Fill = greenStroke;
+            }
+        }
         public int maps = 1;
         public void mapchange(int job)
         {
             maps = job;
         }
         public int winlose;
-        public void Question_Click(Button Button, List<Button> locked)
+        public void Question_Click(Button Button, List<Button> locked, List<Rectangle> changeColor)
         {
             int diff = int.Parse(Button.Content as string);
             SecondWindow second = Application.Current.Windows.OfType<SecondWindow>().FirstOrDefault();
@@ -61,12 +71,14 @@ namespace _3.csapt_projekt
             {
                 difficulty = diff;
                 enabled = locked;
+                brushes = changeColor;
                 second.GoQuestion();
             }
             else
             {
                 difficulty = diff;
                 enabled = locked;
+                brushes = changeColor;
                 second = new SecondWindow();
                 second.GoQuestion();
                 MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
@@ -116,7 +128,7 @@ namespace _3.csapt_projekt
                     MainContent.Content = null;
                     GameContent.Content = map1;
                     stopwatch.Start();
-                    appfunction.maxfault = 10;
+                    appfunction.maxfault = 5;
                     appfunction.maxpoint = 7;
                     ScoreReset();
                     MaxHiba();

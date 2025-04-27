@@ -81,6 +81,7 @@ namespace _3.csapt_projekt
                 eredmeny.Visibility = Visibility.Visible;
                 await Task.Delay(1000);
                 mainwindow.ButtonEnableer();
+                mainwindow.ChangeColor();
                 mainwindow.scores(w, l);
                 SecondWindow sec = Application.Current.Windows.OfType<SecondWindow>().FirstOrDefault();
                 if (sec != null)
@@ -91,12 +92,23 @@ namespace _3.csapt_projekt
                     {
                         MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
                         mainwindow.GameContent.Content = new Win();
-
+                        w = 0;
+                        l = 0;
+                        mainwindow.wins = 0;
+                        mainwindow.faults = 0;
+                        winlose = 0;
+                        appfunction.WinLous = 0;
                     }
                     else if (winlose == 2)
                     {
                         MainWindow gameover = Application.Current.MainWindow as MainWindow;
                         gameover.GameContent.Content = new GameOver();
+                        w = 0;
+                        l = 0;
+                        mainwindow.wins = 0;
+                        mainwindow.faults = 0;
+                        winlose = 0;
+                        appfunction.WinLous = 0;
                     }
                     sec.Close();
                 }// MainWindow mainWindow = Application.Current.MainWindow as MainWindow; mainWindow.Play();
