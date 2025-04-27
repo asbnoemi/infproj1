@@ -228,3 +228,7 @@ C:\Users\asbot\OneDrive\Asztali gép\egyetem\inf.p.1\infproj1\3.csapt_projekt\3.
 C:\Users\asbot\OneDrive\Asztali gép\egyetem\inf.p.1\infproj1\3.csapt_projekt\3.csapt_projekt\bin\Debug\3.csapt_projekt.application
 C:\Users\asbot\OneDrive\Asztali gép\egyetem\inf.p.1\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\3.csapt_projekt.exe.manifest
 C:\Users\asbot\OneDrive\Asztali gép\egyetem\inf.p.1\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\3.csapt_projekt.application
+D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\bin\Debug\3.csapt_projekt.exe.manifest
+D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\bin\Debug\3.csapt_projekt.application
+D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\3.csapt_projekt.exe.manifest
+D:\suli\projekt\HackerGame\infproj1\3.csapt_projekt\3.csapt_projekt\obj\Debug\3.csapt_projekt.application

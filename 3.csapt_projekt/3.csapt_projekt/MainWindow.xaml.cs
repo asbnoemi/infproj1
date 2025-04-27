@@ -31,6 +31,7 @@ namespace _3.csapt_projekt
         public int difficulty = 1;
         public List<Button> enabled = new List<Button>();
         public List<Rectangle> brushes = new List<Rectangle>();
+        public List<Button> CopButtons = new List<Button>();
         public int time = 0;
         Stopwatch stopwatch = new Stopwatch();
         public void ButtonEnableer()
@@ -149,7 +150,7 @@ namespace _3.csapt_projekt
                     GameContent.Content = map3;
                     stopwatch.Start();
                     appfunction.maxpoint = 20;
-                    appfunction.maxfault = 5;
+                    appfunction.maxfault = 40;
                     ScoreReset();
                     MaxHiba();
                     break;
@@ -208,6 +209,14 @@ namespace _3.csapt_projekt
         public void MaxHiba()
         {
             maxHiba.Content = "Maxhiba: " + appfunction.maxfault;
+        }
+
+        public void Cop()
+        {
+            if (CopButtons.Contains(enabled[0]))
+            {
+                appfunction.WinLous = 2;
+            }
         }
     }
 }

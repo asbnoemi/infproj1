@@ -124,6 +124,7 @@ namespace _3.csapt_projekt
                 if (sec != null)
                 {
                     appfunction.WinLous = appfunction.Victori(appfunction.maxpoint,appfunction.maxfault, w, l);
+                    mainwindow.Cop();
                     winlose = appfunction.WinLous;
                     if (winlose == 1)
                     {

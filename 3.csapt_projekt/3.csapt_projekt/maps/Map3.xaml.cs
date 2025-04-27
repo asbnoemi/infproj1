@@ -23,6 +23,10 @@ namespace _3.csapt_projekt.maps
     {
         private List<Button> ButtonList = new List<Button>();
         private List<Rectangle> BrushList = new List<Rectangle>();
+        public List<Button> CopButtons = new List<Button>();
+        MainWindow mainwindow = Application.Current.Windows
+                            .OfType<MainWindow>()
+                            .FirstOrDefault();
         public Map3()
         {
             InitializeComponent();
@@ -32,13 +36,19 @@ namespace _3.csapt_projekt.maps
         }
         private void Question(Button usedbutton, List<Button> locked, List<Rectangle> rec)
         {
-            MainWindow mainwindow = Application.Current.Windows
-                            .OfType<MainWindow>()
-                            .FirstOrDefault();
+            
             mainwindow.Question_Click(usedbutton, locked, rec);
         }
         private void Question_Starter(object sender, RoutedEventArgs e)
         {
+            if (CopButtons != null)
+            {
+                CopButtons.Add(ny3);
+                CopButtons.Add(ny2);
+                CopButtons.Add(t);
+                CopButtons.Add(k31);
+                mainwindow.CopButtons = CopButtons;
+            }
             Button UsedButton = sender as Button;
             ButtonList.Clear();
             BrushList.Clear();
@@ -127,10 +137,10 @@ namespace _3.csapt_projekt.maps
         {
             ButtonList.Clear();
             BrushList.Clear();
-            ButtonList.Add(ny3);
-            BrushList.Add(he3Rec);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
+            ButtonList.Add(ny3);
+            BrushList.Add(he3Rec);
             Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_Ny11(object sender, RoutedEventArgs e)
@@ -177,10 +187,10 @@ namespace _3.csapt_projekt.maps
         {
             ButtonList.Clear();
             BrushList.Clear();
-            ButtonList.Add(ny2);
-            BrushList.Add(ny3Rec);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
+            ButtonList.Add(ny2);
+            BrushList.Add(ny3Rec);
             Question(UsedButton, ButtonList, BrushList);
         }
         private void Question_K11(object sender, RoutedEventArgs e)
