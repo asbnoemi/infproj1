@@ -116,7 +116,7 @@ namespace _3.csapt_projekt
                     MainContent.Content = null;
                     GameContent.Content = map1;
                     stopwatch.Start();
-                    appfunction.maxfault = 5;
+                    appfunction.maxfault = 5    ;
                     appfunction.maxpoint = 7;
                     ScoreReset();
                     MaxHiba();

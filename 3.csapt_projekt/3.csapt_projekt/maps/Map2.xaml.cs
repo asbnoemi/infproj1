@@ -51,10 +51,7 @@ namespace _3.csapt_projekt
         private void Question_E1(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
-            if (!m1.IsEnabled)
-            {
-                ButtonList.Add(m1);
-            }
+            ButtonList.Add(m1);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
             Question(UsedButton, ButtonList);
@@ -91,10 +88,6 @@ namespace _3.csapt_projekt
         private void Question_M21(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
-            if (!m1.IsEnabled)
-            {
-                ButtonList.Add(m1);
-            }
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
             Question(UsedButton, ButtonList);
