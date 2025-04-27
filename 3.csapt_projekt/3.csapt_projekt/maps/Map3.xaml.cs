@@ -79,18 +79,9 @@ namespace _3.csapt_projekt.maps
         private void Question_HA(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
-            if (!he1.IsEnabled)
-            {
-                ButtonList.Add(he1);
-            }
-            if (!he2.IsEnabled)
-            {
-                ButtonList.Add(he2);
-            }
-            if (!he3.IsEnabled)
-            {
-                ButtonList.Add(he3);
-            }
+            ButtonList.Add(he1);
+            ButtonList.Add(he2);
+            ButtonList.Add(he3);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
             Question(UsedButton, ButtonList);
@@ -98,18 +89,9 @@ namespace _3.csapt_projekt.maps
         private void Question_He1(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
-            if (!ny11.IsEnabled)
-            {
-                ButtonList.Add(ny11);
-            }
-            if (!ny12.IsEnabled)
-            {
-                ButtonList.Add(ny12);
-            }
-            if (!ny13.IsEnabled)
-            {
-                ButtonList.Add(ny13);
-            }
+            ButtonList.Add(ny11);
+            ButtonList.Add(ny12);
+            ButtonList.Add(ny13);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
             Question(UsedButton, ButtonList);
@@ -117,10 +99,6 @@ namespace _3.csapt_projekt.maps
         private void Question_He2(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
-            if (!ny2.IsEnabled)
-            {
-                ButtonList.Add(ny2);
-            }
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
             Question(UsedButton, ButtonList);
@@ -128,14 +106,7 @@ namespace _3.csapt_projekt.maps
         private void Question_He3(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
-            if (!ny2.IsEnabled)
-            {
-                ButtonList.Add(ny2);
-            }
-            if (!ny3.IsEnabled)
-            {
-                ButtonList.Add(ny3);
-            }
+            ButtonList.Add(ny3);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
             Question(UsedButton, ButtonList);
@@ -143,11 +114,6 @@ namespace _3.csapt_projekt.maps
         private void Question_Ny11(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
-            if (!k11.IsEnabled)
-            {
-                ButtonList.Add(k11);
-            }
-            
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
             Question(UsedButton, ButtonList);
@@ -155,14 +121,8 @@ namespace _3.csapt_projekt.maps
         private void Question_Ny12(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
-            if (!k21.IsEnabled)
-            {
-                ButtonList.Add(k21);
-            }
-            if (!k22.IsEnabled)
-            {
-                ButtonList.Add(k22);
-            }
+            ButtonList.Add(k21);
+            ButtonList.Add(k22);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
             Question(UsedButton, ButtonList);
@@ -170,14 +130,8 @@ namespace _3.csapt_projekt.maps
         private void Question_Ny13(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
-            if (!k31.IsEnabled)
-            {
-                ButtonList.Add(k31);
-            }
-            if (!k41.IsEnabled)
-            {
-                ButtonList.Add(k41);
-            }
+            ButtonList.Add(k31);
+            ButtonList.Add(k41);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
             Question(UsedButton, ButtonList);
@@ -185,18 +139,6 @@ namespace _3.csapt_projekt.maps
         private void Question_Ny2(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
-            if (!he3.IsEnabled)
-            {
-                ButtonList.Add(he3);
-            }
-            if (!ny3.IsEnabled)
-            {
-                ButtonList.Add(ny3);
-            }
-            if (!he2.IsEnabled)
-            {
-                ButtonList.Add(he2);
-            }
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
             Question(UsedButton, ButtonList);
@@ -204,14 +146,7 @@ namespace _3.csapt_projekt.maps
         private void Question_Ny3(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
-            if (!he3.IsEnabled)
-            {
-                ButtonList.Add(he3);
-            }
-            if (!ny2.IsEnabled)
-            {
-                ButtonList.Add(ny2);
-            }
+            ButtonList.Add(ny2);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
             Question(UsedButton, ButtonList);
@@ -219,10 +154,6 @@ namespace _3.csapt_projekt.maps
         private void Question_K11(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
-            if (!k21.IsEnabled)
-            {
-                ButtonList.Add(k21);
-            }
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
             Question(UsedButton, ButtonList);
@@ -230,14 +161,7 @@ namespace _3.csapt_projekt.maps
         private void Question_K21(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
-            if (!ny12.IsEnabled)
-            {
-                ButtonList.Add(ny12);
-            }
-            if (!k11.IsEnabled)
-            {
-                ButtonList.Add(k11);
-            }
+            ButtonList.Add(k11);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
             Question(UsedButton, ButtonList);
@@ -259,10 +183,7 @@ namespace _3.csapt_projekt.maps
         private void Question_K41(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
-            if (!t.IsEnabled)
-            {
-                ButtonList.Add(t);
-            }
+            ButtonList.Add(t);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
             Question(UsedButton, ButtonList);
