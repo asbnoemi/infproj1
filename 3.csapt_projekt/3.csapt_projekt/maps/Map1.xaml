@@ -9,6 +9,7 @@
     <UserControl.Resources>
         <ImageBrush x:Key="MainBG" ImageSource="/Resources/MainBG.png"/>
     </UserControl.Resources>
+    <Viewbox Stretch="Uniform">
     <Grid>
         
         <Grid Background="{StaticResource MainBG}">
@@ -55,4 +56,5 @@
             </Button>
         </Grid>
     </Grid>
+        </Viewbox>
 </UserControl>
