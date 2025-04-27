@@ -32,7 +32,7 @@ Az elért &#10;eredményeket a Scores menüpontban &#10;tudod megtekinteni."
                     <SolidColorBrush Color="Black" Opacity="0.4"/>
                 </Label.Background>
             </Label>
-            <Label Content="Nehézségi szintek:&#10;A különböző elemek különböző &#10;nehézségű kérdések &#10;megválaszolásával győzhetők le: &#10;PC és Telefon:    1. szint    Könnyű &#10;Laptop:    2. szint   Közepes &#10;Szerver:    3. szint    Nehéz &#10;Minél magasabb szintű az eszköz, &#10;annál nehezebb kérdést kell &#10;megválaszolnod a legyőzéséhez." HorizontalAlignment="Left" Height="430" Margin="521,0,0,0" VerticalAlignment="Center" Width="269" Foreground="White" FontFamily="Impact" FontSize="16">
+            <Label Content="Nehézségi szintek:&#10;A különböző elemek különböző &#10;nehézségű kérdések &#10;megválaszolásával győzhetők le: &#10;PC és Telefon:    1. szint    Könnyű &#10;Laptop:    2. szint   Közepes &#10;Szerver:    3. szint    Nehéz &#10;Minél magasabb szintű az eszköz, &#10;annál nehezebb kérdést kell &#10;megválaszolnod a legyőzéséhez.&#10;Map3-nál további nehezítés a rendőr,&#10;aki a kék vonallal jelölt gépeket &#10;figyeli, ezeknél a gépeknél csak 1-et&#10;lehet hibázni." HorizontalAlignment="Left" Height="430" Margin="521,0,0,0" VerticalAlignment="Center" Width="269" Foreground="White" FontFamily="Impact" FontSize="16">
                 <Label.Background>
                     <SolidColorBrush Color="Black" Opacity="0.4"/>
                 </Label.Background>
