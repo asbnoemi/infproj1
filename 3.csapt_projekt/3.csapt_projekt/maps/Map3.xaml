@@ -54,7 +54,7 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle HorizontalAlignment="Left" Height="93" Margin="373,199,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+            <Rectangle x:Name="he12Rec" HorizontalAlignment="Left" Height="93" Margin="373,199,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>
@@ -64,7 +64,7 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle HorizontalAlignment="Center" Height="21" Margin="0,98,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+            <Rectangle x:Name="ha1Rec" HorizontalAlignment="Center" Height="21" Margin="0,98,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>
@@ -74,7 +74,7 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle HorizontalAlignment="Left" Height="81" Margin="468,42,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+            <Rectangle x:Name="ha2Rec" HorizontalAlignment="Left" Height="81" Margin="468,42,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>
@@ -84,7 +84,7 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle HorizontalAlignment="Left" Height="94" Margin="312,157,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+            <Rectangle x:Name="he11Rec" HorizontalAlignment="Left" Height="94" Margin="312,157,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>
@@ -94,7 +94,7 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle HorizontalAlignment="Left" Height="52" Margin="335,50,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+            <Rectangle x:Name="oRec" HorizontalAlignment="Left" Height="52" Margin="335,50,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>
@@ -104,7 +104,7 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle HorizontalAlignment="Left" Height="93" Margin="154,23,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+            <Rectangle x:Name="hRec" HorizontalAlignment="Left" Height="93" Margin="154,23,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>
@@ -114,7 +114,7 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle HorizontalAlignment="Left" Height="44" Margin="119,87,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+            <Rectangle x:Name="mRec" HorizontalAlignment="Left" Height="44" Margin="119,87,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>
@@ -124,7 +124,7 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle HorizontalAlignment="Left" Height="22" Margin="68,203,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+            <Rectangle x:Name="starterRec" HorizontalAlignment="Left" Height="22" Margin="68,203,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>
@@ -134,7 +134,7 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle HorizontalAlignment="Left" Height="30" Margin="114,147,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+            <Rectangle x:Name="e1Rec" HorizontalAlignment="Left" Height="30" Margin="114,147,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>
@@ -144,7 +144,7 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle HorizontalAlignment="Left" Height="56" Margin="283,346,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+            <Rectangle x:Name="ny121Rec" HorizontalAlignment="Left" Height="56" Margin="283,346,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>
@@ -154,7 +154,7 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle HorizontalAlignment="Left" Height="37" Margin="212,325,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+            <Rectangle x:Name="k21Rec" HorizontalAlignment="Left" Height="37" Margin="212,325,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>
@@ -164,7 +164,7 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle HorizontalAlignment="Left" Height="210" Margin="545,-51,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+            <Rectangle x:Name="ha3Rec" HorizontalAlignment="Left" Height="210" Margin="545,-51,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>
@@ -174,7 +174,7 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle HorizontalAlignment="Left" Height="24" Margin="551,244,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+            <Rectangle x:Name="ny132Rec" HorizontalAlignment="Left" Height="24" Margin="551,244,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>
@@ -184,7 +184,7 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle HorizontalAlignment="Left" Height="81" Margin="460,193,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+            <Rectangle x:Name="he13Rec" HorizontalAlignment="Left" Height="81" Margin="460,193,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>
@@ -194,7 +194,7 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle HorizontalAlignment="Left" Height="39" Margin="382,331,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+            <Rectangle x:Name="ny122Rec" HorizontalAlignment="Left" Height="39" Margin="382,331,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>
@@ -204,7 +204,7 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle HorizontalAlignment="Left" Height="50" Margin="715,114,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+            <Rectangle x:Name="he3Rec" HorizontalAlignment="Left" Height="50" Margin="715,114,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>
@@ -214,7 +214,7 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-                <Rectangle HorizontalAlignment="Left" Height="22" Margin="603,271,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+                <Rectangle x:Name="k41Rec" HorizontalAlignment="Left" Height="22" Margin="603,271,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>
@@ -224,7 +224,7 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle HorizontalAlignment="Left" Height="47" Margin="536,326,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+            <Rectangle x:Name="ny131Rec" HorizontalAlignment="Left" Height="47" Margin="536,326,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>
@@ -234,7 +234,7 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle HorizontalAlignment="Left" Height="22" Margin="701,245,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+            <Rectangle x:Name="ny3Rec" HorizontalAlignment="Left" Height="22" Margin="701,245,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>
