@@ -47,8 +47,11 @@ namespace _3.csapt_projekt.maps
         {
             Button UsedButton = sender as Button;
             ButtonList.Clear();
+            BrushList.Clear();
             ButtonList.Add(firstrow1);
             ButtonList.Add(firstrow2);
+            BrushList.Add(e1Rec);
+            BrushList.Add(e2Rec);
             ButtonList.Add((Button)UsedButton);
             Question(UsedButton, ButtonList, BrushList);
         }
@@ -56,7 +59,9 @@ namespace _3.csapt_projekt.maps
         private void Question_Click2(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
+            BrushList.Clear();
             ButtonList.Add(secondrow2);
+            BrushList.Add(m2Rec);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
             Question(UsedButton, ButtonList, BrushList);
@@ -64,7 +69,9 @@ namespace _3.csapt_projekt.maps
         private void Question_Click3(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
+            BrushList.Clear();
             ButtonList.Add(secondrow1);
+            BrushList.Add(m1Rec);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
             Question(UsedButton, ButtonList, BrushList);
@@ -74,8 +81,11 @@ namespace _3.csapt_projekt.maps
         private void Question_Click4(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
+            BrushList.Clear();
             ButtonList.Add(thirdrow1);
             ButtonList.Add(thirdrow2);
+            BrushList.Add(h1Rec);
+            BrushList.Add(h1Rec);
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
             Question(UsedButton, ButtonList, BrushList);
@@ -85,6 +95,7 @@ namespace _3.csapt_projekt.maps
         private void Question_Click5(object sender, RoutedEventArgs e)
         {
             ButtonList.Clear();
+            BrushList.Clear();
             Button UsedButton = sender as Button;
             ButtonList.Add((Button)UsedButton);
             Question(UsedButton, ButtonList, BrushList);

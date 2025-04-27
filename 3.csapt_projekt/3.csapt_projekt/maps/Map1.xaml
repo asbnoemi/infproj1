@@ -10,51 +10,85 @@
         <ImageBrush x:Key="MainBG" ImageSource="/Resources/MainBG.png"/>
     </UserControl.Resources>
     <Viewbox Stretch="Uniform">
-    <Grid>
-        
-        <Grid >
+        <Grid>
 
-            <Canvas>
-                <Line
-              Stroke="Red"
-              StrokeThickness="2"
-              X1="407" Y1="253"
-              X2="407" Y2="314" Canvas.Left="10" Canvas.Top="10"/>
-                <Line
-                       Stroke="Red"
-                       StrokeThickness="2"
-                       X1="256" Y1="190"
-                       X2="407" Y2="253" Canvas.Left="10" Canvas.Top="10"/>
-                <Line
-                    Stroke="Red"
-                    StrokeThickness="2"
-                    X1="628" Y1="50"
-                    X2="407" Y2="253" Canvas.Left="10" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Center" Width="723"/>
-                <Line
-    Stroke="Red"
-    StrokeThickness="2"
-    X1="469" Y1="50"
-    X2="544" Y2="100" Canvas.Left="10" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Center" Width="723"/>
-                <Line
-    Stroke="Red"
-    StrokeThickness="2"
-    X1="130" Y1="100"
-    X2="256" Y2="190" Canvas.Left="10" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Center" Width="723"/>
-            </Canvas>
-            <Button x:Name="secondrow2" HorizontalAlignment="Left" Margin="544,93,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Click="Question_Click4" IsEnabled="False"/>
-            <Button x:Name="start" HorizontalAlignment="Left" Margin="387,234,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Click="Question_Click1"/>
-            <Button x:Name="firstrow1" HorizontalAlignment="Left" Margin="236,0,0,0" VerticalAlignment="Center" Style="{StaticResource Mobile}" Click="Question_Click3" IsEnabled="False"/>
-            <Button x:Name="firstrow2" HorizontalAlignment="Left" Margin="449,160,0,0" VerticalAlignment="Top" Style="{StaticResource server}" Click="Question_Click2" IsEnabled="False"/>
-            <Button HorizontalAlignment="Left" Margin="362,300,0,0" VerticalAlignment="Top" Style="{StaticResource Hacker}"/>
-            <Button x:Name="secondrow1" HorizontalAlignment="Left" Margin="110,73,0,0" VerticalAlignment="Top" Style="{StaticResource server}" Click="Question_Click5" IsEnabled="False"/>
-            <Button x:Name="thirdrow1" HorizontalAlignment="Left" Margin="449,28,0,0" VerticalAlignment="Top" Style="{StaticResource Mobile}" Click="Question_Click5" IsEnabled="False"/>
-            <Button x:Name="thirdrow2" HorizontalAlignment="Left" Margin="607,28,0,0" VerticalAlignment="Top" Style="{StaticResource Mobile}" Click="Question_Click5" IsEnabled="False"/>
-            <Button Content="Menu" HorizontalAlignment="Left" Height="28" Margin="690,350,0,0" VerticalAlignment="Top" Width="81" BorderBrush="White" Foreground="White" FontSize="18" FontWeight="Bold" FontFamily="Impact" Click="GoStartMenu_Click">
-                <Button.Background>
-                    <SolidColorBrush Color="Black" Opacity="0.2"/>
-                </Button.Background>
-            </Button>
+            <Grid >
+
+
+                <Button x:Name="secondrow2" HorizontalAlignment="Left" Margin="544,93,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Click="Question_Click4" IsEnabled="False"/>
+                <Button x:Name="start" HorizontalAlignment="Left" Margin="387,234,0,0" VerticalAlignment="Top" Style="{StaticResource Computer}" Click="Question_Click1"/>
+                <Button x:Name="firstrow1" HorizontalAlignment="Left" Margin="236,0,0,0" VerticalAlignment="Center" Style="{StaticResource Mobile}" Click="Question_Click3" IsEnabled="False"/>
+                <Button x:Name="firstrow2" HorizontalAlignment="Left" Margin="449,160,0,0" VerticalAlignment="Top" Style="{StaticResource server}" Click="Question_Click2" IsEnabled="False"/>
+                <Button HorizontalAlignment="Left" Margin="362,300,0,0" VerticalAlignment="Top" Style="{StaticResource Hacker}"/>
+                <Button x:Name="secondrow1" HorizontalAlignment="Left" Margin="110,73,0,0" VerticalAlignment="Top" Style="{StaticResource server}" Click="Question_Click5" IsEnabled="False"/>
+                <Button x:Name="thirdrow1" HorizontalAlignment="Left" Margin="449,28,0,0" VerticalAlignment="Top" Style="{StaticResource Mobile}" Click="Question_Click5" IsEnabled="False"/>
+                <Button x:Name="thirdrow2" HorizontalAlignment="Left" Margin="607,28,0,0" VerticalAlignment="Top" Style="{StaticResource Mobile}" Click="Question_Click5" IsEnabled="False"/>
+                <Button Content="Menu" HorizontalAlignment="Left" Height="28" Margin="690,350,0,0" VerticalAlignment="Top" Width="81" BorderBrush="White" Foreground="White" FontSize="18" FontWeight="Bold" FontFamily="Impact" Click="GoStartMenu_Click">
+                    <Button.Background>
+                        <SolidColorBrush Color="Black" Opacity="0.2"/>
+                    </Button.Background>
+                </Button>
+                <Rectangle x:Name="e2Rec" HorizontalAlignment="Left" Height="46" Margin="437,203,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+                    <Rectangle.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="-1"/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="57.902"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+                <Rectangle x:Name="e1Rec" HorizontalAlignment="Left" Height="93" Margin="337,175,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+                    <Rectangle.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="-1"/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-68.151"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+                <Rectangle x:Name="m2Rec" HorizontalAlignment="Left" Height="46" Margin="531,136,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+                    <Rectangle.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="-1"/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="45.143"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+                <Rectangle x:Name="h2Rec" HorizontalAlignment="Left" Height="23" Margin="608,81,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+                    <Rectangle.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="-1"/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="57.902"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+                <Rectangle x:Name="h1Rec" HorizontalAlignment="Left" Height="46" Margin="519,63,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+                    <Rectangle.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="-1"/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-58.363"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+            </Grid>
+            <Rectangle x:Name="m1Rec" HorizontalAlignment="Left" Height="80" Margin="211,119,0,0" Stroke="#FFF70000" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5" Fill="#FFF70000">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-52.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
         </Grid>
-    </Grid>
-        </Viewbox>
+    </Viewbox>
 </UserControl>
